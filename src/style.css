@@ -51,14 +51,15 @@ nav a:visited {
 }
 /*START MAIN APP AREA CSS */
 #appMain{
-    flex: 1 1 0;
+    flex: 1 0 400px;
     display: flex;
     justify-content: space-around;
 
 }
 
 #eqSelection{
-    flex: 1 1 0;
+    flex: 1 0 200px;
+    overflow-y: visible;
 }
 
 #selectForm{
@@ -66,21 +67,48 @@ nav a:visited {
     flex-direction: column;
     color: darkgoldenrod;
     font-family: HeavyMetal;
+    font-size: .80em;
 }
 
 #selectForm > h5{
     float: left;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#selectform > #biglabel{
+    float: left;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 #selectForm > label{
     text-indent: 5%;
 }
+
+select {
+    width: 90%;
+    padding: 0 12px 0 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #816c3f;
+    background-color:#4b361f;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: HeavyMetal;
+    color: darkorange;
+    font-size: 1.1em;
+  }
+
 #mechs{
     flex: 1 1 0;
 }
 
 #mechOutlineDiv{
-    flex: 2 1 0;
+    flex: 2 0 200px;
     background-image: url(../assets/images/mechbay_wall_df.png);
     background-repeat: center;
 }
@@ -95,7 +123,7 @@ nav a:visited {
 }
 
 #eqOutput{
-    flex: 1 1 0;
+    flex: 1 0 200px;
 }
 /*END MAIN APP AREA CSS*/
 
