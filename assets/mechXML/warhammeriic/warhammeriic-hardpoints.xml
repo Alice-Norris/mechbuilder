@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<Hardpoints SearchTable="Objects/mechs/hardpointsearchcriteria.xml">
+	<!--HEAD-->
+	<Hardpoint id="0">
+		<!--Head, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="Laser" AName="whm_head_laser_eh1"/>
+			<Attachment search="Flamer" AName="whm_head_flamer_eh1"/>
+			<Attachment search="Energy" AName="whm_head_laser_eh1"/>
+			<Attachment search="Default" AName="whm_head_blank_eb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+
+	<!--LEFT ARM-->
+	<Hardpoint id="10">
+		<!--Left Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="whm_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="whm_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="whm_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="11">
+		<!--Left Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="whm_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="whm_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="whm_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="Laser" AName="whm_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="whm_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="whm_left_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	<Hardpoint id="12">
+		<!--Left Arm, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="UltraAutoCannon20" AName="whm_left_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="whm_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="LBXAutoCannon10" AName="whm_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="whm_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="whm_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="whm_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="whm_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="whm_left_arm_forearm_lbx2_bh1" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="whm_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="whm_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="whm_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="whm_left_arm_forearm_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="whm_left_arm_forearm_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="whm_left_arm_forearm_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="whm_left_arm_forearm_lbx5_bh1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+
+	<!--LEFT TORSO-->
+	<Hardpoint id="20">
+		<!--Left Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_left_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="whm_left_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="whm_left_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="whm_left_torso_laser_eh1"/>
+			<Attachment search="Default" AName="whm_left_torso_blank_gb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="21">
+		<!--Left Torso, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_left_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="whm_left_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="whm_left_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="whm_left_torso_laser_eh1"/>
+			<Attachment search="Default" AName="whm_left_torso_blank_gb1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_left_torso_ppc_eh2"/>
+			<Attachment search="Laser" AName="whm_left_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="whm_left_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="whm_left_torso_laser_eh2"/>
+			<Attachment search="Default" AName="whm_left_torso_blank_gb2"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	<Hardpoint id="22">
+		<!--Left Torso, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile20" AName="whm_left_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="whm_left_torso_missile15_mh1"/>
+			<Attachment search="Missile12" AName="whm_left_torso_missile12_mh1"/>
+			<Attachment search="Missile10" AName="whm_left_torso_missile10_mh1"/>
+			<Attachment search="Missile9" AName="whm_left_torso_missile9_mh1"/>
+			<Attachment search="Missile5" AName="whm_left_torso_missile5_mh1"/>
+			<Attachment search="Missile6" AName="whm_left_torso_missile6_mh1"/>
+			<Attachment search="Missile4" AName="whm_left_torso_missile4_mh1"/>
+			<Attachment search="Missile3" AName="whm_left_torso_missile3_mh1"/>
+			<Attachment search="Missile2" AName="whm_left_torso_missile2_mh1"/>
+			<Attachment search="NarcBeacon" AName="whm_left_torso_narc_mh1"/>
+			<Attachment search="Missile" AName="whm_left_torso_missile20_mh1"/>
+			<Attachment search="Default" AName="whm_left_torso_blank_mb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="23">
+		<!--Left Torso, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile20" AName="whm_left_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="whm_left_torso_missile15_mh1"/>
+			<Attachment search="Missile12" AName="whm_left_torso_missile12_mh1"/>
+			<Attachment search="Missile10" AName="whm_left_torso_missile10_mh1"/>
+			<Attachment search="Missile9" AName="whm_left_torso_missile9_mh1"/>
+			<Attachment search="Missile5" AName="whm_left_torso_missile5_mh1"/>
+			<Attachment search="Missile6" AName="whm_left_torso_missile6_mh1"/>
+			<Attachment search="Missile4" AName="whm_left_torso_missile4_mh1"/>
+			<Attachment search="Missile3" AName="whm_left_torso_missile3_mh1"/>
+			<Attachment search="Missile2" AName="whm_left_torso_missile2_mh1"/>
+			<Attachment search="NarcBeacon" AName="whm_left_torso_narc_mh1"/>
+			<Attachment search="Missile" AName="whm_left_torso_missile20_mh1"/>
+			<Attachment search="Default" AName="whm_left_torso_blank_mb1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile20" AName="whm_left_torso_missile20_mh2"/>
+			<Attachment search="Missile15" AName="whm_left_torso_missile15_mh2"/>
+			<Attachment search="Missile12" AName="whm_left_torso_missile12_mh2"/>
+			<Attachment search="Missile10" AName="whm_left_torso_missile10_mh2"/>
+			<Attachment search="Missile9" AName="whm_left_torso_missile9_mh2"/>
+			<Attachment search="Missile5" AName="whm_left_torso_missile5_mh2"/>
+			<Attachment search="Missile6" AName="whm_left_torso_missile6_mh2"/>
+			<Attachment search="Missile4" AName="whm_left_torso_missile4_mh2"/>
+			<Attachment search="Missile3" AName="whm_left_torso_missile3_mh2"/>
+			<Attachment search="Missile2" AName="whm_left_torso_missile2_mh2"/>
+			<Attachment search="NarcBeacon" AName="whm_left_torso_narc_mh2"/>
+			<Attachment search="Missile" AName="whm_left_torso_missile20_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	<Hardpoint id="24">
+		<!--Left Torso, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="LBXAutoCannon20" AName="whm_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="whm_left_torso_uac20_bh1" animated="1"/>
+			<Attachment search="AutoCannon20" AName="whm_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="whm_left_torso_gauss_bh1"/>
+			<Attachment search="LBXAutoCannon10" AName="whm_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="whm_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="whm_left_torso_uac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="whm_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="whm_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="whm_left_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="whm_left_torso_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="whm_left_torso_uac5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="whm_left_torso_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="whm_left_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="whm_left_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="whm_left_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="whm_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName="whm_left_torso_blank_gb1"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	<Hardpoint id="25">
+		<!--Left Torso, 1 Energy, With Ballistic-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_left_torso_ppc_eh2"/>
+			<Attachment search="Laser" AName="whm_left_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="whm_left_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="whm_left_torso_laser_eh2"/>
+			<Attachment search="Default" AName="whm_left_torso_blank_gb2"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	
+	<!--CENTER TORSO-->
+	<Hardpoint id="30">
+		<!--Center Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="AntiMissileSystem" AName="whm_centre_torso_ams_ah1"/>
+			<Attachment search="LaserAntiMissileSystem" AName="whm_centre_torso_lams_ah1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	<Hardpoint id="31">
+		<!--Center Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_centre_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="whm_centre_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="whm_centre_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="whm_centre_torso_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>		
+	
+	
+<!--RIGHT TORSO-->
+	<Hardpoint id="40">
+		<!--Right Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_right_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="whm_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="whm_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="whm_right_torso_laser_eh1"/>
+			<Attachment search="Default" AName="whm_right_torso_blank_gb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="41">
+		<!--Right Torso, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_right_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="whm_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="whm_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="whm_right_torso_laser_eh1"/>
+			<Attachment search="Default" AName="whm_right_torso_blank_gb1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_right_torso_ppc_eh2"/>
+			<Attachment search="Laser" AName="whm_right_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="whm_right_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="whm_right_torso_laser_eh2"/>
+			<Attachment search="Default" AName="whm_right_torso_blank_gb2"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	<Hardpoint id="42">
+		<!--Right Torso, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile20" AName="whm_right_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="whm_right_torso_missile15_mh1"/>
+			<Attachment search="Missile12" AName="whm_right_torso_missile12_mh1"/>
+			<Attachment search="Missile12" AName="whm_right_torso_missile12_mh1"/>
+			<Attachment search="Missile10" AName="whm_right_torso_missile10_mh1"/>
+			<Attachment search="Missile9" AName="whm_right_torso_missile9_mh1"/>
+			<Attachment search="Missile5" AName="whm_right_torso_missile5_mh1"/>
+			<Attachment search="Missile6" AName="whm_right_torso_missile6_mh1"/>
+			<Attachment search="Missile4" AName="whm_right_torso_missile4_mh1"/>
+			<Attachment search="Missile3" AName="whm_right_torso_missile3_mh1"/>
+			<Attachment search="Missile2" AName="whm_right_torso_missile2_mh1"/>
+			<Attachment search="NarcBeacon" AName="whm_right_torso_narc_mh1"/>
+			<Attachment search="Missile" AName="whm_right_torso_missile20_mh1"/>
+			<Attachment search="Default" AName="whm_right_torso_blank_mb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="43">
+		<!--Right Torso, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile20" AName="whm_right_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="whm_right_torso_missile15_mh1"/>
+			<Attachment search="Missile12" AName="whm_right_torso_missile12_mh1"/>
+			<Attachment search="Missile10" AName="whm_right_torso_missile10_mh1"/>
+			<Attachment search="Missile9" AName="whm_right_torso_missile9_mh1"/>
+			<Attachment search="Missile5" AName="whm_right_torso_missile5_mh1"/>
+			<Attachment search="Missile6" AName="whm_right_torso_missile6_mh1"/>
+			<Attachment search="Missile4" AName="whm_right_torso_missile4_mh1"/>
+			<Attachment search="Missile3" AName="whm_right_torso_missile3_mh1"/>
+			<Attachment search="Missile2" AName="whm_right_torso_missile2_mh1"/>
+			<Attachment search="NarcBeacon" AName="whm_right_torso_narc_mh1"/>
+			<Attachment search="Missile" AName="whm_right_torso_missile20_mh1"/>
+			<Attachment search="Default" AName="whm_right_torso_blank_mb1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile20" AName="whm_right_torso_missile20_mh2"/>
+			<Attachment search="Missile15" AName="whm_right_torso_missile15_mh2"/>
+			<Attachment search="Missile12" AName="whm_right_torso_missile12_mh2"/>
+			<Attachment search="Missile10" AName="whm_right_torso_missile10_mh2"/>
+			<Attachment search="Missile9" AName="whm_right_torso_missile9_mh2"/>
+			<Attachment search="Missile5" AName="whm_right_torso_missile5_mh2"/>
+			<Attachment search="Missile6" AName="whm_right_torso_missile6_mh2"/>
+			<Attachment search="Missile4" AName="whm_right_torso_missile4_mh2"/>
+			<Attachment search="Missile3" AName="whm_right_torso_missile3_mh2"/>
+			<Attachment search="Missile2" AName="whm_right_torso_missile2_mh2"/>
+			<Attachment search="NarcBeacon" AName="whm_right_torso_narc_mh2"/>
+			<Attachment search="Missile" AName="whm_right_torso_missile20_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>	
+		<Hardpoint id="44">
+		<!--Right Torso, 3 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile20" AName="whm_right_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="whm_right_torso_missile15_mh1"/>
+			<Attachment search="Missile12" AName="whm_right_torso_missile12_mh1"/>
+			<Attachment search="Missile10" AName="whm_right_torso_missile10_mh1"/>
+			<Attachment search="Missile9" AName="whm_right_torso_missile9_mh1"/>
+			<Attachment search="Missile5" AName="whm_right_torso_missile5_mh1"/>
+			<Attachment search="Missile6" AName="whm_right_torso_missile6_mh1"/>
+			<Attachment search="Missile4" AName="whm_right_torso_missile4_mh1"/>
+			<Attachment search="Missile3" AName="whm_right_torso_missile3_mh1"/>
+			<Attachment search="Missile2" AName="whm_right_torso_missile2_mh1"/>
+			<Attachment search="NarcBeacon" AName="whm_right_torso_narc_mh1"/>
+			<Attachment search="Missile" AName="whm_right_torso_missile20_mh1"/>
+			<Attachment search="Default" AName="whm_right_torso_blank_mb1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile20" AName="whm_right_torso_missile20_mh2"/>
+			<Attachment search="Missile15" AName="whm_right_torso_missile15_mh2"/>
+			<Attachment search="Missile12" AName="whm_right_torso_missile12_mh2"/>
+			<Attachment search="Missile10" AName="whm_right_torso_missile10_mh2"/>
+			<Attachment search="Missile9" AName="whm_right_torso_missile9_mh2"/>
+			<Attachment search="Missile5" AName="whm_right_torso_missile5_mh2"/>
+			<Attachment search="Missile6" AName="whm_right_torso_missile6_mh2"/>
+			<Attachment search="Missile4" AName="whm_right_torso_missile4_mh2"/>
+			<Attachment search="Missile3" AName="whm_right_torso_missile3_mh2"/>
+			<Attachment search="Missile2" AName="whm_right_torso_missile2_mh2"/>
+			<Attachment search="NarcBeacon" AName="whm_right_torso_narc_mh2"/>
+			<Attachment search="Missile" AName="whm_right_torso_missile20_mh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile20" AName="whm_right_torso_missile20_mh3"/>
+			<Attachment search="Missile15" AName="whm_right_torso_missile15_mh3"/>
+			<Attachment search="Missile10" AName="whm_right_torso_missile10_mh3"/>
+			<Attachment search="Missile9" AName="whm_right_torso_missile9_mh3"/>
+			<Attachment search="Missile5" AName="whm_right_torso_missile5_mh3"/>
+			<Attachment search="Missile6" AName="whm_right_torso_missile6_mh3"/>
+			<Attachment search="Missile4" AName="whm_right_torso_missile4_mh3"/>
+			<Attachment search="Missile3" AName="whm_right_torso_missile3_mh3"/>
+			<Attachment search="Missile2" AName="whm_right_torso_missile2_mh3"/>
+			<Attachment search="NarcBeacon" AName="whm_right_torso_narc_mh3"/>
+			<Attachment search="Missile" AName="whm_right_torso_missile20_mh3"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	<Hardpoint id="45">
+		<!--Right Torso, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="LBXAutoCannon20" AName="whm_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="whm_right_torso_uac20_bh1" animated="1"/>
+			<Attachment search="AutoCannon20" AName="whm_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="whm_right_torso_gauss_bh1"/>
+			<Attachment search="LBXAutoCannon10" AName="whm_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="whm_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="whm_right_torso_uac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="whm_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="whm_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="whm_right_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="whm_right_torso_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="whm_right_torso_uac5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="whm_right_torso_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="whm_right_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="whm_right_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="whm_right_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="whm_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName="whm_right_torso_blank_gb1"/>
+		</WeaponSlot>
+	</Hardpoint>		
+	<Hardpoint id="46">
+		<!--Right Torso, 1 Energy, Ballistic-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_right_torso_ppc_eh2"/>
+			<Attachment search="Laser" AName="whm_right_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="whm_right_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="whm_right_torso_laser_eh2"/>
+			<Attachment search="Default" AName="whm_right_torso_blank_gb2"/>
+		</WeaponSlot>
+	</Hardpoint>		
+
+<!--LEFT ARM-->
+	<Hardpoint id="50">
+		<!--Left Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="whm_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="whm_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="whm_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="51">
+		<!--Left Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="whm_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="whm_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="whm_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="whm_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="Laser" AName="whm_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="whm_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="whm_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	<Hardpoint id="52">
+		<!--Left Arm, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="UltraAutoCannon20" AName="whm_right_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="whm_right_arm_forearm_gauss_bh1"/>
+			<Attachment search="LBXAutoCannon10" AName="whm_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="whm_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="whm_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="whm_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="whm_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="whm_right_arm_forearm_lbx2_bh1" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="whm_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="whm_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="whm_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="whm_right_arm_forearm_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="whm_right_arm_forearm_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="whm_right_arm_forearm_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="whm_right_arm_forearm_lbx5_bh1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	
+
+</Hardpoints>
+                                                 

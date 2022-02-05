@@ -1,0 +1,149 @@
+<MechDefinition>
+  <Mech Variant="AWS-9MC" VariantType="Champion" MaxTons="80" BaseTons="13" MaxJumpJets="0" CanEquipECM="0" MinEngineRating="160" MaxEngineRating="385" PrivateMatchVariantItemID="32" VariantParent="32" />
+  <Cockpit TechSlots="1" ConsumableSlots="1" WeaponModSlots="2" BoneOffset="0.0, 0.0, 0.0" ViewOffset="0.0, -0.08, 0.0" RenderFlag="1" startup="pilot_startup_awesome" poweron="pilot_poweron_awesome" poweroff="pilot_poweroff_awesome" CockpitItemScaleFactor="1.1548">
+    <Piece>
+      <Attachment AName="cockpit" SkipMatInstancing="1" Animated="1" />
+    </Piece>
+  </Cockpit>
+  <ComponentList>
+    <Component Name="head" Slots="6" HP="15" RenderFlag="2">
+      <Internal ItemID="1900" />
+      <Internal ItemID="1901" />
+      <Internal ItemID="1902" />
+      <Piece>
+        <Attachment AName="aws_head_cockpit" />
+      </Piece>
+      <Hardpoint ID="50" Type="1" Slots="1" lookAim="0" />
+    </Component>
+    <Component Name="centre_torso" Slots="12" HP="50" RenderFlag="2">
+      <Internal ItemID="1903" />
+      <Piece>
+        <Attachment AName="aws_centre_torso" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_centre_torso_pelvis" />
+      </Piece>
+      <Hardpoint ID="20" Type="1" Slots="1" lookAim="0" />
+      <Hardpoint ID="21" Type="2" Slots="1" lookAim="0" />
+    </Component>
+    <Component Name="right_leg" Slots="6" HP="34">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="aws_right_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_right_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_right_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_right_leg_toe0" />
+      </Piece>
+    </Component>
+    <Component Name="left_leg" Slots="6" HP="34">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="aws_left_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_left_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_left_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_left_leg_toe0" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso" Slots="12" HP="34">
+      <Piece>
+        <Attachment AName="aws_left_torso" />
+      </Piece>
+      <Hardpoint ID="10" Type="1" Slots="1" lookAim="0" />
+    </Component>
+    <Component Name="right_torso" Slots="12" HP="34">
+      <Piece>
+        <Attachment AName="aws_right_torso" />
+      </Piece>
+      <Hardpoint ID="31" Type="1" Slots="1" lookAim="0" />
+      <Hardpoint ID="30" Type="4" Slots="1" lookAim="0" />
+    </Component>
+    <Component Name="right_arm" Slots="12" HP="26" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Piece>
+        <Attachment AName="aws_right_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_right_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_right_arm_forearm" />
+      </Piece>
+      <Hardpoint ID="40" Type="1" Slots="1" lookAim="1" />
+    </Component>
+    <Component Name="left_arm" Slots="12" HP="26" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Internal ItemID="1911" />
+      <Piece>
+        <Attachment AName="aws_left_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_left_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_left_arm_forearm" />
+      </Piece>
+      <Hardpoint ID="1" Type="2" Slots="1" lookAim="1" />
+    </Component>
+    <Component Name="left_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="aws_left_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="aws_centre_torso_rear" />
+      </Piece>
+      <Piece>
+        <Attachment AName="aws_centre_torso_pelvis_rear" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="aws_right_torso_rear" />
+      </Piece>
+    </Component>
+  </ComponentList>
+  <MovementTuningConfiguration MovementArchetype="Large" MaxMovementSpeed="16.2" TorsoTurnSpeedYaw="90" TorsoTurnSpeedPitch="45" ArmTurnSpeedYaw="180" ArmTurnSpeedPitch="180" TurnLerpLowRate="1.13" TurnLerpMidRate="0.79" TurnLerpHighRate="0.6" AccelLerpLowRate="88.33" AccelLerpMidRate="20.03" AccelLerpHighRate="11.78" DecelLerpLowRate="120.16" DecelLerpMidRate="1850" DecelLerpHighRate="1850" ReverseSpeedMultiplier="0.666" MaxTorsoAngleYaw="100" MaxTorsoAnglePitch="25" MaxArmRotationYaw="40" MaxArmRotationPitch="30" TurnLerpLowSpeed="0" TurnLerpMidSpeed="0.666" TurnLerpHighSpeed="1.0" DecelLerpLowSpeed="0" DecelLerpMidSpeed="0.666" DecelLerpHighSpeed="1.0" AccelLerpLowSpeed="0" AccelLerpMidSpeed="0.666" AccelLerpHighSpeed="1.0" MaxFreeLookYaw="60" MaxFreeLookPitch="40" JumpJetSpread="0" />
+  <AnimationConfiguration>
+    <ArmAim LeftArmAimYaw="BONE_ARM_L" LeftArmAimPitch="BONE_ARM_L" RightArmAimYaw="BONE_ARM_R" RightArmAimPitch="BONE_ARM_R" />
+    <TwistJointList>
+      <TwistJoint Joint="BONE_SPINE2" Mode="3" />
+    </TwistJointList>
+  </AnimationConfiguration>
+  <QuirkList>
+    <Quirk name="iserppc_heat_multiplier" value="-0.1" />
+    <Quirk name="iserppc_velocity_multiplier" value="0.4" />
+	<Quirk name="energy_range_multiplier" value="0.1" />
+	<Quirk name="all_heat_multiplier" value="-0.1" />
+	<Quirk name="all_cooldown_multiplier" value="-0.1" />
+    <Quirk name="internalresist_ct_additive" value="25" />
+    <Quirk name="internalresist_lt_additive" value="18" />
+    <Quirk name="internalresist_rt_additive" value="18" />
+	<Quirk name="armorresist_la_additive" value="15" />
+	<Quirk name="armorresist_ra_additive" value="15" />
+	<Quirk name="critchance_receiving_multiplier" value="-0.4" />
+    <Quirk name="ppcfamily_minheatpenaltylevel_additive" value="1" />
+  </QuirkList>
+</MechDefinition>

@@ -1,0 +1,183 @@
+<!-- this is SINGLETOE TEMPLATE -->
+<MechDefinition Version="1" ModelPath="Objects/mechs/warhawk/warhawk.cdf" CommonPath="Objects/mechs/warhawk/warhawk-common.xml" EffectsPath="Objects/mechs/warhawk/warhawk-effects.xml" SoundPath="Objects/mechs/warhawk/warhawk-sounds.xml" HardpointPath="Objects/mechs/warhawk/warhawk-hardpoints.xml">
+  <Mech Variant="WHK-PRIME" MaxTons="85" BaseTons="10" MaxJumpJets="0" MinEngineRating="340" MaxEngineRating="340" TPOffset="0,0,2" TPAng="-0.09,0,0" />
+  <Cockpit TechSlots="1" ConsumableSlots="1" WeaponModSlots="2" BoneOffset="0.0, 0.0, 0.0" ViewOffset="0.0, -0.08, 0.0" RenderFlag="1" startup="pilot_startup_warhawk" poweron="pilot_poweron_warhawk" poweroff="pilot_poweroff_warhawk" CockpitItemScaleFactor="1.0">
+    <Piece>
+      <Attachment AName="cockpit" SkipMatInstancing="1" Animated="1" />
+    </Piece>
+  </Cockpit>
+  <ComponentList>
+    <Component Name="head" Slots="6" HP="15" RenderFlag="2" OmniSlot="1">
+      <Internal ItemID="1900" />
+      <!--Life Support-->
+      <Internal ItemID="1901" />
+      <!--Sensors-->
+      <Internal ItemID="1902" />
+      <Internal ItemID="1912" />
+      <!--Cockpit-->
+      <Piece>
+        <Attachment AName="whk_head_cockpit" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso" Slots="12" HP="54" RenderFlag="2" OmniSlot="1" OmniPod="30171">
+      <Internal ItemID="1903" />
+      <Fixed ItemID="3466" />
+      <Fixed ItemID="3004" />
+      <Fixed ItemID="3004" />
+      <Fixed ItemID="3004" />
+      <!--Gyro-->
+      <Piece>
+        <Attachment AName="whk_centre_torso" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_centre_torso_pelvis" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_centre_torso_twist" />
+      </Piece>
+    </Component>
+    <Component Name="right_leg" Slots="6" HP="36" OmniSlot="1">
+      <Internal ItemID="1904" />
+      <!--Hip-->
+      <Internal ItemID="1905" />
+      <!--Upper Leg Actuator-->
+      <Internal ItemID="1906" />
+      <!--Lower Leg Actuator-->
+      <Internal ItemID="1907" />
+      <Fixed ItemID="3004" />
+      <!--Foot Actuator-->
+      <Piece>
+        <Attachment AName="whk_right_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_right_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_right_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_right_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_right_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_right_leg_talon0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_right_leg_talon_pinky1" />
+      </Piece>
+    </Component>
+    <Component Name="left_leg" Slots="6" HP="36" OmniSlot="1">
+      <Internal ItemID="1904" />
+      <!--Hip-->
+      <Internal ItemID="1905" />
+      <!--Upper Leg Actuator-->
+      <Internal ItemID="1906" />
+      <!--Lower Leg Actuator-->
+      <Internal ItemID="1907" />
+      <Fixed ItemID="3004" />
+      <!--Foot Actuator-->
+      <Piece>
+        <Attachment AName="whk_left_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_left_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_left_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_left_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_left_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_left_leg_talon0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_left_leg_talon_pinky1" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso" Slots="12" HP="36" OmniSlot="1">
+      <Piece>
+        <Attachment AName="whk_left_torso" />
+      </Piece>
+      <Fixed ItemID="3004" />
+      <Fixed ItemID="3004" />
+      <Fixed ItemID="3004" />
+      <Fixed ItemID="3004" />
+      <Internal ItemID="1912" />
+      <Internal ItemID="1912" />
+    </Component>
+    <Component Name="right_torso" Slots="12" HP="36" OmniSlot="1">
+      <Piece>
+        <Attachment AName="whk_right_torso" />
+      </Piece>
+      <Fixed ItemID="3004" />
+      <Internal ItemID="1912" />
+      <Internal ItemID="1912" />
+    </Component>
+    <Component Name="right_arm" Slots="12" HP="28" destroyedMeshSuffix="_damaged" OmniSlot="1">
+      <Internal ItemID="1908" />
+      <!--Shoulder-->
+      <Internal ItemID="1909" />
+      <Internal ItemID="1912" />
+      <!--Upper Arm Actuator-->
+      <Piece>
+        <Attachment AName="whk_right_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_right_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_right_arm_forearm" />
+      </Piece>
+      <!-- ER PPC x2 -->
+    </Component>
+    <Component Name="left_arm" Slots="12" HP="28" destroyedMeshSuffix="_damaged" OmniSlot="1">
+      <Internal ItemID="1908" />
+      <!--Shoulder-->
+      <Internal ItemID="1909" />
+      <Internal ItemID="1912" />
+      <!--Upper Arm Actuator-->
+      <Piece>
+        <Attachment AName="whk_left_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_left_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_left_arm_forearm" />
+      </Piece>
+      <!-- ER PPC -->
+      <!-- LRM 10 -->
+    </Component>
+    <Component Name="left_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="whk_left_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="whk_centre_torso_rear" />
+      </Piece>
+      <Piece>
+        <Attachment AName="whk_centre_torso_pelvis_rear" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="whk_right_torso_rear" />
+      </Piece>
+    </Component>
+  </ComponentList>
+  <MovementTuningConfiguration MovementArchetype="Large" MaxMovementSpeed="16.2" TorsoTurnSpeedYaw="85.5" TorsoTurnSpeedPitch="50.63" ArmTurnSpeedYaw="202.5" ArmTurnSpeedPitch="202.5" TurnLerpLowRate="1.13" TurnLerpMidRate="0.79" TurnLerpHighRate="0.6" AccelLerpLowRate="108.67" AccelLerpMidRate="24.64" AccelLerpHighRate="14.49" DecelLerpLowRate="120.16" DecelLerpMidRate="1850" DecelLerpHighRate="1850" ReverseSpeedMultiplier="0.666" MaxTorsoAngleYaw="90" MaxTorsoAnglePitch="25" MaxArmRotationYaw="20" MaxArmRotationPitch="30" TurnLerpLowSpeed="0" TurnLerpMidSpeed="0.666" TurnLerpHighSpeed="1.0" DecelLerpLowSpeed="0" DecelLerpMidSpeed="0.666" DecelLerpHighSpeed="1.0" AccelLerpLowSpeed="0" AccelLerpMidSpeed="0.666" AccelLerpHighSpeed="1.0" MaxFreeLookYaw="60" MaxFreeLookPitch="40" JumpJetSpread="0" MaxArmActuators="2" MaxArmYawAcutatorNone="0" MaxArmYawActuatorOne="10" />
+  <AnimationConfiguration>
+    <ArmAim LeftArmAimYaw="BONE_ARM_L" LeftArmAimPitch="BONE_ARM_L" RightArmAimYaw="BONE_ARM_R" RightArmAimPitch="BONE_ARM_R" />
+    <TwistJointList>
+      <TwistJoint Joint="BONE_SPINE2" Mode="3" />
+    </TwistJointList>
+  </AnimationConfiguration>
+</MechDefinition>

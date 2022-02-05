@@ -1,0 +1,15 @@
+<MechSoundDef>
+	<!-- Names of sounds MUST match enum values in enum_MechSounds.h -->
+	<PrecacheBanks>
+		<AudioBank filename="sounds/mech_awesome/mech_awesome.fsb" />
+	</PrecacheBanks>
+	<SoundList>
+		<!-- Mech Sounds-->
+		<Sound Name="Mech_Engine" res="Sounds/mech_awesome:awesome_pretty_baby:pretty_baby_engine" offset="0.0,0.0,10.0"/>
+		
+		<!-- Third Person Sounds -->
+		<Sound Name="Mech_Engine_TP" res="Sounds/mech_awesome:awesome_pretty_baby:pretty_baby_engine_tp" offset="0.0,0.0,10.0"/>
+	</SoundList>
+
+	
+</MechSoundDef>

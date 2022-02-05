@@ -1,0 +1,604 @@
+<?xml version="1.0"?>
+<Hardpoints SearchTable="Objects/mechs/hardpointsearchcriteria.xml">
+	<!--WEAPONDOORS-->
+	<!--If door are not listed here, door will not open when hardpoint is fired-->
+	<WeaponDoorSet id="1">
+		<!--RESISTANCE - LEFT Arm HAND Actuator, RIGHT Arm NO Actuator-->
+		<WeaponDoor AName="crb_left_arm_forearm_door_act_res_top" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_left_arm_forearm_door_act_res_bottom" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_right_arm_forearm_door_mit_res_top" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_right_arm_forearm_door_mit_res_bottom" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+	</WeaponDoorSet>
+	<WeaponDoorSet id="2">
+		<!--LEFT Arm HAND Actuator, RIGHT Arm NO Actuator-->
+		<WeaponDoor AName="crb_left_arm_forearm_door_act_top" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_left_arm_forearm_door_act_bottom" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_right_arm_forearm_door_mit_top" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_right_arm_forearm_door_mit_bottom" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+	</WeaponDoorSet>
+	<WeaponDoorSet id="3">
+		<!--LEFT Arm HAND Actuator, RIGHT Arm HAND Actuator-->
+		<WeaponDoor AName="crb_left_arm_forearm_door_act_top" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_left_arm_forearm_door_act_bottom" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_right_arm_forearm_door_act_top" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_right_arm_forearm_door_act_bottom" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh2"/>
+		</WeaponDoor>
+	</WeaponDoorSet>
+	<WeaponDoorSet id="4">
+		<!--LEFT Arm NO Actuator, RIGHT Arm NO Actuator-->
+		<WeaponDoor AName="crb_left_arm_forearm_door_mit_top" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="GaussRifle" AName="crb_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="crb_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="crb_left_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="crb_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="crb_left_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="crb_left_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="crb_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="crb_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="crb_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="crb_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="crb_left_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="crb_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="crb_left_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="crb_left_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="crb_left_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="crb_left_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="crb_left_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_left_arm_forearm_door_mit_bottom" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_left_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="GaussRifle" AName="crb_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="crb_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="crb_left_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="crb_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="crb_left_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="crb_left_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="crb_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="crb_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="crb_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="crb_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="crb_left_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="crb_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="crb_left_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="crb_left_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="crb_left_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="crb_left_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="crb_left_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_right_arm_forearm_door_mit_top" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="GaussRifle" AName="crb_right_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="crb_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="crb_right_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="crb_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="crb_right_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="crb_right_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="crb_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="crb_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="crb_right_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="crb_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="crb_right_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="crb_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="crb_right_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="crb_right_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="crb_right_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="crb_right_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="crb_right_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponDoor>
+		<WeaponDoor AName="crb_right_arm_forearm_door_mit_bottom" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment AName="crb_right_arm_forearm_hppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_ppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_snppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_lppc_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="crb_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="GaussRifle" AName="crb_right_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="crb_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="crb_right_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="crb_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="crb_right_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="crb_right_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="crb_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="crb_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="crb_right_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="crb_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="crb_right_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="crb_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="crb_right_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="crb_right_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="crb_right_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="crb_right_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="crb_right_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponDoor>
+	</WeaponDoorSet>
+	<!--CENTER TORSO-->
+	<Hardpoint id="0">
+		<!--Center Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="SnubNosePPC" AName="crb_centre_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_centre_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_centre_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_centre_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_centre_torso_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="1">
+		<!--Center Torso, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="SnubNosePPC" AName="crb_centre_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_centre_torso_lppc_eh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="crb_centre_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_centre_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_centre_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="crb_centre_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="crb_centre_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="crb_centre_torso_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--RIGHT TORSO-->
+	<Hardpoint id="10">
+		<!--Right Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_right_torso_hppc_eh1"/>
+			<Attachment search="PPC" AName="crb_right_torso_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="crb_right_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_right_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_right_torso_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="11">
+		<!--Right Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="crb_right_torso_lams_ah1" animated="1"/>
+			<Attachment search="AntiMissileSystem" AName="crb_right_torso_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="12">
+		<!--Right Torso, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_right_torso_hppc_eh1"/>
+			<Attachment search="PPC" AName="crb_right_torso_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="crb_right_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_right_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_right_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_right_torso_hppc_eh2"/>
+			<Attachment search="PPC" AName="crb_right_torso_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="crb_right_torso_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="crb_right_torso_lppc_eh2"/>
+			<Attachment search="Laser" AName="crb_right_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="crb_right_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="crb_right_torso_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--LEFT TORSO-->
+	<Hardpoint id="20">
+		<!--Left Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_left_torso_hppc_eh1"/>
+			<Attachment search="PPC" AName="crb_left_torso_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="crb_left_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_left_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_left_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_left_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_left_torso_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="21">
+		<!--Left Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="crb_left_torso_lams_ah1" animated="1"/>
+			<Attachment search="AntiMissileSystem" AName="crb_left_torso_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="22">
+		<!--Left Torso, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="crb_left_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="crb_left_torso_missile20_mh1"/>
+			<Attachment search="Missile20" AName="crb_left_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="crb_left_torso_missile15_mh1"/>
+			<Attachment search="RocketLauncher20" AName="crb_left_torso_rl20_mh1"/>
+			<Attachment search="Missile10" AName="crb_left_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="crb_left_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="crb_left_torso_narc_mh1"/>
+			<Attachment search="RocketLauncher15" AName="crb_left_torso_rl15_mh1"/>
+			<Attachment search="Missile5" AName="crb_left_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="crb_left_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="crb_left_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher10" AName="crb_left_torso_rl10_mh1"/>
+			<Attachment search="Missile" AName="crb_left_torso_missile20_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="crb_left_torso_missile20_mh2"/>
+			<Attachment search="Missile30" AName="crb_left_torso_missile20_mh2"/>
+			<Attachment search="Missile20" AName="crb_left_torso_missile20_mh2"/>
+			<Attachment search="Missile15" AName="crb_left_torso_missile15_mh2"/>
+			<Attachment search="RocketLauncher20" AName="crb_left_torso_rl20_mh2"/>
+			<Attachment search="Missile10" AName="crb_left_torso_missile10_mh2"/>
+			<Attachment search="Missile6" AName="crb_left_torso_missile6_mh2"/>
+			<Attachment search="Missile1" AName="crb_left_torso_narc_mh2"/>
+			<Attachment search="RocketLauncher15" AName="crb_left_torso_rl15_mh2"/>
+			<Attachment search="Missile5" AName="crb_left_torso_missile5_mh2"/>
+			<Attachment search="Missile4" AName="crb_left_torso_missile4_mh2"/>
+			<Attachment search="Missile2" AName="crb_left_torso_missile2_mh2"/>
+			<Attachment search="RocketLauncher10" AName="crb_left_torso_rl10_mh2"/>
+			<Attachment search="Missile" AName="crb_left_torso_missile20_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--RIGHT ARM-->
+	<Hardpoint id="30" WeaponDoorsId="1" NoWeaponAName="crb_right_arm_forearm_mit_res_blankdoor">
+		<!--Right Arm, 1 Energy - RESISTANCE NO HAND ACTUATOR (LA YES ACTUATOR)-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="31" WeaponDoorsId="2" NoWeaponAName="crb_right_arm_forearm_mit_blankdoor">
+		<!--Right Arm, 1 Energy - NO HAND ACTUATOR (LA YES ACTUATOR)-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="32" WeaponDoorsId="3" NoWeaponAName="crb_right_arm_forearm_act_blankdoor">
+		<!--Right Arm, 1 Energy - HAND ACTUATOR (LA YES ACTUATOR)-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="33" WeaponDoorsId="4" NoWeaponAName="crb_right_arm_forearm_mit_blankdoor">
+		<!--Right Arm, 2 Energy - NO HAND ACTUATOR (LA NO ACTUATOR)-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="crb_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="crb_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_right_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="crb_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="crb_right_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="crb_right_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="crb_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="crb_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="crb_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="34" WeaponDoorsId="4" NoWeaponAName="crb_right_arm_forearm_mit_blankdoor">
+		<!--Right Arm, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="GaussRifle" AName="crb_right_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="crb_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="crb_right_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="crb_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="crb_right_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="crb_right_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="crb_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="crb_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="crb_right_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="crb_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="crb_right_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="crb_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="crb_right_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="crb_right_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="crb_right_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="crb_right_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="crb_right_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--LEFT ARM-->
+	<Hardpoint id="40" WeaponDoorsId="1" NoWeaponAName="crb_left_arm_forearm_act_res_blankdoor">
+		<!--Left Arm, 1 Energy - RESISTANCE HAND ACTUATOR (RA NO ACTUATOR)-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="41" WeaponDoorsId="2" NoWeaponAName="crb_left_arm_forearm_act_blankdoor">
+		<!--Left Arm, 1 Energy - HAND ACTUATOR (RA NO ACTUATOR)-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="42" WeaponDoorsId="3" NoWeaponAName="crb_left_arm_forearm_act_blankdoor">
+		<!--Left Arm, 1 Energy - HAND ACTUATOR (RA YES ACTUATOR)-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="43" WeaponDoorsId="4" NoWeaponAName="crb_left_arm_forearm_mit_blankdoor">
+		<!--Left Arm, 2 Energy - NO HAND ACTUATOR (RA NO ACTUATOR)-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="crb_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="crb_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="crb_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="crb_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="crb_left_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="crb_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="crb_left_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="crb_left_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="crb_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="crb_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="crb_left_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="44" WeaponDoorsId="4" NoWeaponAName="crb_left_arm_forearm_mit_blankdoor">
+		<!--Left Arm, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="GaussRifle" AName="crb_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="crb_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="crb_left_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="crb_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="crb_left_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="crb_left_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="crb_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="crb_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="crb_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="crb_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="crb_left_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="crb_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="crb_left_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="crb_left_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="crb_left_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="crb_left_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="crb_left_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--HEAD-->
+	<Hardpoint id="50">
+		<!--Head, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="Laser" AName="crb_head_laser_eh1"/>
+			<Attachment search="Flamer" AName="crb_head_flamer_eh1"/>
+			<Attachment search="Energy" AName="crb_head_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+</Hardpoints>
+<!--                                                               -->
+<!--                                                               -->

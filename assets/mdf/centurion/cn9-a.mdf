@@ -1,0 +1,156 @@
+<MechDefinition>
+  <Mech Variant="CN9-A" MaxTons="50" BaseTons="8.0" MaxJumpJets="0" CanEquipECM="0" MinEngineRating="100" MaxEngineRating="275" />
+  <Cockpit TechSlots="2" ConsumableSlots="1" WeaponModSlots="2" BoneOffset="0.0, 0.0, 0.0" ViewOffset="0.0, -0.08, 0.0" RenderFlag="1" startup="pilot_startup_centurion" poweron="pilot_poweron_centurion" poweroff="pilot_poweroff_centurion" CockpitItemScaleFactor="1.0">
+    <Piece>
+      <Attachment AName="cockpit" SkipMatInstancing="1" Animated="1" />
+    </Piece>
+  </Cockpit>
+  <ComponentList>
+    <Component Name="head" Slots="6" HP="15" RenderFlag="2">
+      <Internal ItemID="1900" />
+      <Internal ItemID="1901" />
+      <Internal ItemID="1902" />
+      <Piece>
+        <Attachment AName="cn9_head_cockpit" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso" Slots="12" HP="32" RenderFlag="2">
+      <Internal ItemID="1903" />
+      <Piece>
+        <Attachment AName="cn9_centre_torso_pelvis" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_centre_torso_pelvis_rear" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_centre_torso" />
+      </Piece>
+      <Hardpoint ID="20" Type="1" Slots="1" lookAim="0" />
+    </Component>
+    <Component Name="right_leg" Slots="6" HP="24">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="cn9_right_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_right_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_right_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_right_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_right_leg_toe0" />
+      </Piece>
+    </Component>
+    <Component Name="left_leg" Slots="6" HP="24">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="cn9_left_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_left_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_left_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_left_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_left_leg_toe0" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso" Slots="12" HP="24">
+      <Piece>
+        <Attachment AName="cn9_left_torso" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_left_torso_blank_mb1" />
+      </Piece>
+      <Hardpoint ID="11" Type="2" Slots="4" lookAim="0" />
+    </Component>
+    <Component Name="right_torso" Slots="12" HP="24">
+      <Piece>
+        <Attachment AName="cn9_right_torso" />
+      </Piece>
+      <Hardpoint ID="30" Type="4" Slots="1" lookAim="0" />
+    </Component>
+    <Component Name="right_arm" Slots="12" HP="16" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Piece>
+        <Attachment AName="cn9_right_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_right_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_right_arm_forearm" />
+      </Piece>
+      <Hardpoint ID="40" Type="0" Slots="8" lookAim="1" />
+    </Component>
+    <Component Name="left_arm" Slots="12" HP="16" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Internal ItemID="1911" />
+      <Piece>
+        <Attachment AName="cn9_left_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_left_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="cn9_left_arm_forearm" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="cn9_left_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="cn9_centre_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="cn9_right_torso_rear" />
+      </Piece>
+    </Component>
+  </ComponentList>
+  <MovementTuningConfiguration MovementArchetype="Medium" MaxMovementSpeed="16.2" TorsoTurnSpeedYaw="139.5" TorsoTurnSpeedPitch="73.13" ArmTurnSpeedYaw="247.5" ArmTurnSpeedPitch="247.5" TurnLerpLowRate="1.75" TurnLerpMidRate="1.23" TurnLerpHighRate=".93" AccelLerpLowRate="210.39" AccelLerpMidRate="47.71" AccelLerpHighRate="28.05" DecelLerpLowRate="158.39" DecelLerpMidRate="2375" DecelLerpHighRate="2375" ReverseSpeedMultiplier="0.666" MaxTorsoAngleYaw="130" MaxTorsoAnglePitch="30" MaxArmRotationYaw="35" MaxArmRotationPitch="35" TurnLerpLowSpeed="0" TurnLerpMidSpeed="0.666" TurnLerpHighSpeed="1.0" DecelLerpLowSpeed="0" DecelLerpMidSpeed="0.666" DecelLerpHighSpeed="1.0" AccelLerpLowSpeed="0" AccelLerpMidSpeed="0.666" AccelLerpHighSpeed="1.0" MaxFreeLookYaw="55" MaxFreeLookPitch="40" JumpJetSpread="0" />
+  <AnimationConfiguration>
+    <ArmAim RightArmAimYaw="BONE_ARM_R" RightArmAimPitch="BONE_ARM_R" />
+    <TwistJointList>
+      <TwistJoint Joint="BONE_SPINE2" Mode="3" />
+    </TwistJointList>
+  </AnimationConfiguration>
+  <QuirkList>
+    <Quirk name="all_heat_multiplier" value="-0.1" />
+	<Quirk name="all_cooldown_multiplier" value="-0.1" />
+    <Quirk name="ballistic_cooldown_multiplier" value="-0.15" />
+    <Quirk name="ballistic_velocity_multiplier" value="0.1" />
+    <Quirk name="laser_duration_multiplier" value="-0.1" />
+    <Quirk name="internalresist_la_additive" value="16" />
+    <Quirk name="internalresist_ra_additive" value="16" />
+    <Quirk name="armorresist_ra_additive" value="24" />
+	<Quirk name="armorresist_la_additive" value="24" />
+	<Quirk name="armorresist_ct_additive" value="22" />
+	<Quirk name="armorresist_lt_additive" value="18" />
+	<Quirk name="armorresist_rt_additive" value="18" />
+	<Quirk name="armorresist_ll_additive" value="18" />
+	<Quirk name="armorresist_rl_additive" value="18" />
+  </QuirkList>
+</MechDefinition>

@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<Hardpoints SearchTable="Objects/mechs/hardpointsearchcriteria.xml">
+	
+	<!--LEFT ARM-->
+	
+	<Hardpoint id="0">
+		<!--Left Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="vnd_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="vnd_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="vnd_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="vnd_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="vnd_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="vnd_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="vnd_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="1">
+		<!--Left Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="vnd_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="vnd_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="vnd_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="vnd_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="vnd_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="vnd_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="vnd_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="vnd_left_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="vnd_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="vnd_left_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="vnd_left_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="vnd_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="vnd_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="vnd_left_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="2">
+		<!--Left Arm, 3 Ballistic -->
+		<WeaponSlot>
+			<Attachment search="GaussRifle" AName="vnd_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="vnd_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="vnd_left_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="vnd_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="vnd_left_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="vnd_left_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="vnd_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="vnd_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="vnd_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="vnd_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="RotaryAutoCannon2" AName="vnd_left_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="vnd_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="vnd_left_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="vnd_left_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="vnd_left_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="vnd_left_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="vnd_left_arm_forearm_lbx5_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="AutoCannon5" AName="vnd_left_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="vnd_left_arm_forearm_lbx2_bh2" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="RotaryAutoCannon2" AName="vnd_left_arm_forearm_rac2_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="vnd_left_arm_forearm_uac2_bh2" animated="1"/>
+			<Attachment search="AutoCannon2" AName="vnd_left_arm_forearm_ac2_bh2" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="vnd_left_arm_forearm_hmg_bh2"/>
+			<Attachment search="MachineGun" AName="vnd_left_arm_forearm_mg_bh2"/>
+			<Attachment search="LightMachineGun" AName="vnd_left_arm_forearm_lmg_bh2"/>
+			<Attachment search="Ballistic" AName="vnd_left_arm_forearm_ac5_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="RotaryAutoCannon2" AName="vnd_left_arm_forearm_rac2_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="vnd_left_arm_forearm_uac2_bh3" animated="1"/>
+			<Attachment search="AutoCannon2" AName="vnd_left_arm_forearm_ac2_bh3" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="vnd_left_arm_forearm_hmg_bh3"/>
+			<Attachment search="MachineGun" AName="vnd_left_arm_forearm_mg_bh3"/>
+			<Attachment search="LightMachineGun" AName="vnd_left_arm_forearm_lmg_bh3"/>
+			<Attachment search="Ballistic" AName="vnd_left_arm_forearm_ac2_bh3" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--LEFT TORSO-->
+	
+	<Hardpoint id="10">
+		<!--Left Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="vnd_left_torso_lams_ah1" animated="1"/>
+			<Attachment search="AntiMissileSystem" AName="vnd_left_torso_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="11">
+		<!--Left Torso, 1 Missile -->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="vnd_left_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="vnd_left_torso_missile20_mh1"/>
+			<Attachment search="Missile20" AName="vnd_left_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="vnd_left_torso_missile15_mh1"/>
+			<Attachment search="Missile10" AName="vnd_left_torso_missile10_mh1"/>
+			<Attachment search="Missile5" AName="vnd_left_torso_missile5_mh1"/>
+			<Attachment search="Missile6" AName="vnd_left_torso_missile6_mh1"/>
+			<Attachment search="NarcBeacon" AName="vnd_left_torso_narc_mh1"/>
+			<Attachment search="Missile4" AName="vnd_left_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="vnd_left_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="vnd_left_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="vnd_left_torso_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="12">
+		<!--Left Torso, 2 Missile -->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="vnd_left_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="vnd_left_torso_missile20_mh1"/>
+			<Attachment search="Missile20" AName="vnd_left_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="vnd_left_torso_missile15_mh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Missile10" AName="vnd_left_torso_missile10_mh1"/>
+			<Attachment search="Missile5" AName="vnd_left_torso_missile5_mh1"/>
+			<Attachment search="Missile6" AName="vnd_left_torso_missile6_mh1"/>
+			<Attachment search="NarcBeacon" AName="vnd_left_torso_narc_mh1"/>
+			<Attachment search="Missile4" AName="vnd_left_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="vnd_left_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="vnd_left_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="vnd_left_torso_missile20_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Missile30" AName="vnd_left_torso_missile10_mh2"/>
+			<Attachment search="Missile20" AName="vnd_left_torso_missile10_mh2"/>
+			<Attachment search="Missile15" AName="vnd_left_torso_missile10_mh2"/>
+			<Attachment search="Missile10" AName="vnd_left_torso_missile10_mh2"/>
+			<Attachment search="Missile5" AName="vnd_left_torso_missile5_mh2"/>
+			<Attachment search="Missile6" AName="vnd_left_torso_missile6_mh2"/>
+			<Attachment search="NarcBeacon" AName="vnd_left_torso_narc_mh2"/>
+			<Attachment search="Missile4" AName="vnd_left_torso_missile4_mh2"/>
+			<Attachment search="Missile2" AName="vnd_left_torso_missile2_mh2"/>
+			<Attachment search="RocketLauncher" AName="vnd_left_torso_rl20_mh2"/>
+			<Attachment search="Missile" AName="vnd_left_torso_missile10_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--CENTER TORSO-->
+	
+	
+	<!--RIGHT TORSO-->
+	
+	<Hardpoint id="30">
+		<!--Right Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="vnd_right_torso_lams_ah1"/>
+			<Attachment search="AntiMissileSystem" AName="vnd_right_torso_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--RIGHT ARM-->
+	
+	<Hardpoint id="40">
+		<!--Right Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="vnd_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="vnd_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="vnd_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="vnd_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="vnd_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="vnd_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="vnd_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="41">
+		<!--Right Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="vnd_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="vnd_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="vnd_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="vnd_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="vnd_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="vnd_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="vnd_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="vnd_right_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="vnd_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="vnd_right_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="vnd_right_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="vnd_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="vnd_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="vnd_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--HEAD-->
+	
+	<Hardpoint id="50">
+		<!--Head, Energy-->
+		<WeaponSlot>
+			<Attachment search="Laser" AName="vnd_head_cockpit_laser_eh1"/>
+			<Attachment search="Flamer" AName="vnd_head_cockpit_flamer_eh1"/>
+			<Attachment search="Energy" AName="vnd_head_cockpit_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+</Hardpoints>

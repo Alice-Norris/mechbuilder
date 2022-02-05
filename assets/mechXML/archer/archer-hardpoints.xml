@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+<Hardpoints SearchTable="Objects/mechs/hardpointsearchcriteria.xml">
+	<!--WEAPONDOORS-->
+	<!--If door are not listed here, door will not open when hardpoint fired-->
+	<WeaponDoorSet id="1">
+		<WeaponDoor AName="arc_right_torso_door_top" firingdelay="0.0" stayOpen="1.25" closedDamageFactor="0.8" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="arc_right_torso_missile20_mh1"/>
+			<Attachment AName="arc_right_torso_missile15_mh1"/>
+			<Attachment AName="arc_right_torso_missile10_mh1"/>
+			<Attachment AName="arc_right_torso_missile6_mh1"/>
+			<Attachment AName="arc_right_torso_missile5_mh1"/>
+			<Attachment AName="arc_right_torso_missile4_mh1"/>
+			<Attachment AName="arc_right_torso_missile2_mh1"/>
+			<Attachment AName="arc_right_torso_narc_mh1"/>
+			<Attachment AName="arc_right_torso_rl20_mh1"/>
+			<Attachment AName="arc_right_torso_missile20_mh2"/>
+			<Attachment AName="arc_right_torso_missile15_mh2"/>
+			<Attachment AName="arc_right_torso_missile10_mh2"/>
+			<Attachment AName="arc_right_torso_missile6_mh2"/>
+			<Attachment AName="arc_right_torso_missile5_mh2"/>
+			<Attachment AName="arc_right_torso_missile4_mh2"/>
+			<Attachment AName="arc_right_torso_missile2_mh2"/>
+			<Attachment AName="arc_right_torso_narc_mh2"/>
+			<Attachment AName="arc_right_torso_rl20_mh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="arc_right_torso_door_bottom" firingdelay="0.0" stayOpen="1.25" closedDamageFactor="0.8" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="arc_right_torso_missile20_mh1"/>
+			<Attachment AName="arc_right_torso_missile15_mh1"/>
+			<Attachment AName="arc_right_torso_missile10_mh1"/>
+			<Attachment AName="arc_right_torso_missile6_mh1"/>
+			<Attachment AName="arc_right_torso_missile5_mh1"/>
+			<Attachment AName="arc_right_torso_missile4_mh1"/>
+			<Attachment AName="arc_right_torso_missile2_mh1"/>
+			<Attachment AName="arc_right_torso_narc_mh1"/>
+			<Attachment AName="arc_right_torso_rl20_mh1"/>
+			<Attachment AName="arc_right_torso_missile20_mh2"/>
+			<Attachment AName="arc_right_torso_missile15_mh2"/>
+			<Attachment AName="arc_right_torso_missile10_mh2"/>
+			<Attachment AName="arc_right_torso_missile6_mh2"/>
+			<Attachment AName="arc_right_torso_missile5_mh2"/>
+			<Attachment AName="arc_right_torso_missile4_mh2"/>
+			<Attachment AName="arc_right_torso_missile2_mh2"/>
+			<Attachment AName="arc_right_torso_narc_mh2"/>
+			<Attachment AName="arc_right_torso_rl20_mh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="arc_left_torso_door_top" firingdelay="0.0" stayOpen="1.25" closedDamageFactor="0.8" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="arc_left_torso_missile20_mh1"/>
+			<Attachment AName="arc_left_torso_missile15_mh1"/>
+			<Attachment AName="arc_left_torso_missile10_mh1"/>
+			<Attachment AName="arc_left_torso_missile6_mh1"/>
+			<Attachment AName="arc_left_torso_missile5_mh1"/>
+			<Attachment AName="arc_left_torso_missile4_mh1"/>
+			<Attachment AName="arc_left_torso_missile2_mh1"/>
+			<Attachment AName="arc_left_torso_narc_mh1"/>
+			<Attachment AName="arc_left_torso_rl20_mh1"/>
+			<Attachment AName="arc_left_torso_missile20_mh2"/>
+			<Attachment AName="arc_left_torso_missile15_mh2"/>
+			<Attachment AName="arc_left_torso_missile10_mh2"/>
+			<Attachment AName="arc_left_torso_missile6_mh2"/>
+			<Attachment AName="arc_left_torso_missile5_mh2"/>
+			<Attachment AName="arc_left_torso_missile4_mh2"/>
+			<Attachment AName="arc_left_torso_missile2_mh2"/>
+			<Attachment AName="arc_left_torso_narc_mh2"/>
+			<Attachment AName="arc_left_torso_rl20_mh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="arc_left_torso_door_bottom" firingdelay="0.0" stayOpen="1.25" closedDamageFactor="0.8" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="arc_left_torso_missile20_mh1"/>
+			<Attachment AName="arc_left_torso_missile15_mh1"/>
+			<Attachment AName="arc_left_torso_missile10_mh1"/>
+			<Attachment AName="arc_left_torso_missile6_mh1"/>
+			<Attachment AName="arc_left_torso_missile5_mh1"/>
+			<Attachment AName="arc_left_torso_missile4_mh1"/>
+			<Attachment AName="arc_left_torso_missile2_mh1"/>
+			<Attachment AName="arc_left_torso_narc_mh1"/>
+			<Attachment AName="arc_left_torso_rl20_mh1"/>
+			<Attachment AName="arc_left_torso_missile20_mh2"/>
+			<Attachment AName="arc_left_torso_missile15_mh2"/>
+			<Attachment AName="arc_left_torso_missile10_mh2"/>
+			<Attachment AName="arc_left_torso_missile6_mh2"/>
+			<Attachment AName="arc_left_torso_missile5_mh2"/>
+			<Attachment AName="arc_left_torso_missile4_mh2"/>
+			<Attachment AName="arc_left_torso_missile2_mh2"/>
+			<Attachment AName="arc_left_torso_narc_mh2"/>
+			<Attachment AName="arc_left_torso_rl20_mh2"/>
+		</WeaponDoor>
+	</WeaponDoorSet>
+	
+	
+	
+	<!--CENTER TORSO-->
+	
+	<Hardpoint id="0">
+		<!--Center Torso, 2 Energy - EH2 is used first for compatibility with Missile hardpoints-->
+		<WeaponSlot>
+			<Attachment search="SnubNosePPC" AName="arc_centre_torso_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="arc_centre_torso_lppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="arc_centre_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="arc_centre_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="arc_centre_torso_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="arc_centre_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="arc_centre_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="arc_centre_torso_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<Hardpoint id="1">
+		<!--Center Torso, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile10" AName="arc_center_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="arc_center_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="arc_center_torso_narc_mh1"/>
+			<Attachment search="Missile5" AName="arc_center_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="arc_center_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="arc_center_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="arc_centre_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="arc_center_torso_missile10_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	
+	<!--RIGHT TORSO-->
+	
+	<Hardpoint id="10">
+		<!--Right Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="arc_right_torso_lams_ah1" animated="1"/>
+			<Attachment search="AntiMissileSystem" AName="arc_right_torso_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<Hardpoint id="11" WeaponDoorsId="1" NoWeaponAName="arc_right_torso_door_blank">
+		<!--Right Torso, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_right_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="arc_right_torso_missile20_mh1"/>
+			<Attachment search="Missile20" AName="arc_right_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="arc_right_torso_missile15_mh1"/>
+			<Attachment search="Missile10" AName="arc_right_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="arc_right_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="arc_right_torso_narc_mh1"/>
+			<Attachment search="Missile5" AName="arc_right_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="arc_right_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="arc_right_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="arc_right_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="arc_right_torso_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<Hardpoint id="12" WeaponDoorsId="1" NoWeaponAName="arc_right_torso_door_blank">
+		<!--Right Torso, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_right_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="arc_right_torso_missile20_mh1"/>
+			<Attachment search="Missile20" AName="arc_right_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="arc_right_torso_missile15_mh1"/>
+			<Attachment search="Missile10" AName="arc_right_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="arc_right_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="arc_right_torso_narc_mh1"/>
+			<Attachment search="Missile5" AName="arc_right_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="arc_right_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="arc_right_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="arc_right_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="arc_right_torso_missile20_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_right_torso_missile20_mh2"/>
+			<Attachment search="Missile30" AName="arc_right_torso_missile20_mh2"/>
+			<Attachment search="Missile20" AName="arc_right_torso_missile20_mh2"/>
+			<Attachment search="Missile15" AName="arc_right_torso_missile15_mh2"/>
+			<Attachment search="Missile10" AName="arc_right_torso_missile10_mh2"/>
+			<Attachment search="Missile6" AName="arc_right_torso_missile6_mh2"/>
+			<Attachment search="Missile1" AName="arc_right_torso_narc_mh2"/>
+			<Attachment search="Missile5" AName="arc_right_torso_missile5_mh2"/>
+			<Attachment search="Missile4" AName="arc_right_torso_missile4_mh2"/>
+			<Attachment search="Missile2" AName="arc_right_torso_missile2_mh2"/>
+			<Attachment search="RocketLauncher" AName="arc_right_torso_rl20_mh2"/>
+			<Attachment search="Missile" AName="arc_right_torso_missile20_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	
+	<!--LEFT TORSO-->
+	
+	<Hardpoint id="20" WeaponDoorsId="1" NoWeaponAName="arc_left_torso_door_blank">
+		<!--Left Torso, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="arc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile20" AName="arc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="arc_left_torso_missile15_mh1"/>
+			<Attachment search="Missile10" AName="arc_left_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="arc_left_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="arc_left_torso_narc_mh1"/>
+			<Attachment search="Missile5" AName="arc_left_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="arc_left_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="arc_left_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="arc_left_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="arc_left_torso_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<Hardpoint id="21" WeaponDoorsId="1" NoWeaponAName="arc_left_torso_door_blank">
+		<!--Left Torso, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="arc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile20" AName="arc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="arc_left_torso_missile15_mh1"/>
+			<Attachment search="Missile10" AName="arc_left_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="arc_left_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="arc_left_torso_narc_mh1"/>
+			<Attachment search="Missile5" AName="arc_left_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="arc_left_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="arc_left_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="arc_left_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="arc_left_torso_missile20_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_left_torso_missile20_mh2"/>
+			<Attachment search="Missile30" AName="arc_left_torso_missile20_mh2"/>
+			<Attachment search="Missile20" AName="arc_left_torso_missile20_mh2"/>
+			<Attachment search="Missile15" AName="arc_left_torso_missile15_mh2"/>
+			<Attachment search="Missile10" AName="arc_left_torso_missile10_mh2"/>
+			<Attachment search="Missile6" AName="arc_left_torso_missile6_mh2"/>
+			<Attachment search="Missile1" AName="arc_left_torso_narc_mh2"/>
+			<Attachment search="Missile5" AName="arc_left_torso_missile5_mh2"/>
+			<Attachment search="Missile4" AName="arc_left_torso_missile4_mh2"/>
+			<Attachment search="Missile2" AName="arc_left_torso_missile2_mh2"/>
+			<Attachment search="RocketLauncher" AName="arc_left_torso_rl20_mh2"/>
+			<Attachment search="Missile" AName="arc_left_torso_missile20_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	
+	<!--RIGHT ARM-->
+	
+	<Hardpoint id="30">
+		<!--Right Arm, 1 Energy - EH2 is used first for compatibility with Missile hardpoints-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="arc_right_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="arc_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="arc_right_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="arc_right_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="arc_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="arc_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="arc_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<Hardpoint id="31">
+		<!--Right Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="arc_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="arc_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="arc_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="arc_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="arc_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="arc_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="arc_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="arc_right_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="arc_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="arc_right_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="arc_right_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="arc_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="arc_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="arc_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<Hardpoint id="32">
+		<!--Right Arm, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_right_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile30" AName="arc_right_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile20" AName="arc_right_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile15" AName="arc_right_arm_forearm_missile15_mh1"/>
+			<Attachment search="Missile10" AName="arc_right_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile6" AName="arc_right_arm_forearm_missile6_mh1"/>
+			<Attachment search="Missile1" AName="arc_right_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile5" AName="arc_right_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="arc_right_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="arc_right_arm_forearm_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="arc_right_arm_forearm_rl20_mh1"/>
+			<Attachment search="Missile" AName="arc_right_arm_forearm_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<Hardpoint id="33">
+		<!--Right Arm, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_right_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile30" AName="arc_right_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile20" AName="arc_right_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile15" AName="arc_right_arm_forearm_missile15_mh1"/>
+			<Attachment search="Missile10" AName="arc_right_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile6" AName="arc_right_arm_forearm_missile6_mh1"/>
+			<Attachment search="Missile1" AName="arc_right_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile5" AName="arc_right_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="arc_right_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="arc_right_arm_forearm_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="arc_right_arm_forearm_rl20_mh1"/>
+			<Attachment search="Missile" AName="arc_right_arm_forearm_missile20_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_right_arm_upperarm_missile20_mh2"/>
+			<Attachment search="Missile30" AName="arc_right_arm_upperarm_missile20_mh2"/>
+			<Attachment search="Missile20" AName="arc_right_arm_upperarm_missile20_mh2"/>
+			<Attachment search="Missile15" AName="arc_right_arm_upperarm_missile15_mh2"/>
+			<Attachment search="Missile10" AName="arc_right_arm_upperarm_missile10_mh2"/>
+			<Attachment search="Missile6" AName="arc_right_arm_upperarm_missile6_mh2"/>
+			<Attachment search="Missile1" AName="arc_right_arm_upperarm_narc_mh2"/>
+			<Attachment search="Missile5" AName="arc_right_arm_upperarm_missile5_mh2"/>
+			<Attachment search="Missile4" AName="arc_right_arm_upperarm_missile4_mh2"/>
+			<Attachment search="Missile2" AName="arc_right_arm_upperarm_missile2_mh2"/>
+			<Attachment search="RocketLauncher" AName="arc_right_arm_upperarm_rl20_mh2"/>
+			<Attachment search="Missile" AName="arc_right_arm_upperarm_missile20_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	
+	<!--LEFT ARM-->
+	
+	<Hardpoint id="40">
+		<!--Left Arm, 1 Energy - EH2 is used first for compatibility with Missile hardpoints-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="arc_left_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="arc_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="arc_left_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="arc_left_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="arc_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="arc_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="arc_left_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="41">
+		<!--Left Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="arc_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="arc_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="arc_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="arc_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="arc_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="arc_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="arc_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="arc_left_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="arc_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="arc_left_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="arc_left_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="arc_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="arc_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="arc_left_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="42">
+		<!--Left Arm, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile30" AName="arc_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile20" AName="arc_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile15" AName="arc_left_arm_forearm_missile15_mh1"/>
+			<Attachment search="Missile10" AName="arc_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile6" AName="arc_left_arm_forearm_missile6_mh1"/>
+			<Attachment search="Missile1" AName="arc_left_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile5" AName="arc_left_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="arc_left_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="arc_left_arm_forearm_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="arc_left_arm_forearm_rl20_mh1"/>
+			<Attachment search="Missile" AName="arc_left_arm_forearm_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="43">
+		<!--Left Arm, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile30" AName="arc_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile20" AName="arc_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile15" AName="arc_left_arm_forearm_missile15_mh1"/>
+			<Attachment search="Missile10" AName="arc_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile6" AName="arc_left_arm_forearm_missile6_mh1"/>
+			<Attachment search="Missile1" AName="arc_left_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile5" AName="arc_left_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="arc_left_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="arc_left_arm_forearm_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="arc_left_arm_forearm_rl20_mh1"/>
+			<Attachment search="Missile" AName="arc_left_arm_forearm_missile20_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="arc_left_arm_upperarm_missile20_mh2"/>
+			<Attachment search="Missile30" AName="arc_left_arm_upperarm_missile20_mh2"/>
+			<Attachment search="Missile20" AName="arc_left_arm_upperarm_missile20_mh2"/>
+			<Attachment search="Missile15" AName="arc_left_arm_upperarm_missile15_mh2"/>
+			<Attachment search="Missile10" AName="arc_left_arm_upperarm_missile10_mh2"/>
+			<Attachment search="Missile6" AName="arc_left_arm_upperarm_missile6_mh2"/>
+			<Attachment search="Missile1" AName="arc_left_arm_upperarm_narc_mh2"/>
+			<Attachment search="Missile5" AName="arc_left_arm_upperarm_missile5_mh2"/>
+			<Attachment search="Missile4" AName="arc_left_arm_upperarm_missile4_mh2"/>
+			<Attachment search="Missile2" AName="arc_left_arm_upperarm_missile2_mh2"/>
+			<Attachment search="RocketLauncher" AName="arc_left_arm_upperarm_rl20_mh2"/>
+			<Attachment search="Missile" AName="arc_left_arm_upperarm_missile20_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+</Hardpoints>

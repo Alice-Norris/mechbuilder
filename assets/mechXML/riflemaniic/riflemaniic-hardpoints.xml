@@ -1,0 +1,476 @@
+<?xml version="1.0"?>
+<Hardpoints SearchTable="Objects/mechs/hardpointsearchcriteria.xml">
+	
+	
+	<!--A NOTE RE: BLANKS-->
+	<!--
+	rfl_left_arm_forearm_blank_mh1 occupies the spot used by mh1, eh2, and bh2.
+	Missile and ballistic weapons will always replace it. But it needs to always be on when a variant uses eh2.
+	
+	rfl_left_arm_forearm_blank_bh3 occupied the spot used by mh2, eh3, and bh3.
+	All weapon types will always replace it.
+	-->
+	
+	
+	<!--HEAD-->
+	<Hardpoint id="0">
+		<!--Head, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="Laser" AName="rfl_head_laser_eh1"/>
+			<Attachment search="Flamer" AName="rfl_head_flamer_eh1"/>
+			<Attachment search="Energy" AName="rfl_head_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--LEFT ARM-->
+	<Hardpoint id="10">
+		<!--Left Arm, 1 Energy, used alongside 2M-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="rfl_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="rfl_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="rfl_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="11">
+		<!--Left Arm, 1 Energy, used alongside 1B and 2B-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="Laser" AName="rfl_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="rfl_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="rfl_left_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="12">
+		<!--Left Arm, 3 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="rfl_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="rfl_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="rfl_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="Laser" AName="rfl_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="rfl_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="rfl_left_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_left_arm_forearm_ppc_eh3"/>
+			<Attachment search="Laser" AName="rfl_left_arm_forearm_laser_eh3"/>
+			<Attachment search="Flamer" AName="rfl_left_arm_forearm_flamer_eh3"/>
+			<Attachment search="Energy" AName="rfl_left_arm_forearm_laser_eh3"/>
+			<Attachment search="Default" AName="rfl_left_arm_forearm_blank_bh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="13">
+		<!--Left Arm, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="LBXAutoCannon20" AName="rfl_left_arm_forearm_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="rfl_left_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="rfl_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh1" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_left_arm_forearm_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="rfl_left_arm_forearm_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="rfl_left_arm_forearm_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="rfl_left_arm_forearm_lbx5_bh1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="14">
+		<!--Left Arm, 2 Ballistic, used alongside 1E-->
+		<WeaponSlot>
+			<Attachment search="LBXAutoCannon20" AName="rfl_left_arm_forearm_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="rfl_left_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="rfl_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh1" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_left_arm_forearm_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="rfl_left_arm_forearm_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="rfl_left_arm_forearm_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="rfl_left_arm_forearm_lbx5_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="rfl_left_arm_forearm_blank_bh3"/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh3" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_left_arm_forearm_uac10_bh3" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh3" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_left_arm_forearm_uac5_bh3" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh3" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_left_arm_forearm_uac2_bh3" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_left_arm_forearm_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="rfl_left_arm_forearm_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="rfl_left_arm_forearm_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="rfl_left_arm_forearm_lbx5_bh3" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="15">
+		<!--Left Arm, 3 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="LBXAutoCannon20" AName="rfl_left_arm_forearm_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="rfl_left_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="rfl_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh1" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_left_arm_forearm_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="rfl_left_arm_forearm_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="rfl_left_arm_forearm_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="rfl_left_arm_forearm_lbx5_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="rfl_left_arm_forearm_blank_mh1"/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh2" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_left_arm_forearm_uac10_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_left_arm_forearm_uac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh2" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_left_arm_forearm_uac2_bh2" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_left_arm_forearm_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="rfl_left_arm_forearm_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="rfl_left_arm_forearm_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="rfl_left_arm_forearm_lbx5_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="rfl_left_arm_forearm_blank_bh3"/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh3" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_left_arm_forearm_lbx10_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_left_arm_forearm_uac10_bh3" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh3" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_left_arm_forearm_lbx5_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_left_arm_forearm_uac5_bh3" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh3" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_left_arm_forearm_lbx2_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_left_arm_forearm_uac2_bh3" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_left_arm_forearm_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="rfl_left_arm_forearm_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="rfl_left_arm_forearm_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="rfl_left_arm_forearm_lbx5_bh3" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="16">
+		<!--Left Arm, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile12" AName="rfl_left_arm_forearm_missile12_mh1"/>
+			<Attachment search="Missile20" AName="rfl_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile9" AName="rfl_left_arm_forearm_missile9_mh1"/>
+			<Attachment search="Missile15" AName="rfl_left_arm_forearm_missile15_mh1"/>
+			<Attachment search="Missile3" AName="rfl_left_arm_forearm_missile3_mh1"/>
+			<Attachment search="Missile10" AName="rfl_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="NarcBeacon" AName="rfl_left_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile6" AName="rfl_left_arm_forearm_missile6_mh1"/>
+			<Attachment search="Missile5" AName="rfl_left_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="rfl_left_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="rfl_left_arm_forearm_missile2_mh1"/>
+			<Attachment search="Missile" AName="rfl_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Default" AName="rfl_left_arm_forearm_blank_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="17">
+		<!--Left Arm, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile12" AName="rfl_left_arm_forearm_missile12_mh1"/>
+			<Attachment search="Missile20" AName="rfl_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile9" AName="rfl_left_arm_forearm_missile9_mh1"/>
+			<Attachment search="Missile15" AName="rfl_left_arm_forearm_missile15_mh1"/>
+			<Attachment search="Missile3" AName="rfl_left_arm_forearm_missile3_mh1"/>
+			<Attachment search="Missile10" AName="rfl_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="NarcBeacon" AName="rfl_left_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile6" AName="rfl_left_arm_forearm_missile6_mh1"/>
+			<Attachment search="Missile5" AName="rfl_left_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="rfl_left_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="rfl_left_arm_forearm_missile2_mh1"/>
+			<Attachment search="Missile" AName="rfl_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Default" AName="rfl_left_arm_forearm_blank_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile12" AName="rfl_left_arm_forearm_missile12_mh2"/>
+			<Attachment search="Missile20" AName="rfl_left_arm_forearm_missile20_mh2"/>
+			<Attachment search="Missile9" AName="rfl_left_arm_forearm_missile9_mh2"/>
+			<Attachment search="Missile15" AName="rfl_left_arm_forearm_missile15_mh2"/>
+			<Attachment search="Missile3" AName="rfl_left_arm_forearm_missile3_mh2"/>
+			<Attachment search="Missile10" AName="rfl_left_arm_forearm_missile10_mh2"/>
+			<Attachment search="NarcBeacon" AName="rfl_left_arm_forearm_narc_mh2"/>
+			<Attachment search="Missile6" AName="rfl_left_arm_forearm_missile6_mh2"/>
+			<Attachment search="Missile5" AName="rfl_left_arm_forearm_missile5_mh2"/>
+			<Attachment search="Missile4" AName="rfl_left_arm_forearm_missile4_mh2"/>
+			<Attachment search="Missile2" AName="rfl_left_arm_forearm_missile2_mh2"/>
+			<Attachment search="Missile" AName="rfl_left_arm_forearm_missile20_mh2"/>
+			<Attachment search="Default" AName="rfl_left_arm_forearm_blank_bh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--LEFT TORSO-->
+	<Hardpoint id="20">
+		<!--Left Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_left_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="rfl_left_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="rfl_left_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="rfl_left_torso_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--CENTER TORSO-->
+	<Hardpoint id="30">
+		<!--Center Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="rfl_centre_torso_lams_ah1" animated="1"/>
+			<Attachment search="AntiMissileSystem" AName="rfl_centre_torso_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--RIGHT TORSO-->
+	<Hardpoint id="40">
+		<!--Right Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_right_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="rfl_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="rfl_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="rfl_right_torso_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--RIGHT ARM-->
+	<Hardpoint id="50">
+		<!--Right Arm, 1 Energy, used alongside 2M-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="rfl_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="rfl_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="rfl_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="51">
+		<!--Right Arm, 1 Energy, used alongside 1B and 2B-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="Laser" AName="rfl_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="rfl_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="rfl_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="52">
+		<!--Right Arm, 3 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="rfl_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="rfl_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="rfl_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="Laser" AName="rfl_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="rfl_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="rfl_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="rfl_right_arm_forearm_ppc_eh3"/>
+			<Attachment search="Laser" AName="rfl_right_arm_forearm_laser_eh3"/>
+			<Attachment search="Flamer" AName="rfl_right_arm_forearm_flamer_eh3"/>
+			<Attachment search="Energy" AName="rfl_right_arm_forearm_laser_eh3"/>
+			<Attachment search="Default" AName="rfl_right_arm_forearm_blank_bh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="53">
+		<!--Right Arm, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="LBXAutoCannon20" AName="rfl_right_arm_forearm_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="rfl_right_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="rfl_right_arm_forearm_gauss_bh1"/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh1" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_right_arm_forearm_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="rfl_right_arm_forearm_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="rfl_right_arm_forearm_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="rfl_right_arm_forearm_lbx5_bh1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="54">
+		<!--Right Arm, 2 Ballistic, used alongside 1E-->
+		<WeaponSlot>
+			<Attachment search="LBXAutoCannon20" AName="rfl_right_arm_forearm_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="rfl_right_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="rfl_right_arm_forearm_gauss_bh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh1" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_right_arm_forearm_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="rfl_right_arm_forearm_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="rfl_right_arm_forearm_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="rfl_right_arm_forearm_lbx5_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="rfl_right_arm_forearm_blank_bh3"/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh3" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_right_arm_forearm_uac10_bh3" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh3" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_right_arm_forearm_uac5_bh3" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh3" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_right_arm_forearm_uac2_bh3" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_right_arm_forearm_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="rfl_right_arm_forearm_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="rfl_right_arm_forearm_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="rfl_right_arm_forearm_lbx5_bh3" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="55">
+		<!--Right Arm, 3 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="LBXAutoCannon20" AName="rfl_right_arm_forearm_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="rfl_right_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="rfl_right_arm_forearm_gauss_bh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh1" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_right_arm_forearm_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="rfl_right_arm_forearm_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="rfl_right_arm_forearm_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="rfl_right_arm_forearm_lbx5_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="rfl_right_arm_forearm_blank_mh1"/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh2" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_right_arm_forearm_uac10_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_right_arm_forearm_uac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh2" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_right_arm_forearm_uac2_bh2" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_right_arm_forearm_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="rfl_right_arm_forearm_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="rfl_right_arm_forearm_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="rfl_right_arm_forearm_lbx5_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="rfl_right_arm_forearm_blank_bh3"/>
+			<Attachment search="LBXAutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh3" animated="1"/>
+			<Attachment search="AutoCannon10" AName="rfl_right_arm_forearm_lbx10_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="rfl_right_arm_forearm_uac10_bh3" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh3" animated="1"/>
+			<Attachment search="AutoCannon5" AName="rfl_right_arm_forearm_lbx5_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="rfl_right_arm_forearm_uac5_bh3" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh3" animated="1"/>	
+			<Attachment search="AutoCannon2" AName="rfl_right_arm_forearm_lbx2_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="rfl_right_arm_forearm_uac2_bh3" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="rfl_right_arm_forearm_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="rfl_right_arm_forearm_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="rfl_right_arm_forearm_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="rfl_right_arm_forearm_lbx5_bh3" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="56">
+		<!--Right Arm, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile12" AName="rfl_right_arm_forearm_missile12_mh1"/>
+			<Attachment search="Missile20" AName="rfl_right_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile9" AName="rfl_right_arm_forearm_missile9_mh1"/>
+			<Attachment search="Missile15" AName="rfl_right_arm_forearm_missile15_mh1"/>
+			<Attachment search="Missile3" AName="rfl_right_arm_forearm_missile3_mh1"/>
+			<Attachment search="Missile10" AName="rfl_right_arm_forearm_missile10_mh1"/>
+			<Attachment search="NarcBeacon" AName="rfl_right_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile6" AName="rfl_right_arm_forearm_missile6_mh1"/>
+			<Attachment search="Missile5" AName="rfl_right_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="rfl_right_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="rfl_right_arm_forearm_missile2_mh1"/>
+			<Attachment search="Missile" AName="rfl_right_arm_forearm_missile20_mh1"/>
+			<Attachment search="Default" AName="rfl_right_arm_forearm_blank_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="57">
+		<!--Right Arm, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile12" AName="rfl_right_arm_forearm_missile12_mh1"/>
+			<Attachment search="Missile20" AName="rfl_right_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile9" AName="rfl_right_arm_forearm_missile9_mh1"/>
+			<Attachment search="Missile15" AName="rfl_right_arm_forearm_missile15_mh1"/>
+			<Attachment search="Missile3" AName="rfl_right_arm_forearm_missile3_mh1"/>
+			<Attachment search="Missile10" AName="rfl_right_arm_forearm_missile10_mh1"/>
+			<Attachment search="NarcBeacon" AName="rfl_right_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile6" AName="rfl_right_arm_forearm_missile6_mh1"/>
+			<Attachment search="Missile5" AName="rfl_right_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="rfl_right_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="rfl_right_arm_forearm_missile2_mh1"/>
+			<Attachment search="Missile" AName="rfl_right_arm_forearm_missile20_mh1"/>
+			<Attachment search="Default" AName="rfl_right_arm_forearm_blank_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile12" AName="rfl_right_arm_forearm_missile12_mh2"/>
+			<Attachment search="Missile20" AName="rfl_right_arm_forearm_missile20_mh2"/>
+			<Attachment search="Missile9" AName="rfl_right_arm_forearm_missile9_mh2"/>
+			<Attachment search="Missile15" AName="rfl_right_arm_forearm_missile15_mh2"/>
+			<Attachment search="Missile3" AName="rfl_right_arm_forearm_missile3_mh2"/>
+			<Attachment search="Missile10" AName="rfl_right_arm_forearm_missile10_mh2"/>
+			<Attachment search="NarcBeacon" AName="rfl_right_arm_forearm_narc_mh2"/>
+			<Attachment search="Missile6" AName="rfl_right_arm_forearm_missile6_mh2"/>
+			<Attachment search="Missile5" AName="rfl_right_arm_forearm_missile5_mh2"/>
+			<Attachment search="Missile4" AName="rfl_right_arm_forearm_missile4_mh2"/>
+			<Attachment search="Missile2" AName="rfl_right_arm_forearm_missile2_mh2"/>
+			<Attachment search="Missile" AName="rfl_right_arm_forearm_missile20_mh2"/>
+			<Attachment search="Default" AName="rfl_right_arm_forearm_blank_bh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+
+</Hardpoints>
+                                                                                                  

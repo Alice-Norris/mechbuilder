@@ -1,0 +1,7 @@
+<MechCommon>
+ <CockpitCustomizations>
+  <Item type="item_01" Orientation="-0.43000001,0,-0.49999997"/>
+  <Item type="item_02" Orientation="0.1,0,-0.85999995"/>
+  <Item type="item_03" Orientation="0.1,0,0.15"/>
+ </CockpitCustomizations>
+</MechCommon>

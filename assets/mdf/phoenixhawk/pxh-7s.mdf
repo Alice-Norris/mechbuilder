@@ -1,0 +1,167 @@
+<MechDefinition>
+  <Mech Variant="PXH-7S" MaxTons="45" BaseTons="10" MaxJumpJets="6" MinEngineRating="100" MaxEngineRating="355" CanEquipMASC="1" />
+  <Cockpit TechSlots="1" ConsumableSlots="1" WeaponModSlots="2" BoneOffset="0.0, 0.0, 0.0" ViewOffset="0.0, -0.08, 0.0" RenderFlag="1" ShakeDamping="0.85" startup="pilot_startup_phoenixhawk" poweron="pilot_poweron_phoenixhawk" poweroff="pilot_poweroff_phoenixhawk" CockpitItemScaleFactor="1.0">
+    <Piece>
+      <Attachment AName="cockpit" SkipMatInstancing="1" Animated="1" />
+    </Piece>
+  </Cockpit>
+  <ComponentList>
+    <Component Name="head" Slots="6" HP="15" RenderFlag="2">
+      <Internal ItemID="1900" />
+      <Internal ItemID="1901" />
+      <Internal ItemID="1902" />
+      <Piece>
+        <Attachment AName="pxh_head_cockpit" />
+      </Piece>
+      <Hardpoint ID="50" Type="1" lookAim="0" />
+    </Component>
+    <Component Name="centre_torso" Slots="12" HP="28" RenderFlag="2">
+      <Internal ItemID="1903" />
+      <Piece>
+        <Attachment AName="pxh_centre_torso" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_centre_torso_pelvis" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_centre_torso_flap_right" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_centre_torso_flap_left" />
+      </Piece>
+    </Component>
+    <Component Name="right_leg" Slots="6" HP="22" RenderFlag="2">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="pxh_right_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_right_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_right_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_right_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_right_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_right_leg_talon1" />
+      </Piece>
+    </Component>
+    <Component Name="left_leg" Slots="6" HP="22" RenderFlag="2">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="pxh_left_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_left_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_left_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_left_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_left_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_left_leg_talon1" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso" Slots="12" HP="22" RenderFlag="2">
+      <Piece>
+        <Attachment AName="pxh_left_torso" />
+      </Piece>
+      <Hardpoint ID="20" Type="4" lookAim="0" />
+      <Hardpoint ID="21" Type="1" lookAim="0" />
+    </Component>
+    <Component Name="right_torso" Slots="12" HP="22" RenderFlag="2">
+      <Piece>
+        <Attachment AName="pxh_right_torso" />
+      </Piece>
+      <Hardpoint ID="10" Type="1" lookAim="0" />
+    </Component>
+    <Component Name="right_arm" Slots="12" HP="14" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Internal ItemID="1911" />
+      <Piece>
+        <Attachment AName="pxh_right_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_right_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_right_arm_forearm" />
+      </Piece>
+      <Hardpoint ID="32" Type="1" lookAim="1" />
+    </Component>
+    <Component Name="left_arm" Slots="12" HP="14" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Internal ItemID="1911" />
+      <Piece>
+        <Attachment AName="pxh_left_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_left_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="pxh_left_arm_forearm" />
+      </Piece>
+      <Hardpoint ID="45" Type="1" lookAim="1" />
+    </Component>
+    <Component Name="left_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="pxh_left_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="pxh_centre_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="pxh_right_torso_rear" />
+      </Piece>
+    </Component>
+  </ComponentList>
+  <MovementTuningConfiguration MovementArchetype="Medium" MaxMovementSpeed="16.2" TorsoTurnSpeedYaw="157.5" TorsoTurnSpeedPitch="98.44" ArmTurnSpeedYaw="393.75" ArmTurnSpeedPitch="393.75" TurnLerpLowRate="2.19" TurnLerpMidRate="1.53" TurnLerpHighRate="1.17" AccelLerpLowRate="281.59" AccelLerpMidRate="63.85" AccelLerpHighRate="37.55" DecelLerpLowRate="213.01" DecelLerpMidRate="3125" DecelLerpHighRate="3125" ReverseSpeedMultiplier="0.666" MaxTorsoAngleYaw="115" MaxTorsoAnglePitch="30" MaxArmRotationYaw="30" MaxArmRotationPitch="35" TurnLerpLowSpeed="0" TurnLerpMidSpeed="0.666" TurnLerpHighSpeed="1.0" DecelLerpLowSpeed="0" DecelLerpMidSpeed="0.666" DecelLerpHighSpeed="1.0" AccelLerpLowSpeed="0" AccelLerpMidSpeed="0.666" AccelLerpHighSpeed="1.0" MaxFreeLookYaw="60" MaxFreeLookPitch="40" JumpJetSpread="1.9375" />
+  <AnimationConfiguration>
+    <ArmAim LeftArmAimYaw="BONE_ARM_L" LeftArmAimPitch="BONE_ARM_L" RightArmAimYaw="BONE_ARM_R" RightArmAimPitch="BONE_ARM_R" />
+    <TwistJointList>
+      <TwistJoint Joint="BONE_SPINE" Mode="1" />
+      <TwistJoint Joint="BONE_SPINE2" Mode="2" />
+    </TwistJointList>
+  </AnimationConfiguration>
+  <QuirkList>
+    <Quirk name="isstdlaser_range_multiplier" value="0.1" />
+    <Quirk name="ismediumlaser_minheatpenaltylevel_additive" value="1" />
+    <Quirk name="ppcfamily_velocity_multiplier" value="0.2" />
+    <Quirk name="targetinfogathering_multiplier" value="0.2" />
+    <Quirk name="internalresist_ct_additive" value="7" />
+    <Quirk name="internalresist_lt_additive" value="6" />
+    <Quirk name="internalresist_rt_additive" value="6" />
+    <Quirk name="internalresist_la_additive" value="7" />
+    <Quirk name="internalresist_ra_additive" value="7" />
+    <Quirk name="internalresist_ll_additive" value="6" />
+    <Quirk name="internalresist_rl_additive" value="6" />
+    <Quirk name="armorresist_la_additive" value="21" />
+    <Quirk name="armorresist_ra_additive" value="21" />
+    <Quirk name="jumpjets_burntime_multiplier" value="0.15" />
+    <Quirk name="falldamage_multiplier" value="-0.25" />
+  </QuirkList>
+</MechDefinition>

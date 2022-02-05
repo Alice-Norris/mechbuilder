@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<Hardpoints SearchTable="Objects/mechs/hardpointsearchcriteria.xml">
+	
+	<!--LEFT ARM-->
+	<Hardpoint id="0">
+		<!--Left Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="jr7_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="jr7_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="jr7_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="jr7_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="jr7_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="jr7_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="jr7_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="jr7_left_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="jr7_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="jr7_left_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="jr7_left_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="jr7_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="jr7_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="jr7_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="1">
+		<!--Left Arm, 3 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="jr7_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="jr7_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="jr7_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="jr7_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="jr7_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="jr7_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="jr7_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="jr7_left_arm_forearm_hppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="jr7_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="jr7_left_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="jr7_left_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="jr7_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="jr7_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="jr7_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="jr7_left_arm_forearm_ppc_eh3"/>
+			<Attachment search="SnubNosePPC" AName="jr7_left_arm_forearm_snppc_eh3"/>
+			<Attachment search="LightPPC" AName="jr7_left_arm_forearm_lppc_eh3"/>
+			<Attachment search="Laser" AName="jr7_left_arm_forearm_laser_eh3"/>
+			<Attachment search="Flamer" AName="jr7_left_arm_forearm_flamer_eh3"/>
+			<Attachment search="Energy" AName="jr7_left_arm_forearm_laser_eh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="2">
+		<!--Left Arm, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="jr7_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile30" AName="jr7_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile20" AName="jr7_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile15" AName="jr7_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile10" AName="jr7_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile6" AName="jr7_left_arm_forearm_missile6_mh1"/>
+			<Attachment search="Missile1" AName="jr7_left_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile5" AName="jr7_left_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="jr7_left_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="jr7_left_arm_forearm_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="jr7_left_arm_forearm_rl20_mh1"/>
+			<Attachment search="Missile" AName="jr7_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="Default" AName="jr7_left_arm_forearm_blank_gb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--LEFT TORSO-->
+	<Hardpoint id="10">
+		<!--Right Torso, AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="jr7_left_torso_lams_ah1" animated="1"/>
+			<Attachment search="AntiMissileSystem" AName="jr7_left_torso_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--CENTER TORSO-->
+	<Hardpoint id="20">
+		<!--Center Torso, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile10" AName="jr7_centre_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="jr7_centre_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="jr7_centre_torso_narc_mh1"/>
+			<Attachment search="Missile5" AName="jr7_centre_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="jr7_centre_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="jr7_centre_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="jr7_centre_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="jr7_centre_torso_missile10_mh1"/>
+			<Attachment search="Default" AName="jr7_centre_torso_blank_mb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="21">
+		<!--Center Torso, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Default" AName="jr7_centre_torso_blank_mb1"/>
+			<Attachment search="Missile10" AName="jr7_centre_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="jr7_centre_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="jr7_centre_torso_narc_mh1"/>
+			<Attachment search="Missile5" AName="jr7_centre_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="jr7_centre_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="jr7_centre_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="jr7_centre_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="jr7_centre_torso_missile10_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile5" AName="jr7_centre_torso_missile5_mh2"/>
+			<Attachment search="Missile4" AName="jr7_centre_torso_missile4_mh2"/>
+			<Attachment search="Missile2" AName="jr7_centre_torso_missile2_mh2"/>
+			<Attachment search="RocketLauncher" AName="jr7_centre_torso_rl20_mh2"/>
+			<Attachment search="Default" AName="jr7_centre_torso_blank_mb2"/>
+			<Attachment search="Missile" AName="jr7_centre_torso_missile5_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="22">
+		<!--Center Torso, 1 Missile - JR7-K-->
+		<WeaponSlot>
+			<Attachment search="Missile10" AName="jr7_centre_torso_missile10_mh3"/>
+			<Attachment search="Missile6" AName="jr7_centre_torso_missile6_mh3"/>
+			<Attachment search="Missile1" AName="jr7_centre_torso_narc_mh3"/>
+			<Attachment search="Missile5" AName="jr7_centre_torso_missile5_mh3"/>
+			<Attachment search="Missile4" AName="jr7_centre_torso_missile4_mh3"/>
+			<Attachment search="Missile2" AName="jr7_centre_torso_missile2_mh3"/>
+			<Attachment search="RocketLauncher" AName="jr7_centre_torso_rl20_mh3"/>
+			<Attachment search="Missile" AName="jr7_centre_torso_missile10_mh3"/>
+			<Attachment search="Default" AName="jr7_centre_torso_blank_mb3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--RIGHT TORSO-->
+	
+	
+	<!--RIGHT ARM-->
+	<Hardpoint id="40">
+		<!--Right Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="jr7_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="jr7_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="jr7_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="jr7_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="jr7_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="jr7_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="jr7_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="jr7_right_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="jr7_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="jr7_right_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="jr7_right_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="jr7_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="jr7_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="jr7_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="41">
+		<!--Right Arm, 3 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="jr7_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="jr7_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="jr7_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="jr7_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="jr7_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="jr7_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="jr7_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="jr7_right_arm_forearm_hppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="jr7_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="jr7_right_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="jr7_right_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="jr7_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="jr7_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="jr7_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="jr7_right_arm_forearm_ppc_eh3"/>
+			<Attachment search="SnubNosePPC" AName="jr7_right_arm_forearm_snppc_eh3"/>
+			<Attachment search="LightPPC" AName="jr7_right_arm_forearm_lppc_eh3"/>
+			<Attachment search="Laser" AName="jr7_right_arm_forearm_laser_eh3"/>
+			<Attachment search="Flamer" AName="jr7_right_arm_forearm_flamer_eh3"/>
+			<Attachment search="Energy" AName="jr7_right_arm_forearm_laser_eh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="42">
+		<!--Right Arm, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="jr7_right_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile30" AName="jr7_right_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile20" AName="jr7_right_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile15" AName="jr7_right_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile10" AName="jr7_right_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile6" AName="jr7_right_arm_forearm_missile6_mh1"/>
+			<Attachment search="Missile1" AName="jr7_right_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile5" AName="jr7_right_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="jr7_right_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="jr7_right_arm_forearm_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="jr7_right_arm_forearm_rl20_mh1"/>
+			<Attachment search="Missile" AName="jr7_right_arm_forearm_missile10_mh1"/>
+			<Attachment search="Default" AName="jr7_right_arm_forearm_blank_gb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+
+</Hardpoints>

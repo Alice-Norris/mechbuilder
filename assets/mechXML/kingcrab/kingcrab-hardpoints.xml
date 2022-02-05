@@ -1,0 +1,841 @@
+<?xml version="1.0"?>
+<Hardpoints SearchTable="Objects/mechs/hardpointsearchcriteria.xml">
+	<!--WEAPONDOORS-->
+	<!--If door are not listed here, door will not open when hardpoint fired-->
+	<WeaponDoorSet id="1">
+		<WeaponDoor AName="kgc_right_arm_forearm_door_top" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="kgc_right_arm_forearm_ac20_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_gauss_bh1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_mg_bh1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_uac5_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac2_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_mg_bh2"/>
+			<Attachment AName="kgc_right_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_ppc_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_flamer_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_ppc_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_flamer_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_lgauss_bh1"/>
+			<Attachment AName="kgc_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_hmg_bh1"/>
+			<Attachment AName="kgc_right_arm_forearm_lmg_bh1"/>
+			<Attachment AName="kgc_right_arm_forearm_lgauss_bh2"/>
+			<Attachment AName="kgc_right_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_lbx2_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_rac2_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_uac2_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_hmg_bh2"/>
+			<Attachment AName="kgc_right_arm_forearm_lmg_bh2"/>
+			<Attachment AName="kgc_right_arm_forearm_hppc_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_snppc_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_lppc_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_hppc_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_snppc_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_lppc_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="kgc_right_arm_forearm_door_bottom" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor02">
+			<Attachment AName="kgc_right_arm_forearm_ac20_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_gauss_bh1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_mg_bh1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_uac5_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_ac2_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_mg_bh2"/>
+			<Attachment AName="kgc_right_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_ppc_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_flamer_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_laser_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_ppc_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_flamer_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_laser_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_lgauss_bh1"/>
+			<Attachment AName="kgc_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_hmg_bh1"/>
+			<Attachment AName="kgc_right_arm_forearm_lmg_bh1"/>
+			<Attachment AName="kgc_right_arm_forearm_lgauss_bh2"/>
+			<Attachment AName="kgc_right_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_lbx2_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_rac2_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_uac2_bh2" animated="1"/>
+			<Attachment AName="kgc_right_arm_forearm_hmg_bh2"/>
+			<Attachment AName="kgc_right_arm_forearm_lmg_bh2"/>
+			<Attachment AName="kgc_right_arm_forearm_hppc_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_snppc_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_lppc_eh1"/>
+			<Attachment AName="kgc_right_arm_forearm_hppc_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_snppc_eh2"/>
+			<Attachment AName="kgc_right_arm_forearm_lppc_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="kgc_left_arm_forearm_door_top" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="kgc_left_arm_forearm_ac20_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_gauss_bh1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_mg_bh1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_uac5_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac2_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_mg_bh2"/>
+			<Attachment AName="kgc_left_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_ppc_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_flamer_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_ppc_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_flamer_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_lgauss_bh1"/>
+			<Attachment AName="kgc_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_hmg_bh1"/>
+			<Attachment AName="kgc_left_arm_forearm_lmg_bh1"/>
+			<Attachment AName="kgc_left_arm_forearm_lgauss_bh2"/>
+			<Attachment AName="kgc_left_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_lbx2_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_rac2_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_uac2_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_hmg_bh2"/>
+			<Attachment AName="kgc_left_arm_forearm_lmg_bh2"/>
+			<Attachment AName="kgc_left_arm_forearm_hppc_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_snppc_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_lppc_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_hppc_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_snppc_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_lppc_eh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="kgc_left_arm_forearm_door_bottom" firingdelay="0.0" stayOpen="0.25" closedDamageFactor="0.9" cockpitattachment="Objects/mechs/catapult/cockpit_standard/catapult_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="kgc_left_arm_forearm_ac20_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_gauss_bh1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_mg_bh1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_uac5_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_ac2_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_mg_bh2"/>
+			<Attachment AName="kgc_left_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_ppc_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_flamer_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_laser_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_ppc_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_flamer_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_laser_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_lgauss_bh1"/>
+			<Attachment AName="kgc_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_hmg_bh1"/>
+			<Attachment AName="kgc_left_arm_forearm_lmg_bh1"/>
+			<Attachment AName="kgc_left_arm_forearm_lgauss_bh2"/>
+			<Attachment AName="kgc_left_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_lbx2_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_rac2_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_uac2_bh2" animated="1"/>
+			<Attachment AName="kgc_left_arm_forearm_hmg_bh2"/>
+			<Attachment AName="kgc_left_arm_forearm_lmg_bh2"/>
+			<Attachment AName="kgc_left_arm_forearm_hppc_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_snppc_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_lppc_eh1"/>
+			<Attachment AName="kgc_left_arm_forearm_hppc_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_snppc_eh2"/>
+			<Attachment AName="kgc_left_arm_forearm_lppc_eh2"/>
+		</WeaponDoor>
+	</WeaponDoorSet>
+	
+	
+	
+	<!--CENTER TORSO-->
+	<Hardpoint id="0">
+		<!--Center Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="kgc_centre_torso_lams_ah1"/>
+			<Attachment search="AntiMissileSystem" AName="kgc_centre_torso_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	
+	<!--RIGHT TORSO-->
+	<Hardpoint id="10">
+		<!--Right Torso, 2 Energy, used on its own-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_torso_hppc_eh1"/>
+			<Attachment search="PPC" AName="kgc_right_torso_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="kgc_right_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="kgc_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="kgc_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="kgc_right_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_torso_hppc_eh2"/>
+			<Attachment search="PPC" AName="kgc_right_torso_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_torso_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="kgc_right_torso_lppc_eh2"/>
+			<Attachment search="Laser" AName="kgc_right_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="kgc_right_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="kgc_right_torso_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="11">
+		<!--Right Torso, 3 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_torso_hppc_eh1"/>
+			<Attachment search="PPC" AName="kgc_right_torso_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="kgc_right_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="kgc_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="kgc_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="kgc_right_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_torso_hppc_eh2"/>
+			<Attachment search="PPC" AName="kgc_right_torso_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_torso_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="kgc_right_torso_lppc_eh2"/>
+			<Attachment search="Laser" AName="kgc_right_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="kgc_right_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="kgc_right_torso_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_torso_hppc_eh3"/>
+			<Attachment search="PPC" AName="kgc_right_torso_ppc_eh3"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_torso_snppc_eh3"/>
+			<Attachment search="LightPPC" AName="kgc_right_torso_lppc_eh3"/>
+			<Attachment search="Laser" AName="kgc_right_torso_laser_eh3"/>
+			<Attachment search="Flamer" AName="kgc_right_torso_flamer_eh3"/>
+			<Attachment search="Energy" AName="kgc_right_torso_laser_eh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="12">
+		<!--Right Torso, 4 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_torso_hppc_eh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="kgc_right_torso_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="kgc_right_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="kgc_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="kgc_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="kgc_right_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_torso_hppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="kgc_right_torso_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_torso_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="kgc_right_torso_lppc_eh2"/>
+			<Attachment search="Laser" AName="kgc_right_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="kgc_right_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="kgc_right_torso_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_torso_hppc_eh3"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="kgc_right_torso_ppc_eh3"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_torso_snppc_eh3"/>
+			<Attachment search="LightPPC" AName="kgc_right_torso_lppc_eh3"/>
+			<Attachment search="Laser" AName="kgc_right_torso_laser_eh3"/>
+			<Attachment search="Flamer" AName="kgc_right_torso_flamer_eh3"/>
+			<Attachment search="Energy" AName="kgc_right_torso_laser_eh3"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="kgc_right_torso_ppc_eh4"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_torso_snppc_eh4"/>
+			<Attachment search="LightPPC" AName="kgc_right_torso_lppc_eh4"/>
+			<Attachment search="Laser" AName="kgc_right_torso_laser_eh4"/>
+			<Attachment search="Flamer" AName="kgc_right_torso_flamer_eh4"/>
+			<Attachment search="Energy" AName="kgc_right_torso_laser_eh4"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="14">
+		<!--Right Torso, 2 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="HeavyGaussRifle" AName="kgc_right_torso_hgauss_bh1"/>
+			<Attachment search="LBXAutoCannon20" AName="kgc_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="kgc_right_torso_uac20_bh1" animated="1"/>
+			<Attachment search="AutoCannon20" AName="kgc_right_torso_ac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="kgc_right_torso_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="kgc_right_torso_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="kgc_right_torso_ac10_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="LBXAutoCannon10" AName="kgc_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="kgc_right_torso_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="kgc_right_torso_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_right_torso_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="kgc_right_torso_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_right_torso_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_right_torso_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_right_torso_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_right_torso_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_right_torso_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="kgc_right_torso_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="kgc_right_torso_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="kgc_right_torso_ac20_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="LBXAutoCannon10" AName="kgc_right_torso_lbx10_bh2" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="kgc_right_torso_rac5_bh2" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="kgc_right_torso_lgauss_bh2"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_right_torso_uac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_right_torso_lbx5_bh2" animated="1"/>
+			<Attachment search="AutoCannon5" AName="kgc_right_torso_ac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_right_torso_lbx2_bh2" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_right_torso_rac2_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_right_torso_uac2_bh2" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_right_torso_ac2_bh2" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_right_torso_hmg_bh2"/>
+			<Attachment search="MachineGun" AName="kgc_right_torso_mg_bh2"/>
+			<Attachment search="LightMachineGun" AName="kgc_right_torso_lmg_bh2"/>
+			<Attachment search="Ballistic" AName="kgc_right_torso_lbx10_bh2" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="15">
+		<!--Right Torso, 2 Energy, used with 1M-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_torso_hppc_eh3"/>
+			<Attachment search="PPC" AName="kgc_right_torso_ppc_eh3"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_torso_snppc_eh3"/>
+			<Attachment search="LightPPC" AName="kgc_right_torso_lppc_eh3"/>
+			<Attachment search="Laser" AName="kgc_right_torso_laser_eh3"/>
+			<Attachment search="Flamer" AName="kgc_right_torso_flamer_eh3"/>
+			<Attachment search="Energy" AName="kgc_right_torso_laser_eh3"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_torso_hppc_eh4"/>
+			<Attachment search="PPC" AName="kgc_right_torso_ppc_eh4"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_torso_snppc_eh4"/>
+			<Attachment search="LightPPC" AName="kgc_right_torso_lppc_eh4"/>
+			<Attachment search="Laser" AName="kgc_right_torso_laser_eh4"/>
+			<Attachment search="Flamer" AName="kgc_right_torso_flamer_eh4"/>
+			<Attachment search="Energy" AName="kgc_right_torso_laser_eh4"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="16">
+		<!--Right Torso, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kgc_right_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="kgc_right_torso_missile20_mh1"/>
+			<Attachment search="Missile20" AName="kgc_right_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="kgc_right_torso_missile15_mh1"/>
+			<Attachment search="Missile10" AName="kgc_right_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="kgc_right_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="kgc_right_torso_narc_mh1"/>
+			<Attachment search="Missile5" AName="kgc_right_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="kgc_right_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="kgc_right_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="kgc_right_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="kgc_right_torso_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	
+	<!--LEFT TORSO-->
+	<Hardpoint id="20">
+		<!--Left Torso, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kgc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="kgc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile20" AName="kgc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="kgc_left_torso_missile15_mh1"/>
+			<Attachment search="RocketLauncher20" AName="kgc_left_torso_rl20_mh1"/>
+			<Attachment search="Missile10" AName="kgc_left_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="kgc_left_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="kgc_left_torso_narc_mh1"/>
+			<Attachment search="RocketLauncher15" AName="kgc_left_torso_rl15_mh1"/>
+			<Attachment search="Missile5" AName="kgc_left_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="kgc_left_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="kgc_left_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher10" AName="kgc_left_torso_rl10_mh1"/>
+			<Attachment search="Missile" AName="kgc_left_torso_missile20_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kgc_left_torso_missile20_mh2"/>
+			<Attachment search="Missile30" AName="kgc_left_torso_missile20_mh2"/>
+			<Attachment search="Missile20" AName="kgc_left_torso_missile20_mh2"/>
+			<Attachment search="Missile15" AName="kgc_left_torso_missile15_mh2"/>
+			<Attachment search="RocketLauncher20" AName="kgc_left_torso_rl20_mh2"/>
+			<Attachment search="Missile10" AName="kgc_left_torso_missile10_mh2"/>
+			<Attachment search="Missile6" AName="kgc_left_torso_missile6_mh2"/>
+			<Attachment search="Missile1" AName="kgc_left_torso_narc_mh2"/>
+			<Attachment search="RocketLauncher15" AName="kgc_left_torso_rl15_mh2"/>
+			<Attachment search="Missile5" AName="kgc_left_torso_missile5_mh2"/>
+			<Attachment search="Missile4" AName="kgc_left_torso_missile4_mh2"/>
+			<Attachment search="Missile2" AName="kgc_left_torso_missile2_mh2"/>
+			<Attachment search="RocketLauncher10" AName="kgc_left_torso_rl10_mh2"/>
+			<Attachment search="Missile" AName="kgc_left_torso_missile20_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="21">
+		<!--Left Torso, 3 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kgc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="kgc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile20" AName="kgc_left_torso_missile20_mh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Missile15" AName="kgc_left_torso_missile15_mh1"/>
+			<Attachment search="RocketLauncher20" AName="kgc_left_torso_rl20_mh1"/>
+			<Attachment search="Missile10" AName="kgc_left_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="kgc_left_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="kgc_left_torso_narc_mh1"/>
+			<Attachment search="RocketLauncher15" AName="kgc_left_torso_rl15_mh1"/>
+			<Attachment search="Missile5" AName="kgc_left_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="kgc_left_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="kgc_left_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher10" AName="kgc_left_torso_rl10_mh1"/>
+			<Attachment search="Missile" AName="kgc_left_torso_missile20_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kgc_left_torso_missile20_mh2"/>
+			<Attachment search="Missile30" AName="kgc_left_torso_missile20_mh2"/>
+			<Attachment search="Missile20" AName="kgc_left_torso_missile20_mh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Missile15" AName="kgc_left_torso_missile15_mh2"/>
+			<Attachment search="RocketLauncher20" AName="kgc_left_torso_rl20_mh2"/>
+			<Attachment search="Missile10" AName="kgc_left_torso_missile10_mh2"/>
+			<Attachment search="Missile6" AName="kgc_left_torso_missile6_mh2"/>
+			<Attachment search="Missile1" AName="kgc_left_torso_narc_mh2"/>
+			<Attachment search="RocketLauncher15" AName="kgc_left_torso_rl15_mh2"/>
+			<Attachment search="Missile5" AName="kgc_left_torso_missile5_mh2"/>
+			<Attachment search="Missile4" AName="kgc_left_torso_missile4_mh2"/>
+			<Attachment search="Missile2" AName="kgc_left_torso_missile2_mh2"/>
+			<Attachment search="RocketLauncher10" AName="kgc_left_torso_rl10_mh2"/>
+			<Attachment search="Missile" AName="kgc_left_torso_missile20_mh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Missile20" AName="kgc_left_torso_missile15_mh3"/>
+			<Attachment search="Missile15" AName="kgc_left_torso_missile15_mh3"/>
+			<Attachment search="RocketLauncher20" AName="kgc_left_torso_rl20_mh3"/>
+			<Attachment search="Missile10" AName="kgc_left_torso_missile10_mh3"/>
+			<Attachment search="Missile6" AName="kgc_left_torso_missile6_mh3"/>
+			<Attachment search="Missile1" AName="kgc_left_torso_narc_mh3"/>
+			<Attachment search="RocketLauncher15" AName="kgc_left_torso_rl15_mh3"/>
+			<Attachment search="Missile5" AName="kgc_left_torso_missile5_mh3"/>
+			<Attachment search="Missile4" AName="kgc_left_torso_missile4_mh3"/>
+			<Attachment search="Missile2" AName="kgc_left_torso_missile2_mh3"/>
+			<Attachment search="RocketLauncher10" AName="kgc_left_torso_rl10_mh3"/>
+			<Attachment search="Missile" AName="kgc_left_torso_missile15_mh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="22">
+		<!--Left Torso, 4 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kgc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="kgc_left_torso_missile20_mh1"/>
+			<Attachment search="Missile20" AName="kgc_left_torso_missile20_mh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Missile15" AName="kgc_left_torso_missile15_mh1"/>
+			<Attachment search="RocketLauncher20" AName="kgc_left_torso_rl20_mh1"/>
+			<Attachment search="Missile10" AName="kgc_left_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="kgc_left_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="kgc_left_torso_narc_mh1"/>
+			<Attachment search="RocketLauncher15" AName="kgc_left_torso_rl15_mh1"/>
+			<Attachment search="Missile5" AName="kgc_left_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="kgc_left_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="kgc_left_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher10" AName="kgc_left_torso_rl10_mh1"/>
+			<Attachment search="Missile" AName="kgc_left_torso_missile20_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kgc_left_torso_missile20_mh2"/>
+			<Attachment search="Missile30" AName="kgc_left_torso_missile20_mh2"/>
+			<Attachment search="Missile20" AName="kgc_left_torso_missile20_mh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Missile15" AName="kgc_left_torso_missile15_mh2"/>
+			<Attachment search="RocketLauncher20" AName="kgc_left_torso_rl20_mh2"/>
+			<Attachment search="Missile10" AName="kgc_left_torso_missile10_mh2"/>
+			<Attachment search="Missile6" AName="kgc_left_torso_missile6_mh2"/>
+			<Attachment search="Missile1" AName="kgc_left_torso_narc_mh2"/>
+			<Attachment search="RocketLauncher15" AName="kgc_left_torso_rl15_mh2"/>
+			<Attachment search="Missile5" AName="kgc_left_torso_missile5_mh2"/>
+			<Attachment search="Missile4" AName="kgc_left_torso_missile4_mh2"/>
+			<Attachment search="Missile2" AName="kgc_left_torso_missile2_mh2"/>
+			<Attachment search="RocketLauncher10" AName="kgc_left_torso_rl10_mh2"/>
+			<Attachment search="Missile" AName="kgc_left_torso_missile20_mh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Missile20" AName="kgc_left_torso_missile15_mh3"/>
+			<Attachment search="Missile15" AName="kgc_left_torso_missile15_mh3"/>
+			<Attachment search="RocketLauncher20" AName="kgc_left_torso_rl20_mh3"/>
+			<Attachment search="Missile10" AName="kgc_left_torso_missile10_mh3"/>
+			<Attachment search="Missile6" AName="kgc_left_torso_missile6_mh3"/>
+			<Attachment search="Missile1" AName="kgc_left_torso_narc_mh3"/>
+			<Attachment search="RocketLauncher15" AName="kgc_left_torso_rl15_mh3"/>
+			<Attachment search="Missile5" AName="kgc_left_torso_missile5_mh3"/>
+			<Attachment search="Missile4" AName="kgc_left_torso_missile4_mh3"/>
+			<Attachment search="Missile2" AName="kgc_left_torso_missile2_mh3"/>
+			<Attachment search="RocketLauncher10" AName="kgc_left_torso_rl10_mh3"/>
+			<Attachment search="Missile" AName="kgc_left_torso_missile15_mh3"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Missile20" AName="kgc_left_torso_missile15_mh4"/>
+			<Attachment search="Missile15" AName="kgc_left_torso_missile15_mh4"/>
+			<Attachment search="RocketLauncher20" AName="kgc_left_torso_rl20_mh4"/>
+			<Attachment search="Missile10" AName="kgc_left_torso_missile10_mh4"/>
+			<Attachment search="Missile6" AName="kgc_left_torso_missile6_mh4"/>
+			<Attachment search="Missile1" AName="kgc_left_torso_narc_mh4"/>
+			<Attachment search="RocketLauncher15" AName="kgc_left_torso_rl15_mh4"/>
+			<Attachment search="Missile5" AName="kgc_left_torso_missile5_mh4"/>
+			<Attachment search="Missile4" AName="kgc_left_torso_missile4_mh4"/>
+			<Attachment search="Missile2" AName="kgc_left_torso_missile2_mh4"/>
+			<Attachment search="RocketLauncher10" AName="kgc_left_torso_rl10_mh4"/>
+			<Attachment search="Missile" AName="kgc_left_torso_missile15_mh4"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--RIGHT ARM-->
+	<Hardpoint id="30" WeaponDoorsId="1" NoWeaponAName="kgc_right_arm_forearm_blankdoor">
+		<!--Right Arm, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="UltraAutoCannon20" AName="kgc_right_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="AutoCannon20" AName="kgc_right_arm_forearm_ac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="kgc_right_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="kgc_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="kgc_right_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="kgc_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="kgc_right_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="kgc_right_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="kgc_right_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_right_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_right_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_right_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="kgc_right_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="kgc_right_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="kgc_right_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="31" WeaponDoorsId="1" NoWeaponAName="kgc_right_arm_forearm_blankdoor">
+		<!--Right Arm, 2 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="UltraAutoCannon20" AName="kgc_right_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="AutoCannon20" AName="kgc_right_arm_forearm_ac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="kgc_right_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="kgc_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="kgc_right_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="kgc_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="kgc_right_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="LightGaussRifle" AName="kgc_right_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="kgc_right_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_right_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_right_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_right_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="kgc_right_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="kgc_right_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="kgc_right_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="LightGaussRifle" AName="kgc_right_arm_forearm_lgauss_bh2"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_right_arm_forearm_uac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_right_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment search="AutoCannon5" AName="kgc_right_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_right_arm_forearm_lbx2_bh2" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_right_arm_forearm_rac2_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_right_arm_forearm_uac2_bh2" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_right_arm_forearm_ac2_bh2" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_right_arm_forearm_hmg_bh2"/>
+			<Attachment search="MachineGun" AName="kgc_right_arm_forearm_mg_bh2"/>
+			<Attachment search="LightMachineGun" AName="kgc_right_arm_forearm_lmg_bh2"/>
+			<Attachment search="Ballistic" AName="kgc_right_arm_forearm_ac5_bh2" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="32" WeaponDoorsId="1" NoWeaponAName="kgc_right_arm_forearm_blankdoor">
+		<!--Right Arm, 3 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="UltraAutoCannon20" AName="kgc_right_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="AutoCannon20" AName="kgc_right_arm_forearm_ac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="kgc_right_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="kgc_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="kgc_right_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="kgc_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="kgc_right_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="kgc_right_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon5" AName="kgc_right_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_right_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_right_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_right_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="kgc_right_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="kgc_right_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="kgc_right_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="LightGaussRifle" AName="kgc_right_arm_forearm_lgauss_bh2"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_right_arm_forearm_uac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_right_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon5" AName="kgc_right_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_right_arm_forearm_lbx2_bh2" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_right_arm_forearm_rac2_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_right_arm_forearm_uac2_bh2" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_right_arm_forearm_ac2_bh2" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_right_arm_forearm_hmg_bh2"/>
+			<Attachment search="MachineGun" AName="kgc_right_arm_forearm_mg_bh2"/>
+			<Attachment search="LightMachineGun" AName="kgc_right_arm_forearm_lmg_bh2"/>
+			<Attachment search="Ballistic" AName="kgc_right_arm_forearm_ac5_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon5" AName="kgc_right_arm_forearm_ac5_bh3" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_right_arm_forearm_lbx2_bh3" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_right_arm_forearm_rac2_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_right_arm_forearm_uac2_bh3" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_right_arm_forearm_ac2_bh3" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_right_arm_forearm_hmg_bh3"/>
+			<Attachment search="MachineGun" AName="kgc_right_arm_forearm_mg_bh3"/>
+			<Attachment search="LightMachineGun" AName="kgc_right_arm_forearm_lmg_bh3"/>
+			<Attachment search="Ballistic" AName="kgc_right_arm_forearm_ac2_bh3" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="33" WeaponDoorsId="1" NoWeaponAName="kgc_right_arm_forearm_blankdoor">
+		<!--Right Arm, 3 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="kgc_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="kgc_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="kgc_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="kgc_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="kgc_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_right_arm_forearm_hppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="kgc_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="kgc_right_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="kgc_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="kgc_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="kgc_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="kgc_right_arm_forearm_ppc_eh3"/>
+			<Attachment search="SnubNosePPC" AName="kgc_right_arm_forearm_snppc_eh3"/>
+			<Attachment search="LightPPC" AName="kgc_right_arm_forearm_lppc_eh3"/>
+			<Attachment search="Laser" AName="kgc_right_arm_forearm_laser_eh3"/>
+			<Attachment search="Flamer" AName="kgc_right_arm_forearm_flamer_eh3"/>
+			<Attachment search="Energy" AName="kgc_right_arm_forearm_laser_eh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--LEFT ARM-->
+	<Hardpoint id="40" WeaponDoorsId="1" NoWeaponAName="kgc_left_arm_forearm_blankdoor">
+		<!--Left Arm, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="UltraAutoCannon20" AName="kgc_left_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="AutoCannon20" AName="kgc_left_arm_forearm_ac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="kgc_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="kgc_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="kgc_left_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="kgc_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="kgc_left_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="kgc_left_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="kgc_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_left_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_left_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_left_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="kgc_left_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="kgc_left_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="kgc_left_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="41" WeaponDoorsId="1" NoWeaponAName="kgc_left_arm_forearm_blankdoor">
+		<!--Left Arm, 2 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="UltraAutoCannon20" AName="kgc_left_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="AutoCannon20" AName="kgc_left_arm_forearm_ac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="kgc_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="kgc_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="kgc_left_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="kgc_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="kgc_left_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="LightGaussRifle" AName="kgc_left_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="kgc_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_left_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_left_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_left_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="kgc_left_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="kgc_left_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="kgc_left_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="LightGaussRifle" AName="kgc_left_arm_forearm_lgauss_bh2"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_left_arm_forearm_uac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_left_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment search="AutoCannon5" AName="kgc_left_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_left_arm_forearm_lbx2_bh2" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_left_arm_forearm_rac2_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_left_arm_forearm_uac2_bh2" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_left_arm_forearm_ac2_bh2" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_left_arm_forearm_hmg_bh2"/>
+			<Attachment search="MachineGun" AName="kgc_left_arm_forearm_mg_bh2"/>
+			<Attachment search="LightMachineGun" AName="kgc_left_arm_forearm_lmg_bh2"/>
+			<Attachment search="Ballistic" AName="kgc_left_arm_forearm_ac5_bh2" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="42" WeaponDoorsId="1" NoWeaponAName="kgc_left_arm_forearm_blankdoor">
+		<!--Left Arm, 3 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="UltraAutoCannon20" AName="kgc_left_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="AutoCannon20" AName="kgc_left_arm_forearm_ac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="kgc_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="kgc_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="kgc_left_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="kgc_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="kgc_left_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="kgc_left_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon5" AName="kgc_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_left_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_left_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_left_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="kgc_left_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="kgc_left_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="kgc_left_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="LightGaussRifle" AName="kgc_left_arm_forearm_lgauss_bh2"/>
+			<Attachment search="UltraAutoCannon5" AName="kgc_left_arm_forearm_uac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="kgc_left_arm_forearm_lbx5_bh2" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon5" AName="kgc_left_arm_forearm_ac5_bh2" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_left_arm_forearm_lbx2_bh2" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_left_arm_forearm_rac2_bh2" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_left_arm_forearm_uac2_bh2" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_left_arm_forearm_ac2_bh2" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_left_arm_forearm_hmg_bh2"/>
+			<Attachment search="MachineGun" AName="kgc_left_arm_forearm_mg_bh2"/>
+			<Attachment search="LightMachineGun" AName="kgc_left_arm_forearm_lmg_bh2"/>
+			<Attachment search="Ballistic" AName="kgc_left_arm_forearm_ac5_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon5" AName="kgc_left_arm_forearm_ac5_bh3" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="kgc_left_arm_forearm_lbx2_bh3" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="kgc_left_arm_forearm_rac2_bh3" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="kgc_left_arm_forearm_uac2_bh3" animated="1"/>
+			<Attachment search="AutoCannon2" AName="kgc_left_arm_forearm_ac2_bh3" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="kgc_left_arm_forearm_hmg_bh3"/>
+			<Attachment search="MachineGun" AName="kgc_left_arm_forearm_mg_bh3"/>
+			<Attachment search="LightMachineGun" AName="kgc_left_arm_forearm_lmg_bh3"/>
+			<Attachment search="Ballistic" AName="kgc_left_arm_forearm_ac2_bh3" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="43" WeaponDoorsId="1" NoWeaponAName="kgc_left_arm_forearm_blankdoor">
+		<!--Left Arm, 3 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="kgc_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="kgc_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="kgc_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="kgc_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="kgc_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="kgc_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kgc_left_arm_forearm_hppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="kgc_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="kgc_left_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="kgc_left_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="kgc_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="kgc_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="kgc_left_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="kgc_left_arm_forearm_ppc_eh3"/>
+			<Attachment search="SnubNosePPC" AName="kgc_left_arm_forearm_snppc_eh3"/>
+			<Attachment search="LightPPC" AName="kgc_left_arm_forearm_lppc_eh3"/>
+			<Attachment search="Laser" AName="kgc_left_arm_forearm_laser_eh3"/>
+			<Attachment search="Flamer" AName="kgc_left_arm_forearm_flamer_eh3"/>
+			<Attachment search="Energy" AName="kgc_left_arm_forearm_laser_eh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+</Hardpoints>

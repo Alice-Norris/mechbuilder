@@ -1,0 +1,119 @@
+
+@font-face{
+    font-family: HeavyMetal;
+    src: url(../assets/fonts/Hvymtl2.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url(../assets/images/loading_mechlab.png);
+    background-position: center;
+}
+
+header{
+    flex: 1 1;
+    background-image: url(../assets/images/concrete.png);
+}
+
+ nav{
+    flex: 1 1;
+    height: 100%;
+    display: flex;
+    justify-content:space-around;
+    background-image: url(../assets/images/mechbay_floors_b_spc.png);
+}
+
+header > h1 {
+    text-align: center;
+    font-family: HeavyMetal;
+    font-size: 2.3em;
+    color: rgb(78, 0, 0);
+}
+
+nav > a {
+    font-family: HeavyMetal;
+    color: darkorange;
+}
+
+nav > a:visited{
+    font-family: HeavyMetal;
+    color: darkgoldenrod;
+}
+
+nav > a:hover {
+    color: orange;
+}
+nav a:visited {
+    color: darkgoldenrod;
+}
+/*START MAIN APP AREA CSS */
+#appMain{
+    flex: 1 1 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#eqSelection{
+    flex: 1 1 0;
+}
+
+#selectForm{
+    display: flex;
+    flex-direction: column;
+    color: darkgoldenrod;
+    font-family: HeavyMetal;
+}
+
+#selectForm > h5{
+    float: left;
+}
+
+#selectForm > label{
+    text-indent: 5%;
+}
+#mechs{
+    flex: 1 1 0;
+}
+
+#mechOutlineDiv{
+    flex: 2 1 0;
+    background-image: url(../assets/images/mechbay_wall_df.png);
+    background-repeat: center;
+}
+
+#mechOutline{
+    max-width: 100%;
+    object-fit:scale-down;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    align-content: center;
+
+}
+
+#eqOutput{
+    flex: 1 1 0;
+}
+/*END MAIN APP AREA CSS*/
+
+#footerDiv{
+    flex: 1 1 100%;
+    display: flex;
+}
+div > footer{
+    flex: 1 0 100%;
+    background-image: url(../assets/images/concrete.png);
+    background-repeat: repeat;
+    text-align:center;
+}
+
+h4{
+    font-family: HeavyMetal;
+    color: darkorange;
+    font-size: 1.3em;
+    background-color: red;  
+    vertical-align: center;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; secript-src 'self'">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mech Builder</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id = "header">
+            <h1>Mech Builder</h1>
+        </header>
+
+        <nav id = "topnav">
+            <a href="/new">New Mech</a>
+            <a href="/edit">Edit Mech</a>
+            <a href="#save-load">Save/Load Mech</a>
+        </nav>
+
+        <div id="appMain">
+            <div id = "eqSelection">
+                <form id = "selectForm">
+                    <label for="mechs">Choose a chassis:</label>
+                    <select name = "mechs" id = "mech">
+                        <option value="none"> ——— NAME ——— </option>
+                    </select>
+                    <label for="subtype">Choose a subtype:</label>
+                    <select name = "subtype" id = "subtype">
+                        <option value = "none"> ——— NAME ——— </option>
+                    </select>
+                        <h5>Head:</h5>
+                        <Label for = "head">Head Options:</Label>
+                        <Select name = "head">
+                            <option value ="none"> ——— NAME ——— </option>
+                        </Select>
+                        <h5>Torso:</h5>
+                        <label for="leftTorso">Left Torso:</label>
+                        <select name = "leftTorso">
+                            <option value="none">——— NAME ———</option>
+                        </select>
+                        <label for = "centerTorso">Center Torso:</label>
+                        <select name = "centerTorso">
+                            <option value="none">——— NAME ———</option>
+                        </select>
+                        <label for="rightTorso">Right Torso:</label>
+                        <select name = "rightTorso">
+                            <option value="none">——— NAME ———</option>
+                        </select>
+                        <h5>Arms:</h5>
+                        <label for="leftArm">Left Arm:</label>
+                        <select name = "leftArm">
+                            <option value="none">——— NAME ———</option>
+                        </select>
+                        <label for="rightArm">Right Arm:</label>
+                        <select name = "rightArm">
+                            <option value="none">——— NAME ———</option>
+                        </select>
+                        <h5>Legs:</h5>
+                        <label for="leftLeg">Left Leg:</label>
+                        <select name = "leftLeg">
+                            <option value="none">——— NAME ———</option>
+                        </select>
+                        <label for="rightLeg">Right Leg:</label>
+                        <select name = "rightLeg">
+                            <option value="none">——— NAME ———</option>
+                        </select>
+                </form>
+            </div >
+            <div id = "mechOutlineDiv">
+                <img id = "mechOutline" src = "../assets/images/mech_outline_square.svg"/>
+            </div>
+            <div id = "eqOutput">
+            </div>
+        </div>
+        <div id = "footerDiv">
+            <footer id = "footer">
+                <h4 id = "footerText">&lt;3 Chris Cross & Alice Kneller &lt;3</h4>
+            </footer>
+            </div>
+        </div> 
+
+    </body>
+</html>

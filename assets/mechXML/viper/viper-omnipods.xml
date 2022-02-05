@@ -1,0 +1,360 @@
+<OmniPods>
+  <Set name="vpr-prime">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="energy_cooldown_multiplier" value="-0.1" />
+        <Quirk name="missile_cooldown_multiplier" value="-0.15" />
+        <Quirk name="all_cooldown_multiplier" value="-0.15" />
+        <Quirk name="laser_duration_multiplier" value="-0.2" />
+        <Quirk name="clanmachinegun_rof_multiplier" value="0.2" />
+        <Quirk name="seismicsensorrange_additive" value="100" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="jumpjets_heat_multiplier" value="-0.2" />
+      <Quirk name="armorresist_ct_additive" value="10" />
+      <Quirk name="falldamage_multiplier" value="-0.25" />
+    </component>
+    <component name="left_arm">
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Hardpoint ID="40" Type="2" lookAim="1" />
+      <Quirk name="armorresist_la_additive" value="4" />
+      <Quirk name="missile_spread_multiplier" value="-0.1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="20" Type="4" lookAim="0" />
+      <Quirk name="accellerp_all_multiplier" value="0.25" />
+      <Quirk name="decellerp_all_multiplier" value="0.25" />
+      <Quirk name="turnlerp_all_multiplier" value="0.10" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.15" />
+      <Quirk name="armorresist_lt_additive" value="8" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="14" Type="0" lookAim="0" />
+      <Quirk name="accellerp_all_multiplier" value="0.1" />
+      <Quirk name="decellerp_all_multiplier" value="0.1" />
+      <Quirk name="turnlerp_all_multiplier" value="0.05" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.05" />
+      <Quirk name="armorresist_rt_additive" value="4" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="31" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Quirk name="armorresist_ra_additive" value="4" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="armorresist_ll_additive" value="8" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="armorresist_rl_additive" value="8" />
+    </component>
+  </Set>
+  <Set name="vpr-a">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="laser_heat_multiplier" value="-.05" />
+        <Quirk name="missile_spread_multiplier" value="-.05" />
+        <Quirk name="clanmediumpulselaser_heat_multiplier" value="-0.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="jumpjets_heat_multiplier" value="-0.2" />
+      <Quirk name="armorresist_ct_additive" value="10" />
+      <Quirk name="falldamage_multiplier" value="-0.25" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="40" Type="2" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Quirk name="armorresist_la_additive" value="4" />
+      <Quirk name="missile_cooldown_multiplier" value="-0.05" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="22" Type="1" lookAim="0" />
+      <Quirk name="armorresist_lt_additive" value="4" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="11" Type="1" lookAim="0" />
+      <Quirk name="armorresist_rt_additive" value="4" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="30" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Quirk name="armorresist_ra_additive" value="6" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="armorresist_ll_additive" value="8" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="armorresist_rl_additive" value="8" />
+    </component>
+  </Set>
+  <Set name="vpr-b">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="all_range_multiplier" value="0.1" />
+        <Quirk name="clanerppc_velocity_multiplier" value="0.3" />
+        <Quirk name="clanerppc_heat_multiplier" value="-0.1" />
+        <Quirk name="all_heat_multiplier" value="-0.05" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="jumpjets_heat_multiplier" value="-0.2" />
+      <Quirk name="armorresist_ct_additive" value="10" />
+      <Quirk name="falldamage_multiplier" value="-0.25" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="41" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Quirk name="armorresist_la_additive" value="6" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="21" Type="1" lookAim="0" />
+      <Quirk name="accellerp_all_multiplier" value="0.10" />
+      <Quirk name="decellerp_all_multiplier" value="0.10" />
+      <Quirk name="turnlerp_all_multiplier" value="0.05" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.05" />
+      <Quirk name="armorresist_lt_additive" value="6" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="10" Type="1" lookAim="0" />
+      <Quirk name="accellerp_all_multiplier" value="0.1" />
+      <Quirk name="decellerp_all_multiplier" value="0.1" />
+      <Quirk name="turnlerp_all_multiplier" value="0.05" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.05" />
+      <Quirk name="armorresist_rt_additive" value="6" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="30" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Quirk name="armorresist_ra_additive" value="6" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="armorresist_ll_additive" value="8" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="armorresist_rl_additive" value="8" />
+    </component>
+  </Set>
+  <Set name="vpr-c">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="clanmachinegun_rof_multiplier" value="0.05" />
+        <Quirk name="accellerp_all_multiplier" value="0.1" />
+        <Quirk name="decellerp_all_multiplier" value="0.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Hardpoint ID="0" Type="1" lookAim="0" />
+      <Quirk name="jumpjets_heat_multiplier" value="-0.2" />
+      <Quirk name="armorresist_ct_additive" value="4" />
+      <Quirk name="falldamage_multiplier" value="-0.25" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="42" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Quirk name="armorresist_la_additive" value="4" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="24" Type="0" lookAim="0" />
+      <Quirk name="accellerp_all_multiplier" value="0.1" />
+      <Quirk name="decellerp_all_multiplier" value="0.1" />
+      <Quirk name="turnlerp_all_multiplier" value="0.05" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.05" />
+      <Quirk name="armorresist_lt_additive" value="4" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="14" Type="0" lookAim="0" />
+      <Quirk name="accellerp_all_multiplier" value="0.1" />
+      <Quirk name="decellerp_all_multiplier" value="0.1" />
+      <Quirk name="turnlerp_all_multiplier" value="0.05" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.05" />
+      <Quirk name="armorresist_rt_additive" value="4" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="31" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Quirk name="armorresist_ra_additive" value="4" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="armorresist_ll_additive" value="8" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="armorresist_rl_additive" value="8" />
+    </component>
+  </Set>
+  <Set name="vpr-d">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="missile_cooldown_multiplier" value="-0.3" />
+        <Quirk name="energy_cooldown_multiplier" value="-0.05" />
+        <Quirk name="all_heat_multiplier" value="-0.05" />
+        <Quirk name="ammocapacity_cnarc_additive" value="13" />
+        <Quirk name="ammocapacity_catm_additive" value="105" />
+        <Quirk name="ammocapacity_clrm_additive" value="240" />
+        <Quirk name="ammocapacity_csrm_additive" value="120" />
+        <Quirk name="ammocapacity_cstreak_srm_additive" value="140" />
+        <Quirk name="ammocapacity_clrm_artemis_additive" value="240" />
+        <Quirk name="ammocapacity_csrm_artemis_additive" value="120" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="jumpjets_heat_multiplier" value="-0.2" />
+      <Quirk name="armorresist_ct_additive" value="10" />
+      <Quirk name="falldamage_multiplier" value="-0.25" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="40" Type="2" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Quirk name="armorresist_la_additive" value="6" />
+      <Quirk name="missile_velocity_multiplier" value="0.05" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="21" Type="1" lookAim="0" />
+      <Quirk name="accellerp_all_multiplier" value="0.1" />
+      <Quirk name="decellerp_all_multiplier" value="0.1" />
+      <Quirk name="turnlerp_all_multiplier" value="0.05" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.05" />
+      <Quirk name="armorresist_lt_additive" value="6" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="12" Type="2" lookAim="0" />
+      <Quirk name="accellerp_all_multiplier" value="0.1" />
+      <Quirk name="decellerp_all_multiplier" value="0.1" />
+      <Quirk name="turnlerp_all_multiplier" value="0.05" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.05" />
+      <Quirk name="armorresist_rt_additive" value="6" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="31" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Quirk name="armorresist_ra_additive" value="4" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="armorresist_ll_additive" value="8" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="armorresist_rl_additive" value="8" />
+    </component>
+  </Set>
+  <Set name="vpr-m">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="laser_heat_multiplier" value="-.05" />
+        <Quirk name="laser_range_multiplier" value="0.1" />
+        <Quirk name="accellerp_all_multiplier" value="0.1" />
+        <Quirk name="decellerp_all_multiplier" value="0.1" />
+        <Quirk name="armorresist_la_additive" value="6" />
+        <Quirk name="armorresist_ra_additive" value="6" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Hardpoint ID="1" Type="4" lookAim="0" />
+      <Quirk name="jumpjets_heat_multiplier" value="-0.2" />
+      <Quirk name="armorresist_ct_additive" value="8" />
+      <Quirk name="falldamage_multiplier" value="-0.25" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="43" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="23" Type="2" lookAim="0" />
+      <Quirk name="accellerp_all_multiplier" value="0.1" />
+      <Quirk name="decellerp_all_multiplier" value="0.1" />
+      <Quirk name="turnlerp_all_multiplier" value="0.05" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.05" />
+      <Quirk name="armorresist_lt_additive" value="4" />
+    </component>
+    <component name="right_torso">
+      <Quirk name="accellerp_all_multiplier" value="0.25" />
+      <Quirk name="decellerp_all_multiplier" value="0.25" />
+      <Quirk name="turnlerp_all_multiplier" value="0.1" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.15" />
+      <Quirk name="armorresist_rt_additive" value="8" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="32" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="armorresist_ll_additive" value="8" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="armorresist_rl_additive" value="8" />
+    </component>
+  </Set>
+  <Set name="vpr-f">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="ammocapacity_cmachinegun_additive" value="2000" />
+        <Quirk name="ammocapacity_clightmachinegun_additive" value="3200" />
+        <Quirk name="ammocapacity_cheavymachinegun_additive" value="1600" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Hardpoint ID="0" Type="1" lookAim="0" />
+      <Quirk name="jumpjets_heat_multiplier" value="-0.2" />
+      <Quirk name="armorresist_ct_additive" value="4" />
+      <Quirk name="falldamage_multiplier" value="-0.25" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="44" Type="0" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Quirk name="armorresist_la_additive" value="4" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="21" Type="1" lookAim="0" />
+      <Quirk name="accellerp_all_multiplier" value="0.1" />
+      <Quirk name="decellerp_all_multiplier" value="0.1" />
+      <Quirk name="turnlerp_all_multiplier" value="0.05" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.05" />
+      <Quirk name="armorresist_lt_additive" value="6" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="armorresist_ll_additive" value="8" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="10" Type="1" lookAim="0" />
+      <Quirk name="accellerp_all_multiplier" value="0.1" />
+      <Quirk name="decellerp_all_multiplier" value="0.1" />
+      <Quirk name="turnlerp_all_multiplier" value="0.05" />
+      <Quirk name="torso_yawspeed_multiplier" value="0.05" />
+      <Quirk name="armorresist_rt_additive" value="6" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="armorresist_rl_additive" value="8" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="33" Type="0" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+      <Internal ItemID="1911" Toggleable="1" />
+      <Quirk name="armorresist_ra_additive" value="4" />
+    </component>
+  </Set>
+</OmniPods>

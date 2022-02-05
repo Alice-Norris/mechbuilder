@@ -1,0 +1,169 @@
+<MechDefinition>
+  <Mech Variant="HLF-B" MaxTons="60" BaseTons="10" MaxJumpJets="0" MinEngineRating="120" MaxEngineRating="360" CanEquipMASC="1" />
+  <Cockpit TechSlots="1" ConsumableSlots="1" WeaponModSlots="2" BoneOffset="0.0, 0.0, 0.0" ViewOffset="0.0, -0.08, 0.0" RenderFlag="1" startup="pilot_startup_hellfire" poweron="pilot_poweron_hellfire" poweroff="pilot_poweroff_hellfire" CockpitItemScaleFactor="1.0">
+    <Piece>
+      <Attachment AName="cockpit" SkipMatInstancing="1" Animated="1" />
+    </Piece>
+  </Cockpit>
+  <ComponentList>
+    <Component Name="head" Slots="6" HP="15" RenderFlag="2">
+      <Internal ItemID="1900" />
+      <Internal ItemID="1901" />
+      <Internal ItemID="1902" />
+      <Piece>
+        <Attachment AName="hlf_head_cockpit" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso" Slots="12" HP="40" RenderFlag="2">
+      <Internal ItemID="1903" />
+      <Piece>
+        <Attachment AName="hlf_centre_torso" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_centre_torso_pelvis" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_centre_torso_twist" />
+      </Piece>
+    </Component>
+    <Component Name="right_leg" Slots="6" HP="28" RenderFlag="2">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="hlf_right_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_right_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_right_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_right_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_right_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_right_leg_talon1" />
+      </Piece>
+    </Component>
+    <Component Name="left_leg" Slots="6" HP="28" RenderFlag="2">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="hlf_left_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_left_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_left_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_left_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_left_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_left_leg_talon1" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso" Slots="12" HP="28" RenderFlag="3">
+      <Piece>
+        <Attachment AName="hlf_left_torso" />
+      </Piece>
+      <Hardpoint ID="14" Type="2" lookAim="0" />
+      <Hardpoint ID="10" Type="1" lookAim="0" />
+    </Component>
+    <Component Name="right_torso" Slots="12" HP="28" RenderFlag="3">
+      <Piece>
+        <Attachment AName="hlf_right_torso" />
+      </Piece>
+      <Hardpoint ID="22" Type="2" lookAim="0" />
+      <Hardpoint ID="20" Type="4" lookAim="0" />
+    </Component>
+    <Component Name="right_arm" Slots="12" HP="20" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Internal ItemID="1911" />
+      <Piece>
+        <Attachment AName="hlf_right_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_right_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_right_arm_forearm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_right_arm_forearm_blank_gb3" />
+      </Piece>
+      <Hardpoint ID="30" Type="1" lookAim="1" />
+    </Component>
+    <Component Name="left_arm" Slots="12" HP="20" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Internal ItemID="1911" />
+      <Piece>
+        <Attachment AName="hlf_left_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_left_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_left_arm_forearm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_left_arm_forearm_blank_gb3" />
+      </Piece>
+      <Hardpoint ID="0" Type="1" lookAim="1" />
+    </Component>
+    <Component Name="left_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="hlf_left_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="hlf_centre_torso_rear" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hlf_centre_torso_pelvis_rear" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="hlf_right_torso_rear" />
+      </Piece>
+    </Component>
+  </ComponentList>
+  <MovementTuningConfiguration MovementArchetype="Large" MaxMovementSpeed="16.2" TorsoTurnSpeedYaw="99" TorsoTurnSpeedPitch="56.25" ArmTurnSpeedYaw="225" ArmTurnSpeedPitch="225" TurnLerpLowRate="1.5" TurnLerpMidRate="1.05" TurnLerpHighRate="0.8" AccelLerpLowRate="149.36" AccelLerpMidRate="33.87" AccelLerpHighRate="19.91" DecelLerpLowRate="147.47" DecelLerpMidRate="2225" DecelLerpHighRate="2225" ReverseSpeedMultiplier="0.666" MaxTorsoAngleYaw="90" MaxTorsoAnglePitch="25" MaxArmRotationYaw="20" MaxArmRotationPitch="30" TurnLerpLowSpeed="0" TurnLerpMidSpeed="0.666" TurnLerpHighSpeed="1.0" DecelLerpLowSpeed="0" DecelLerpMidSpeed="0.666" DecelLerpHighSpeed="1.0" AccelLerpLowSpeed="0" AccelLerpMidSpeed="0.666" AccelLerpHighSpeed="1.0" MaxFreeLookYaw="60" MaxFreeLookPitch="40" JumpJetSpread="0" />
+  <AnimationConfiguration>
+    <ArmAim LeftArmAimYaw="BONE_ARM_L" LeftArmAimPitch="BONE_ARM_L" RightArmAimYaw="BONE_ARM_R" RightArmAimPitch="BONE_ARM_R" />
+    <TwistJointList>
+      <TwistJoint Joint="BONE_SPINE" Mode="1" />
+      <TwistJoint Joint="BONE_SPINE2" Mode="2" />
+    </TwistJointList>
+  </AnimationConfiguration>
+  <QuirkList>
+    <Quirk name="heavylaser_range_multiplier" value="0.05" />
+	<Quirk name="all_range_multiplier" value="0.05" />
+    <Quirk name="missile_velocity_multiplier" value="0.05" />
+    <Quirk name="internalresist_ct_additive" value="5" />
+    <Quirk name="internalresist_lt_additive" value="5" />
+    <Quirk name="internalresist_rt_additive" value="5" />
+	<Quirk name="armorresist_ct_additive" value="12" />
+	<Quirk name="armorresist_lt_additive" value="12" />
+	<Quirk name="armorresist_rt_additive" value="12" />
+	<Quirk name="armorresist_la_additive" value="10" />
+	<Quirk name="armorresist_ra_additive" value="10" />
+  </QuirkList>
+</MechDefinition>

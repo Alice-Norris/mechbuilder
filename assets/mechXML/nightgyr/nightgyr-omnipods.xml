@@ -1,0 +1,224 @@
+<OmniPods>
+  <Set name="ntg-prime">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+        <Quirk name="ultraautocannon_cooldown_multiplier" value="-0.1" />
+        <Quirk name="energy_range_multiplier" value="0.05" />
+      </Bonus>
+    </SetBonuses>
+    <component name="left_arm">
+      <Hardpoint ID="44" Type="1" lookAim="1" />
+    </component>
+    <component name="head">
+      <Hardpoint ID="0" Type="1" lookAim="0" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="20" Type="1" lookAim="0" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="30" Type="1" lookAim="0" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="50" Type="0" lookAim="1" />
+    </component>
+    <component name="centre_torso">
+      <Quirk name="externalheat_multiplier" value="-1" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+  </Set>
+  <Set name="ntg-a">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="ballistic_velocity_multiplier" value="0.1" />
+        <Quirk name="missile_cooldown_multiplier" value="-0.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head">
+      <Hardpoint ID="0" Type="1" lookAim="0" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="45" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="21" Type="2" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="10" />
+      <Quirk name="torso_pitchangle_additive" value="2" />
+    </component>
+    <component name="centre_torso">
+      <Quirk name="externalheat_multiplier" value="-1" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="32" Type="2" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="10" />
+      <Quirk name="torso_pitchangle_additive" value="2" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="50" Type="0" lookAim="1" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+  </Set>
+  <Set name="ntg-b">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="clangaussrifle_cooldown_multiplier" value="-0.05" />
+        <Quirk name="ballistic_cooldown_multiplier" value="-0.05" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head">
+      <Hardpoint ID="1" Type="4" lookAim="0" />
+      <Piece>
+        <Attachment AName="ntg_head_cockpit_blank_eh1" />
+      </Piece>
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="41" Type="0" lookAim="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="22" Type="0" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="5" />
+    </component>
+    <component name="centre_torso">
+      <Quirk name="externalheat_multiplier" value="-1" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="31" Type="0" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="5" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="50" Type="0" lookAim="1" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+  </Set>
+  <Set name="ntg-c">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="energy_range_multiplier" value="0.10" />
+        <Quirk name="ballistic_velocity_multiplier" value="0.20" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head">
+      <Hardpoint ID="0" Type="1" lookAim="0" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="43" Type="0" lookAim="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="20" Type="1" lookAim="0" />
+    </component>
+    <component name="centre_torso">
+      <Quirk name="externalheat_multiplier" value="-1" />
+    </component>
+    <component name="right_torso">
+      <Quirk name="torso_yawangle_additive" value="10" />
+      <Quirk name="torso_pitchangle_additive" value="2" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="52" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="right_leg" />
+    <component name="left_leg" />
+  </Set>
+  <Set name="ntg-d">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="energy_cooldown_multiplier" value="-0.1" />
+        <Quirk name="energy_range_multiplier" value="0.05" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head">
+      <Hardpoint ID="0" Type="1" lookAim="0" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="40" Type="2" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="21" Type="2" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="10" />
+      <Quirk name="torso_pitchangle_additive" value="2" />
+    </component>
+    <component name="centre_torso">
+      <Hardpoint ID="10" Type="1" lookAim="0" />
+      <Quirk name="externalheat_multiplier" value="-1" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="51" Type="2" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+    <component name="right_torso">
+      <Hardpoint ID="32" Type="2" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="10" />
+      <Quirk name="torso_pitchangle_additive" value="2" />
+    </component>
+  </Set>
+  <Set name="ntg-jk">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="missile_velocity_multiplier" value="0.1" />
+        <Quirk name="clanerppc_velocity_multiplier" value="0.25" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head">
+      <Piece>
+        <Attachment AName="ntg_head_cockpit_blank_eh1" />
+      </Piece>
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="42" Type="0" lookAim="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="23" Type="0" lookAim="0" />
+    </component>
+    <component name="centre_torso">
+      <Quirk name="externalheat_multiplier" value="-1" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="33" Type="2" lookAim="0" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="52" Type="1" lookAim="1" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+  </Set>
+  <Set name="ntg-hl">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="heavylaser_duration_multiplier" value="-0.1" />
+        <Quirk name="ballistic_cooldown_multiplier" value="-0.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head">
+      <Hardpoint ID="0" Type="1" lookAim="0" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="41" Type="0" lookAim="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="20" Type="1" lookAim="0" />
+    </component>
+    <component name="centre_torso">
+      <Quirk name="externalheat_multiplier" value="-1" />
+    </component>
+    <component name="right_torso" CanEquipECM="1" />
+    <component name="right_arm">
+      <Hardpoint ID="50" Type="0" lookAim="1" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+  </Set>
+</OmniPods>

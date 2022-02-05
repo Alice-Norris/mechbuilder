@@ -1,0 +1,315 @@
+<OmniPods>
+  <Set name="sns-prime">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="ultraautocannon_jamchance_multiplier" value="-0.2" />
+        <Quirk name="energy_cooldown_multiplier" value="-0.15" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="armorresist_ct_additive" value="10" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="3" Type="2" lookAim="1" />
+      <Quirk name="armorresist_la_additive" value="7" />
+    </component>
+    <component name="left_torso" RenderFlag="1">
+      <Hardpoint ID="11" Type="1" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="5" />
+      <Quirk name="armorresist_lt_additive" value="10" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+    <component name="right_torso" RenderFlag="1">
+      <Hardpoint ID="22" Type="0" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="5" />
+      <Quirk name="armorresist_rt_additive" value="10" />
+      <Piece>
+        <Attachment AName="sns_right_torso_blank_gb2" />
+      </Piece>
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="33" Type="2" lookAim="1" />
+      <Quirk name="armorresist_ra_additive" value="7" />
+    </component>
+  </Set>
+  <Set name="sns-a">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="all_range_multiplier" value="0.05" />
+        <Quirk name="energy_range_multiplier" value="0.05" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="armorresist_ct_additive" value="10" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="0" Type="1" lookAim="1" />
+      <Quirk name="armorresist_la_additive" value="7" />
+      <Quirk name="laser_duration_multiplier" value="-0.025" />
+      <Piece>
+        <Attachment AName="sns_left_arm_forearm_blank_gb3" />
+      </Piece>
+    </component>
+    <component name="left_torso" RenderFlag="1">
+      <Hardpoint ID="14" Type="0" lookAim="0" />
+      <Quirk name="armorresist_lt_additive" value="7" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+    <component name="right_torso" RenderFlag="1">
+      <Hardpoint ID="23" Type="0" lookAim="0" />
+      <Quirk name="armorresist_rt_additive" value="7" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="30" Type="1" lookAim="1" />
+      <Quirk name="armorresist_ra_additive" value="7" />
+      <Quirk name="laser_duration_multiplier" value="-0.025" />
+      <Piece>
+        <Attachment AName="sns_right_arm_forearm_blank_gb3" />
+      </Piece>
+    </component>
+  </Set>
+  <Set name="sns-b">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="all_cooldown_multiplier" value="-0.1" />
+        <Quirk name="ballistic_cooldown_multiplier" value="-0.05" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="armorresist_ct_additive" value="10" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="7" Type="1" lookAim="1" />
+      <Hardpoint ID="6" Type="2" lookAim="1" />
+      <Quirk name="armorresist_la_additive" value="7" />
+    </component>
+    <component name="left_torso" RenderFlag="1">
+      <Hardpoint ID="11" Type="1" lookAim="0" />
+      <Hardpoint ID="10" Type="4" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="5" />
+      <Quirk name="armorresist_lt_additive" value="10" />
+      <Piece>
+        <Attachment AName="sns_left_torso_blank_gb2" />
+      </Piece>
+    </component>
+    <component name="left_leg" />
+    <component name="right_torso" RenderFlag="1">
+      <Hardpoint ID="22" Type="0" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="5" />
+      <Quirk name="armorresist_rt_additive" value="10" />
+      <Piece>
+        <Attachment AName="sns_right_torso_blank_gb2" />
+      </Piece>
+    </component>
+    <component name="right_leg" />
+    <component name="right_arm">
+      <Hardpoint ID="36" Type="1" lookAim="1" />
+      <Hardpoint ID="35" Type="2" lookAim="1" />
+      <Quirk name="armorresist_ra_additive" value="7" />
+    </component>
+  </Set>
+  <Set name="sns-c">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="missile_velocity_multiplier" value="0.1" />
+        <Quirk name="targetdecayduration_additive" value="0.5" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="armorresist_ct_additive" value="10" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="3" Type="2" lookAim="1" />
+      <Quirk name="armorresist_la_additive" value="7" />
+    </component>
+    <component name="left_torso" RenderFlag="1">
+      <Hardpoint ID="12" Type="2" lookAim="0" />
+      <Quirk name="armorresist_lt_additive" value="10" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+    <component name="right_torso" RenderFlag="1">
+      <Hardpoint ID="21" Type="2" lookAim="0" />
+      <Quirk name="armorresist_rt_additive" value="10" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="33" Type="2" lookAim="1" />
+      <Quirk name="armorresist_ra_additive" value="7" />
+    </component>
+  </Set>
+  <Set name="sns-d">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="clanmachinegun_rof_multiplier" value="0.2" />
+        <Quirk name="torso_yawangle_additive" value="10" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="armorresist_ct_additive" value="10" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="4" Type="0" lookAim="1" />
+      <Quirk name="armorresist_la_additive" value="7" />
+      <Piece>
+        <Attachment AName="sns_left_arm_forearm_blank_gb3" />
+      </Piece>
+    </component>
+    <component name="left_torso" CanEquipECM="1" RenderFlag="1">
+      <Piece>
+        <Attachment AName="sns_left_torso_blank_gb1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="sns_left_torso_blank_gb2" />
+      </Piece>
+      <Quirk name="torso_yawangle_additive" value="5" />
+      <Quirk name="armorresist_lt_additive" value="7" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+    <component name="right_torso" RenderFlag="1">
+      <Hardpoint ID="23" Type="0" lookAim="0" />
+      <Quirk name="armorresist_rt_additive" value="7" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="34" Type="0" lookAim="1" />
+      <Quirk name="armorresist_ra_additive" value="7" />
+      <Piece>
+        <Attachment AName="sns_right_arm_forearm_blank_gb3" />
+      </Piece>
+    </component>
+  </Set>
+  <Set name="sns-ml">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="ppcfamily_velocity_multiplier" value="0.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+        <Quirk name="accellerp_all_multiplier" value="0.1" />
+        <Quirk name="decellerp_all_multiplier" value="0.1" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="armorresist_ct_additive" value="10" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="1" Type="1" lookAim="1" />
+      <Quirk name="armorresist_la_additive" value="5" />
+    </component>
+    <component name="left_torso" RenderFlag="1">
+      <Hardpoint ID="11" Type="1" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="5" />
+      <Quirk name="armorresist_lt_additive" value="10" />
+      <Piece>
+        <Attachment AName="sns_left_torso_blank_gb2" />
+      </Piece>
+    </component>
+    <component name="right_torso" RenderFlag="1">
+      <Hardpoint ID="20" Type="4" lookAim="0" />
+      <Quirk name="ppcfamily_velocity_multiplier" value="0.1" />
+      <Quirk name="torso_yawangle_additive" value="5" />
+      <Quirk name="erlaser_duration_multiplier" value="-.05" />
+      <Quirk name="armorresist_rt_additive" value="10" />
+      <Piece>
+        <Attachment AName="sns_right_torso_blank_gb1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="sns_right_torso_blank_gb2" />
+      </Piece>
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="31" Type="1" lookAim="1" />
+      <Quirk name="armorresist_ra_additive" value="5" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+  </Set>
+  <Set name="sns-vg">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="ballistic_cooldown_multiplier" value="-0.1" />
+        <Quirk name="energy_cooldown_multiplier" value="-0.15" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="armorresist_ct_additive" value="10" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="2" Type="2" lookAim="1" />
+      <Quirk name="armorresist_la_additive" value="7" />
+      <Quirk name="missile_spread_multiplier" value="-0.05" />
+      <Piece>
+        <Attachment AName="sns_left_arm_forearm_blank_gb2" />
+      </Piece>
+    </component>
+    <component name="left_torso" RenderFlag="1">
+      <Hardpoint ID="15" Type="1" lookAim="0" />
+      <Hardpoint ID="13" Type="0" lookAim="0" />
+      <Quirk name="armorresist_lt_additive" value="7" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+    <component name="right_torso" RenderFlag="1">
+      <Hardpoint ID="22" Type="0" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="5" />
+      <Quirk name="armorresist_rt_additive" value="10" />
+      <Piece>
+        <Attachment AName="sns_right_torso_blank_gb2" />
+      </Piece>
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="33" Type="2" lookAim="1" />
+      <Quirk name="armorresist_ra_additive" value="7" />
+    </component>
+  </Set>
+  <Set name="sns-amb">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="ballistic_velocity_multiplier" value="0.15" />
+        <Quirk name="energy_heat_multiplier" value="-0.05" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso">
+      <Quirk name="armorresist_ct_additive" value="10" />
+    </component>
+    <component name="left_arm">
+      <Quirk name="armorresist_la_additive" value="7" />
+      <Piece>
+        <Attachment AName="sns_left_arm_forearm_blank_gb3" />
+      </Piece>
+      <Hardpoint ID="4" Type="0" lookAim="1" />
+    </component>
+    <component name="left_torso" RenderFlag="1">
+      <Quirk name="armorresist_lt_additive" value="5" />
+      <Hardpoint ID="16" Type="1" lookAim="0" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+    <component name="right_torso" RenderFlag="1">
+      <Quirk name="armorresist_rt_additive" value="5" />
+      <Hardpoint ID="24" Type="1" lookAim="0" />
+    </component>
+    <component name="right_arm">
+      <Quirk name="armorresist_ra_additive" value="7" />
+      <Piece>
+        <Attachment AName="sns_right_arm_forearm_blank_gb3" />
+      </Piece>
+      <Hardpoint ID="34" Type="0" lookAim="1" />
+    </component>
+  </Set>
+</OmniPods>

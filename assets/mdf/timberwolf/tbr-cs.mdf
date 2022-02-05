@@ -1,0 +1,242 @@
+<MechDefinition>
+  <Mech Variant="TBR-CS" VariantType="Special" MaxTons="75" BaseTons="10" MaxJumpJets="0" MinEngineRating="375" MaxEngineRating="375" TPOffset="0,0,0.75" TPAng="-0.09,0,0" PrivateMatchVariantItemID="164" VariantParent="164" />
+  <Cockpit TechSlots="1" ConsumableSlots="1" WeaponModSlots="1" BoneOffset="0.0, 0.0, 0.0" ViewOffset="0.0, -0.08, 0.0" RenderFlag="1" startup="pilot_startup_timberwolf" poweron="pilot_poweron_timberwolf" poweroff="pilot_poweroff_timberwolf" ShakeDamping="0.8" CockpitItemScaleFactor="1.2">
+    <Piece>
+      <Attachment AName="cockpit" SkipMatInstancing="1" Animated="1" />
+    </Piece>
+  </Cockpit>
+  <ComponentList>
+    <Component Name="head" Slots="6" HP="15" RenderFlag="2" OmniSlot="1">
+      <Internal ItemID="1900" />
+      <!--Life Support-->
+      <Internal ItemID="1901" />
+      <!--Sensors-->
+      <Internal ItemID="1902" />
+      <!--Cockpit-->
+      <Internal ItemID="1912" />
+      <!--Fixed Armor Slot-->
+      <Piece>
+        <Attachment AName="tbr_head_cockpit" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso" Slots="12" HP="46" RenderFlag="2" OmniSlot="1" OmniPod="30011">
+      <Internal ItemID="1903" />
+      <!--Gyro-->
+      <Internal ItemID="1913" />
+      <!--Fixed Structure Slot-->
+      <Fixed ItemID="3473" />
+      <!--XL 375 Engine-->
+      <Fixed ItemID="3004" />
+      <!--Double Heat Sink-->
+      <Fixed ItemID="3004" />
+      <!--Double Heat Sink-->
+      <Fixed ItemID="3004" />
+      <!--Double Heat Sink-->
+      <Fixed ItemID="3004" />
+      <!--Double Heat Sink-->
+      <Fixed ItemID="3004" />
+      <!--Double Heat Sink-->
+      <Piece>
+        <Attachment AName="tbr_centre_torso" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_centre_torso_pelvis" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_centre_torso_twist" />
+      </Piece>
+    </Component>
+    <Component Name="right_leg" Slots="6" HP="32" OmniSlot="1">
+      <Internal ItemID="1904" />
+      <!--Hip-->
+      <Internal ItemID="1905" />
+      <!--Upper Leg Actuator-->
+      <Internal ItemID="1906" />
+      <!--Lower Leg Actuator-->
+      <Internal ItemID="1907" />
+      <!--Foot Actuator-->
+      <Internal ItemID="1913" />
+      <!--Fixed Structure Slot-->
+      <Internal ItemID="1913" />
+      <!--Fixed Structure Slot-->
+      <Piece>
+        <Attachment AName="tbr_right_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_leg_toe_index1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_leg_toe_index2" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_leg_toe_pinky1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_leg_toe_pinky2" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_leg_talon0" />
+      </Piece>
+    </Component>
+    <Component Name="left_leg" Slots="6" HP="32" OmniSlot="1">
+      <Internal ItemID="1904" />
+      <!--Hip-->
+      <Internal ItemID="1905" />
+      <!--Upper Leg Actuator-->
+      <Internal ItemID="1906" />
+      <!--Lower Leg Actuator-->
+      <Internal ItemID="1907" />
+      <!--Foot Actuator-->
+      <Internal ItemID="1913" />
+      <!--Fixed Structure Slot-->
+      <Internal ItemID="1913" />
+      <!--Fixed Structure Slot-->
+      <Piece>
+        <Attachment AName="tbr_left_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_leg_toe_index1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_leg_toe_index2" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_leg_toe_pinky1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_leg_toe_pinky2" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_leg_talon0" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso" Slots="12" HP="32" OmniSlot="1">
+      <Internal ItemID="1912" />
+      <!--Fixed Armor Slot-->
+      <Internal ItemID="1912" />
+      <!--Fixed Armor Slot-->
+      <Internal ItemID="1913" />
+      <!--Fixed Structure Slot-->
+      <Piece>
+        <Attachment AName="tbr_left_torso_shoulder_blank" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_torso" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso" Slots="12" HP="32" OmniSlot="1">
+      <Internal ItemID="1912" />
+      <!--Fixed Armor Slot-->
+      <Internal ItemID="1912" />
+      <!--Fixed Armor Slot-->
+      <Internal ItemID="1913" />
+      <!--Fixed Structure Slot-->
+      <Piece>
+        <Attachment AName="tbr_right_torso_shoulder_blank" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_torso" />
+      </Piece>
+    </Component>
+    <Component Name="right_arm" Slots="12" HP="24" destroyedMeshSuffix="_damaged" OmniSlot="1">
+      <Internal ItemID="1908" />
+      <!--Shoulder-->
+      <Internal ItemID="1909" />
+      <!--Upper Arm Actuator-->
+      <!--Lower Arm Actuator-->
+      <Internal ItemID="1912" />
+      <!--Fixed Armor Slot-->
+      <Piece>
+        <Attachment AName="tbr_right_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_arm_forearm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_arm_forearm_blank" />
+      </Piece>
+    </Component>
+    <Component Name="left_arm" Slots="12" HP="24" destroyedMeshSuffix="_damaged" OmniSlot="1">
+      <Internal ItemID="1908" />
+      <!--Shoulder-->
+      <Internal ItemID="1909" />
+      <!--Upper Arm Actuator-->
+      <!--Lower Arm Actuator-->
+      <Internal ItemID="1912" />
+      <!--Fixed Armor Slot-->
+      <Piece>
+        <Attachment AName="tbr_left_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_arm_forearm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_arm_forearm_blank" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="tbr_left_torso_rear" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_left_torso_rear_jumpjet" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="tbr_centre_torso_rear" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_centre_torso_pelvis_rear" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_centre_torso_rear_jumpjet" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="tbr_right_torso_rear" />
+      </Piece>
+      <Piece>
+        <Attachment AName="tbr_right_torso_rear_jumpjet" />
+      </Piece>
+    </Component>
+  </ComponentList>
+  <MovementTuningConfiguration MovementArchetype="Large" MaxMovementSpeed="16.2" TorsoTurnSpeedYaw="99" TorsoTurnSpeedPitch="47.81" ArmTurnSpeedYaw="191.25" ArmTurnSpeedPitch="191.25" TurnLerpLowRate="1.5" TurnLerpMidRate="1.05" TurnLerpHighRate="0.8" AccelLerpLowRate="129.01" AccelLerpMidRate="29.26" AccelLerpHighRate="17.2" DecelLerpLowRate="158.39" DecelLerpMidRate="2375" DecelLerpHighRate="2375" ReverseSpeedMultiplier="0.666" MaxTorsoAngleYaw="95" MaxTorsoAnglePitch="25" MaxArmRotationYaw="25" MaxArmRotationPitch="30" TurnLerpLowSpeed="0" TurnLerpMidSpeed="0.666" TurnLerpHighSpeed="1.0" DecelLerpLowSpeed="0" DecelLerpMidSpeed="0.666" DecelLerpHighSpeed="1.0" AccelLerpLowSpeed="0" AccelLerpMidSpeed="0.666" AccelLerpHighSpeed="1.0" MaxFreeLookYaw="60" MaxFreeLookPitch="40" JumpJetSpread="2.625" MaxArmActuators="2" MaxArmYawAcutatorNone="0" MaxArmYawActuatorOne="10" />
+  <AnimationConfiguration>
+    <ArmAim LeftArmAimYaw="BONE_ARM_L" LeftArmAimPitch="BONE_ARM_L" RightArmAimYaw="BONE_ARM_R" RightArmAimPitch="BONE_ARM_R" />
+    <TwistJointList>
+      <TwistJoint Joint="BONE_SPINE2" Mode="3" />
+    </TwistJointList>
+  </AnimationConfiguration>
+</MechDefinition>

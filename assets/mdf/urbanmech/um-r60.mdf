@@ -1,0 +1,169 @@
+<!-- this is SINGLETOE TEMPLATE -->
+<MechDefinition>
+  <Mech Variant="UM-R60" MaxTons="30" BaseTons="10" MaxJumpJets="4" MinEngineRating="60" MaxEngineRating="180" />
+  <Cockpit TechSlots="1" ConsumableSlots="1" WeaponModSlots="2" BoneOffset="0.0, 0.0, 0.0" ViewOffset="0.0, -0.08, 0.0" RenderFlag="1" ShakeDamping="0.9" startup="pilot_startup_urbanmech" poweron="pilot_poweron_urbanmech" poweroff="pilot_poweroff_urbanmech" CockpitItemScaleFactor="1.0">
+    <Piece>
+      <Attachment AName="cockpit" SkipMatInstancing="1" Animated="1" />
+    </Piece>
+  </Cockpit>
+  <ComponentList>
+    <Component Name="head" Slots="6" HP="15" RenderFlag="2">
+      <Internal ItemID="1900" />
+      <Internal ItemID="1901" />
+      <Internal ItemID="1902" />
+      <Piece>
+        <Attachment AName="um_head_cockpit" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso" Slots="12" HP="20" RenderFlag="2">
+      <Internal ItemID="1903" />
+      <Piece>
+        <Attachment AName="um_centre_torso" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_centre_torso_pelvis" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_centre_torso_twist" />
+      </Piece>
+    </Component>
+    <Component Name="right_leg" Slots="6" HP="14" RenderFlag="2">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="um_right_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_right_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_right_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_right_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_right_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_right_leg_talon0" />
+      </Piece>
+    </Component>
+    <Component Name="left_leg" Slots="6" HP="14" RenderFlag="2">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="um_left_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_left_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_left_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_left_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_left_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_left_leg_talon0" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso" Slots="12" HP="14" RenderFlag="2">
+      <Piece>
+        <Attachment AName="um_left_torso" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso" Slots="12" HP="14" RenderFlag="2">
+      <Piece>
+        <Attachment AName="um_right_torso" />
+      </Piece>
+      <Hardpoint ID="10" Type="4" lookAim="0" />
+    </Component>
+    <Component Name="right_arm" Slots="12" HP="10" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Piece>
+        <Attachment AName="um_right_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_right_arm_forearm" />
+      </Piece>
+      <Hardpoint ID="32" Type="0" lookAim="1" />
+    </Component>
+    <Component Name="left_arm" Slots="12" HP="10" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Piece>
+        <Attachment AName="um_left_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_left_arm_forearm" />
+      </Piece>
+      <Hardpoint ID="41" Type="1" lookAim="1" />
+    </Component>
+    <Component Name="left_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="um_left_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="um_centre_torso_rear" />
+      </Piece>
+      <Piece>
+        <Attachment AName="um_centre_torso_pelvis_rear" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="um_right_torso_rear" />
+      </Piece>
+    </Component>
+  </ComponentList>
+  <MovementTuningConfiguration MovementArchetype="Tiny" MaxMovementSpeed="16.2" TorsoTurnSpeedYaw="175.5" TorsoTurnSpeedPitch="87.19" ArmTurnSpeedYaw="348.75" ArmTurnSpeedPitch="348.75" TurnLerpLowRate="2.5" TurnLerpMidRate="1.75" TurnLerpHighRate="1.33" AccelLerpLowRate="291.76" AccelLerpMidRate="66.16" AccelLerpHighRate="38.9" DecelLerpLowRate="196.62" DecelLerpMidRate="2900" DecelLerpHighRate="2900" ReverseSpeedMultiplier="0.666" MaxTorsoAngleYaw="360" MaxTorsoAnglePitch="30" MaxArmRotationYaw="0" MaxArmRotationPitch="30" TurnLerpLowSpeed="0" TurnLerpMidSpeed="0.666" TurnLerpHighSpeed="1.0" DecelLerpLowSpeed="0" DecelLerpMidSpeed="0.666" DecelLerpHighSpeed="1.0" AccelLerpLowSpeed="0" AccelLerpMidSpeed="0.666" AccelLerpHighSpeed="1.0" MaxFreeLookYaw="60" MaxFreeLookPitch="40" JumpJetSpread="1.25" />
+  <AnimationConfiguration>
+    <ArmAim LeftArmAimYaw="BONE_ARM_L" LeftArmAimPitch="BONE_ARM_L" RightArmAimYaw="BONE_ARM_R" RightArmAimPitch="BONE_ARM_R" />
+    <TwistJointList>
+      <TwistJoint Joint="BONE_SPINE2" Mode="3" />
+    </TwistJointList>
+  </AnimationConfiguration>
+  <QuirkList>
+    <Quirk name="heatdissipation_multiplier" value="0.05" />
+    <Quirk name="ballistic_cooldown_multiplier" value="-0.15" />
+    <Quirk name="ballistic_range_multiplier" value="0.1" />
+    <Quirk name="ballistic_velocity_multiplier" value="0.1" />
+    <Quirk name="energy_cooldown_multiplier" value="-0.1" />
+	<Quirk name="ismachinegun_rof_multiplier" value="0.3" />
+	<Quirk name="autocannon_cooldown_multiplier" value="-0.05" />
+    <Quirk name="armorresist_ct_additive" value="20" />
+    <Quirk name="armorresist_lt_additive" value="14" />
+    <Quirk name="armorresist_rt_additive" value="14" />
+    <Quirk name="armorresist_la_additive" value="14" />
+    <Quirk name="armorresist_ra_additive" value="14" />
+    <Quirk name="armorresist_ll_additive" value="14" />
+    <Quirk name="armorresist_rl_additive" value="14" />
+	<Quirk name="ammocapacity_ac2_additive" value="87"/>
+	<Quirk name="ammocapacity_ac5_additive" value="35"/>
+	<Quirk name="ammocapacity_ac10_additive" value="23"/>
+	<Quirk name="ammocapacity_ac20_additive" value="8"/>
+	<Quirk name="ammocapacity_lb2x_additive" value="87"/>
+	<Quirk name="ammocapacity_lb5x_additive" value="35"/>
+	<Quirk name="ammocapacity_lb10x_additive" value="23"/>
+	<Quirk name="ammocapacity_gauss_additive" value="10"/>
+	<Quirk name="ammocapacity_lightgauss_additive" value="20"/>
+	<Quirk name="ammocapacity_ultraac2_additive" value="87"/>
+	<Quirk name="ammocapacity_ultraac5_additive" value="35"/>
+	<Quirk name="ammocapacity_ultraac10_additive" value="46"/>
+	<Quirk name="ammocapacity_ultraac20_additive" value="24"/>
+	<Quirk name="ammocapacity_rotary_ac2_additive" value="350"/>
+	<Quirk name="ammocapacity_rotary_ac5_additive" value="175"/>
+	<Quirk name="overheatdamage_multiplier" value="-0.25" />
+  </QuirkList>
+</MechDefinition>

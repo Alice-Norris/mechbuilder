@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<Hardpoints SearchTable="Objects/mechs/hardpointsearchcriteria.xml">
+	<!--CENTER TORSO-->
+	<Hardpoint id="0">
+		<!--Center Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="SnubNosePPC" AName="ghr_centre_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="ghr_centre_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="ghr_centre_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_centre_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_centre_torso_laser_eh1"/>
+			<Attachment search="Default" AName="ghr_centre_torso_blank_eb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="1">
+		<!--Center Torso, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="SnubNosePPC" AName="ghr_centre_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="ghr_centre_torso_lppc_eh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="ghr_centre_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_centre_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_centre_torso_laser_eh1"/>
+			<Attachment search="Default" AName="ghr_centre_torso_blank_eb1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="ghr_centre_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="ghr_centre_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="ghr_centre_torso_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--RIGHT TORSO-->
+	<Hardpoint id="10">
+		<!--Right Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="ghr_right_torso_lams_ah1" animated="1"/>
+			<Attachment search="AntiMissileSystem" AName="ghr_right_torso_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="11">
+		<!--Right Torso, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_right_torso_hppc_eh1"/>
+			<Attachment search="PPC" AName="ghr_right_torso_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="ghr_right_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="ghr_right_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="ghr_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_right_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_right_torso_hppc_eh2"/>
+			<Attachment search="PPC" AName="ghr_right_torso_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="ghr_right_torso_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="ghr_right_torso_lppc_eh2"/>
+			<Attachment search="Laser" AName="ghr_right_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="ghr_right_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="ghr_right_torso_laser_eh2"/>
+			<Attachment search="Default" AName="ghr_right_torso_blank_eb2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="12">
+		<!--Right Torso, 3 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_right_torso_hppc_eh1"/>
+			<Attachment search="PPC" AName="ghr_right_torso_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="ghr_right_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="ghr_right_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="ghr_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_right_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_right_torso_hppc_eh2"/>
+			<Attachment search="PPC" AName="ghr_right_torso_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="ghr_right_torso_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="ghr_right_torso_lppc_eh2"/>
+			<Attachment search="Laser" AName="ghr_right_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="ghr_right_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="ghr_right_torso_laser_eh2"/>
+			<Attachment search="Default" AName="ghr_right_torso_blank_eb2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_right_torso_hppc_eh3"/>
+			<Attachment search="PPC" AName="ghr_right_torso_ppc_eh3"/>
+			<Attachment search="SnubNosePPC" AName="ghr_right_torso_snppc_eh3"/>
+			<Attachment search="LightPPC" AName="ghr_right_torso_lppc_eh3"/>
+			<Attachment search="Laser" AName="ghr_right_torso_laser_eh3"/>
+			<Attachment search="Flamer" AName="ghr_right_torso_flamer_eh3"/>
+			<Attachment search="Energy" AName="ghr_right_torso_laser_eh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--LEFT TORSO-->
+	<Hardpoint id="20">
+		<!--Left Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="ghr_left_torso_lams_ah1" animated="1"/>
+			<Attachment search="AntiMissileSystem" AName="ghr_left_torso_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="21">
+		<!--Left Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_left_torso_hppc_eh1"/>
+			<Attachment search="PPC" AName="ghr_left_torso_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="ghr_left_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="ghr_left_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="ghr_left_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_left_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_left_torso_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="22">
+		<!--Left Torso, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_left_torso_hppc_eh1"/>
+			<Attachment search="PPC" AName="ghr_left_torso_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="ghr_left_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="ghr_left_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="ghr_left_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_left_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_left_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_left_torso_hppc_eh2"/>
+			<Attachment search="PPC" AName="ghr_left_torso_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="ghr_left_torso_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="ghr_left_torso_lppc_eh2"/>
+			<Attachment search="Laser" AName="ghr_left_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="ghr_left_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="ghr_left_torso_laser_eh2"/>
+			<Attachment search="Default" AName="ghr_left_torso_blank_eb2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="23">
+		<!--Left Torso, 3 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_left_torso_hppc_eh1"/>
+			<Attachment search="PPC" AName="ghr_left_torso_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="ghr_left_torso_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="ghr_left_torso_lppc_eh1"/>
+			<Attachment search="Laser" AName="ghr_left_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_left_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_left_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_left_torso_hppc_eh2"/>
+			<Attachment search="PPC" AName="ghr_left_torso_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="ghr_left_torso_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="ghr_left_torso_lppc_eh2"/>
+			<Attachment search="Laser" AName="ghr_left_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="ghr_left_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="ghr_left_torso_laser_eh2"/>
+			<Attachment search="Default" AName="ghr_left_torso_blank_eb2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_left_torso_hppc_eh3"/>
+			<Attachment search="PPC" AName="ghr_left_torso_ppc_eh3"/>
+			<Attachment search="SnubNosePPC" AName="ghr_left_torso_snppc_eh3"/>
+			<Attachment search="LightPPC" AName="ghr_left_torso_lppc_eh3"/>
+			<Attachment search="Laser" AName="ghr_left_torso_laser_eh3"/>
+			<Attachment search="Flamer" AName="ghr_left_torso_flamer_eh3"/>
+			<Attachment search="Energy" AName="ghr_left_torso_laser_eh3"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--RIGHT ARM-->
+	<Hardpoint id="30">
+		<!--Right Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="ghr_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="ghr_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="ghr_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="ghr_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Default" AName="ghr_right_arm_forearm_blank_eb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="31">
+		<!--Right Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="ghr_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="ghr_right_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="ghr_right_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="ghr_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Default" AName="ghr_right_arm_forearm_blank_eb1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_right_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="ghr_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="ghr_right_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="ghr_right_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="ghr_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="ghr_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="ghr_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--LEFT ARM-->
+	<Hardpoint id="40">
+		<!--Left Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="ghr_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="ghr_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="ghr_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="ghr_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Default" AName="ghr_left_arm_forearm_blank_eb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="41">
+		<!--Left Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="ghr_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="ghr_left_arm_forearm_snppc_eh1"/>
+			<Attachment search="LightPPC" AName="ghr_left_arm_forearm_lppc_eh1"/>
+			<Attachment search="Laser" AName="ghr_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Default" AName="ghr_left_arm_forearm_blank_eb1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="ghr_left_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="ghr_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="ghr_left_arm_forearm_snppc_eh2"/>
+			<Attachment search="LightPPC" AName="ghr_left_arm_forearm_lppc_eh2"/>
+			<Attachment search="Laser" AName="ghr_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="ghr_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="ghr_left_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="42">
+		<!--Left Arm, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="GaussRifle" AName="ghr_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="ghr_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="ghr_left_arm_forearm_ac10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="ghr_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon5" AName="ghr_left_arm_forearm_rac5_bh1" animated="1"/>
+			<Attachment search="LightGaussRifle" AName="ghr_left_arm_forearm_lgauss_bh1"/>
+			<Attachment search="UltraAutoCannon5" AName="ghr_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="ghr_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="ghr_left_arm_forearm_ac5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="ghr_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="RotaryAutoCannon2" AName="ghr_left_arm_forearm_rac2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="ghr_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="ghr_left_arm_forearm_ac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="ghr_left_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="ghr_left_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="ghr_left_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="ghr_left_arm_forearm_ac5_bh1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<!--HEAD-->
+	<Hardpoint id="50">
+		<!--Head, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="Laser" AName="ghr_head_laser_eh1"/>
+			<Attachment search="Flamer" AName="ghr_head_flamer_eh1"/>
+			<Attachment search="Energy" AName="ghr_head_laser_eh1"/>
+			<Attachment search="Default" AName="ghr_head_blank_gb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="51">
+		<!--Head, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile5" AName="ghr_head_missile5_mh1"/>
+			<Attachment search="Missile4" AName="ghr_head_missile4_mh1"/>
+			<Attachment search="Missile2" AName="ghr_head_missile2_mh1"/>
+			<Attachment search="RocketLauncher10" AName="ghr_head_rl10_mh1"/>
+			<Attachment search="Missile" AName="ghr_head_missile5_mh1"/>
+			<Attachment search="Default" AName="ghr_head_blank_gb1"/>
+		</WeaponSlot>
+	</Hardpoint>
+</Hardpoints>

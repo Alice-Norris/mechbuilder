@@ -1,0 +1,181 @@
+<MechDefinition>
+  <Mech Variant="WVR-7K" MaxTons="55" BaseTons="10" MaxJumpJets="7" MinEngineRating="110" MaxEngineRating="360" />
+  <Cockpit TechSlots="1" ConsumableSlots="1" WeaponModSlots="2" BoneOffset="0.0, 0.0, 0.0" ViewOffset="0.0, -0.08, 0.0" RenderFlag="1" ShakeDamping="0.85" startup="pilot_startup_wolverine" poweron="pilot_poweron_wolverine" poweroff="pilot_poweroff_wolverine" CockpitItemScaleFactor="0.858756">
+    <Piece>
+      <Attachment AName="cockpit" SkipMatInstancing="1" Animated="1" />
+    </Piece>
+  </Cockpit>
+  <ComponentList>
+    <Component Name="head" Slots="6" HP="15" RenderFlag="2">
+      <Internal ItemID="1900" />
+      <Internal ItemID="1901" />
+      <Internal ItemID="1902" />
+      <Piece>
+        <Attachment AName="wvr_head_cockpit" />
+      </Piece>
+      <Hardpoint ID="50" Type="1" Slots="1" lookAim="0" />
+    </Component>
+    <Component Name="centre_torso" Slots="12" HP="36" RenderFlag="2">
+      <Internal ItemID="1903" />
+      <Piece>
+        <Attachment AName="wvr_centre_torso" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_centre_torso_pelvis" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_centre_torso_twist" />
+      </Piece>
+    </Component>
+    <Component Name="right_leg" Slots="6" HP="26">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="wvr_right_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_right_leg_flap_side" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_right_leg_flap_back" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_right_leg_flap_front" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_right_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_right_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_right_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_right_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_right_leg_talon1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_right_leg_talon2" />
+      </Piece>
+    </Component>
+    <Component Name="left_leg" Slots="6" HP="26">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="wvr_left_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_left_leg_flap_side" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_left_leg_flap_back" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_left_leg_flap_front" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_left_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_left_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_left_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_left_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_left_leg_talon1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_left_leg_talon2" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso" Slots="12" HP="26">
+      <Piece>
+        <Attachment AName="wvr_left_torso" />
+      </Piece>
+      <Hardpoint ID="21" Type="2" Slots="1" lookAim="0" />
+    </Component>
+    <Component Name="right_torso" Slots="12" HP="26">
+      <Piece>
+        <Attachment AName="wvr_right_torso" />
+      </Piece>
+      <Hardpoint ID="10" Type="2" Slots="1" lookAim="0" />
+      <Hardpoint ID="12" Type="4" Slots="1" lookAim="0" />
+    </Component>
+    <Component Name="right_arm" Slots="12" HP="18" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Internal ItemID="1911" />
+      <Piece>
+        <Attachment AName="wvr_right_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_right_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_right_arm_forearm" />
+      </Piece>
+      <Hardpoint ID="32" Type="1" Slots="1" lookAim="1" />
+    </Component>
+    <Component Name="left_arm" Slots="12" HP="18" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Internal ItemID="1911" />
+      <Piece>
+        <Attachment AName="wvr_left_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_left_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_left_arm_forearm" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="wvr_left_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="wvr_centre_torso_rear" />
+      </Piece>
+      <Piece>
+        <Attachment AName="wvr_centre_torso_pelvis_rear" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="wvr_right_torso_rear" />
+      </Piece>
+    </Component>
+  </ComponentList>
+  <MovementTuningConfiguration MovementArchetype="Medium" MaxMovementSpeed="16.2" TorsoTurnSpeedYaw="144" TorsoTurnSpeedPitch="90" ArmTurnSpeedYaw="360" ArmTurnSpeedPitch="360" TurnLerpLowRate="2" TurnLerpMidRate="1.4" TurnLerpHighRate="1.07" AccelLerpLowRate="230.73" AccelLerpMidRate="52.32" AccelLerpHighRate="30.76" DecelLerpLowRate="174.78" DecelLerpMidRate="2600" DecelLerpHighRate="2600" ReverseSpeedMultiplier="0.666" MaxTorsoAngleYaw="125" MaxTorsoAnglePitch="30" MaxArmRotationYaw="30" MaxArmRotationPitch="35" TurnLerpLowSpeed="0" TurnLerpMidSpeed="0.666" TurnLerpHighSpeed="1.0" DecelLerpLowSpeed="0" DecelLerpMidSpeed="0.666" DecelLerpHighSpeed="1.0" AccelLerpLowSpeed="0" AccelLerpMidSpeed="0.666" AccelLerpHighSpeed="1.0" MaxFreeLookYaw="60" MaxFreeLookPitch="40" JumpJetSpread="1.9375" />
+  <AnimationConfiguration>
+    <ArmAim LeftArmAimYaw="BONE_ARM_L" LeftArmAimPitch="BONE_ARM_L" RightArmAimYaw="BONE_ARM_R" RightArmAimPitch="BONE_ARM_R" />
+    <TwistJointList>
+      <TwistJoint Joint="BONE_SPINE" Mode="1" />
+      <TwistJoint Joint="BONE_SPINE2" Mode="2" />
+    </TwistJointList>
+  </AnimationConfiguration>
+  <QuirkList>
+    <Quirk name="laser_duration_multiplier" value="-0.1" />
+    <Quirk name="energy_range_multiplier" value="0.1" />
+    <Quirk name="missile_cooldown_multiplier" value="-0.15" />
+    <Quirk name="missile_range_multiplier" value="0.1" />
+    <Quirk name="internalresist_ct_additive" value="15" />
+    <Quirk name="internalresist_ra_additive" value="18" />
+  </QuirkList>
+</MechDefinition>

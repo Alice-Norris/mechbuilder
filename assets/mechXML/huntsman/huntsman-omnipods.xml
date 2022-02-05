@@ -1,0 +1,228 @@
+<OmniPods>
+  <Set name="hmn-prime">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="ballistic_cooldown_multiplier" value="-0.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+        <Quirk name="missile_heat_multiplier" value="-.1" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso" />
+    <component name="left_arm">
+      <Hardpoint ID="25" Type="1" lookAim="1" />
+      <Hardpoint ID="22" Type="2" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="1" Type="1" lookAim="0" />
+      <Hardpoint ID="0" Type="4" lookAim="0" />
+      <Piece>
+        <Attachment AName="hmn_left_torso_mh1_blank" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hmn_left_torso_mh2_blank" />
+      </Piece>
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="13" Type="2" lookAim="0" />
+      <Piece>
+        <Attachment AName="hmn_right_torso_mh2_blank" />
+      </Piece>
+      <Quirk name="torso_yawangle_additive" value="20" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="36" Type="1" lookAim="1" />
+      <Hardpoint ID="35" Type="0" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+  </Set>
+  <Set name="hmn-a">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="pulselaser_cooldown_multiplier" value="-0.05" />
+        <Quirk name="pulselaser_range_multiplier" value="0.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso" />
+    <component name="left_arm">
+      <Hardpoint ID="26" Type="1" lookAim="1" />
+      <Hardpoint ID="22" Type="2" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="left_torso">
+      <Piece>
+        <Attachment AName="hmn_left_torso_mh1_blank" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hmn_left_torso_mh2_blank" />
+      </Piece>
+      <Quirk name="torso_yawangle_additive" value="20" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_torso">
+      <Piece>
+        <Attachment AName="hmn_right_torso_mh1_blank" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hmn_right_torso_mh2_blank" />
+      </Piece>
+      <Quirk name="torso_yawangle_additive" value="20" />
+    </component>
+    <component name="right_leg" />
+    <component name="right_arm">
+      <Hardpoint ID="37" Type="1" lookAim="1" />
+      <Hardpoint ID="35" Type="0" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+  </Set>
+  <Set name="hmn-b">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="clanlbxautocannon10_cooldown_multiplier" value="-0.05" />
+        <Quirk name="ballistic_velocity_multiplier" value="0.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso" />
+    <component name="left_arm">
+      <Hardpoint ID="24" Type="0" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="left_torso">
+      <Piece>
+        <Attachment AName="hmn_left_torso_mh1_blank" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hmn_left_torso_mh2_blank" />
+      </Piece>
+      <Quirk name="torso_yawangle_additive" value="20" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_torso">
+      <Hardpoint ID="15" Type="0" lookAim="0" />
+      <Piece>
+        <Attachment AName="hmn_right_torso_mh1_blank" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hmn_right_torso_mh2_blank" />
+      </Piece>
+      <Quirk name="torso_yawangle_additive" value="10" />
+    </component>
+    <component name="right_leg" />
+    <component name="right_arm">
+      <Hardpoint ID="32" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+  </Set>
+  <Set name="hmn-c">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="ultraautocannon_jamchance_multiplier" value="-.15" />
+        <Quirk name="lrm_spread_multiplier" value="-.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso" />
+    <component name="left_arm">
+      <Hardpoint ID="24" Type="0" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="1" Type="1" lookAim="0" />
+      <Hardpoint ID="2" Type="2" lookAim="0" />
+      <Piece>
+        <Attachment AName="hmn_left_torso_mh2_blank" />
+      </Piece>
+    </component>
+    <component name="left_leg" />
+    <component name="right_torso">
+      <Hardpoint ID="11" Type="1" lookAim="0" />
+      <Hardpoint ID="13" Type="2" lookAim="0" />
+      <Piece>
+        <Attachment AName="hmn_right_torso_mh2_blank" />
+      </Piece>
+      <Quirk name="torso_yawangle_additive" value="10" />
+    </component>
+    <component name="right_leg" />
+    <component name="right_arm">
+      <Hardpoint ID="33" Type="2" lookAim="1" />
+    </component>
+  </Set>
+  <Set name="hmn-p">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="erlaser_range_multiplier" value=".05" />
+        <Quirk name="streaksrm_cooldown_multiplier" value="-0.05" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso" />
+    <component name="left_arm">
+      <Hardpoint ID="23" Type="2" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="4" Type="0" lookAim="0" />
+      <Piece>
+        <Attachment AName="hmn_left_torso_mh1_blank" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hmn_left_torso_mh2_blank" />
+      </Piece>
+      <Quirk name="torso_yawangle_additive" value="20" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+    <component name="right_arm">
+      <Hardpoint ID="34" Type="2" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="12" Type="1" lookAim="0" />
+      <Piece>
+        <Attachment AName="hmn_right_torso_mh1_blank" />
+      </Piece>
+      <Piece>
+        <Attachment AName="hmn_right_torso_mh2_blank" />
+      </Piece>
+    </component>
+  </Set>
+  <Set name="hmn-pa">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="missile_velocity_multiplier" value=".1" />
+        <Quirk name="turnlerp_all_multiplier" value=".15" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" />
+    <component name="centre_torso" />
+    <component name="left_arm">
+      <Hardpoint ID="20" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="3" Type="2" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="20" />
+    </component>
+    <component name="left_leg" />
+    <component name="right_leg" />
+    <component name="right_torso">
+      <Hardpoint ID="10" Type="4" lookAim="0" />
+      <Hardpoint ID="14" Type="2" lookAim="0" />
+      <Quirk name="torso_yawangle_additive" value="20" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="31" Type="1" lookAim="1" />
+      <Internal ItemID="1910" Toggleable="1" />
+    </component>
+  </Set>
+</OmniPods>

@@ -1,0 +1,222 @@
+<OmniPods>
+  <Set name="bkl-prime">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="missile_cooldown_multiplier" value="-0.1" />
+        <Quirk name="missile_velocity_multiplier" value="0.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" CanEquipECM="1" />
+    <component name="centre_torso">
+      <Quirk name="all_range_multiplier" value="0.1" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="10" Type="1" lookAim="1" />
+      <Quirk name="armorresist_la_additive" value="5" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="21" Type="2" lookAim="0" />
+      <Quirk name="internalresist_lt_additive" value="5" />
+      <Quirk name="turnrate_multiplier" value="0.05" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="internalresist_ll_additive" value="5" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="31" Type="2" lookAim="0" />
+      <Quirk name="internalresist_rt_additive" value="5" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="internalresist_rl_additive" value="5" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="40" Type="1" lookAim="1" />
+      <Quirk name="armorresist_ra_additive" value="8" />
+    </component>
+  </Set>
+  <Set name="bkl-a">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="ppcfamily_velocity_multiplier" value=".2" />
+        <Quirk name="targetdecayduration_additive" value="1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head" CanEquipECM="1" />
+    <component name="centre_torso">
+      <Quirk name="all_range_multiplier" value="0.1" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="10" Type="1" lookAim="1" />
+      <Quirk name="internalresist_la_additive" value="10" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="20" Type="1" lookAim="0" />
+      <Quirk name="internalresist_lt_additive" value="5" />
+      <Quirk name="turnrate_multiplier" value="0.05" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="internalresist_ll_additive" value="5" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="internalresist_rl_additive" value="5" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="30" Type="4" lookAim="0" />
+      <Quirk name="armorresist_rt_additive" value="9" />
+      <Quirk name="turnrate_multiplier" value=".05" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="40" Type="1" lookAim="1" />
+      <Quirk name="armorresist_ra_additive" value="8" />
+    </component>
+  </Set>
+  <Set name="bkl-c">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="missile_cooldown_multiplier" value="-0.15" />
+        <Quirk name="erlaser_heat_multiplier" value="-0.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head">
+      <Quirk name="targetdecayduration_additive" value="1" />
+    </component>
+    <component name="centre_torso">
+      <Quirk name="all_range_multiplier" value="0.1" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="11" Type="1" lookAim="1" />
+    </component>
+    <component name="left_torso">
+      <Quirk name="armorresist_lt_additive" value="9" />
+      <Quirk name="turnrate_multiplier" value="0.1" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="internalresist_ll_additive" value="5" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="internalresist_rl_additive" value="5" />
+    </component>
+    <component name="right_torso">
+      <Quirk name="armorresist_rt_additive" value="9" />
+      <Quirk name="turnrate_multiplier" value="0.05" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="45" Type="2" lookAim="1" />
+      <Quirk name="armorresist_ra_additive" value="10" />
+    </component>
+  </Set>
+  <Set name="bkl-d">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="turnrate_multiplier" value="0.15" />
+        <Quirk name="missile_cooldown_multiplier" value="-0.1" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head">
+      <Quirk name="targetdecayduration_additive" value="1" />
+    </component>
+    <component name="centre_torso">
+      <Quirk name="all_range_multiplier" value="0.1" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="10" Type="1" lookAim="1" />
+      <Hardpoint ID="12" Type="0" lookAim="1" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="20" Type="1" lookAim="0" />
+      <Hardpoint ID="21" Type="2" lookAim="0" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="internalresist_ll_additive" value="5" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="internalresist_rl_additive" value="5" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="41" Type="1" lookAim="1" />
+      <Hardpoint ID="43" Type="0" lookAim="1" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="31" Type="2" lookAim="0" />
+      <Quirk name="internalresist_rt_additive" value="5" />
+    </component>
+  </Set>
+  <Set name="bkl-e">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="missile_cooldown_multiplier" value="-0.1" />
+        <Quirk name="all_heat_multiplier" value="-0.05" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head">
+      <Quirk name="targetdecayduration_additive" value="1" />
+    </component>
+    <component name="centre_torso">
+      <Quirk name="all_range_multiplier" value="0.1" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="14" Type="2" lookAim="1" />
+      <Quirk name="armorresist_la_additive" value="8" />
+    </component>
+    <component name="left_torso">
+      <Quirk name="armorresist_lt_additive" value="9" />
+      <Quirk name="turnrate_multiplier" value="0.1" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="internalresist_ll_additive" value="5" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="internalresist_rl_additive" value="5" />
+    </component>
+    <component name="right_torso">
+      <Quirk name="armorresist_rt_additive" value="9" />
+      <Quirk name="turnrate_multiplier" value="0.05" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="42" Type="1" lookAim="1" />
+    </component>
+  </Set>
+  <Set name="bkl-bl">
+    <SetBonuses>
+      <Bonus PieceCount="8">
+        <Quirk name="missile_cooldown_multiplier" value="-0.1" />
+        <Quirk name="energy_cooldown_multiplier" value="-0.1" />
+        <Quirk name="turnrate_multiplier" value="0.15" />
+        <Quirk name="xpbonus_multiplier" value="0.025" />
+      </Bonus>
+    </SetBonuses>
+    <component name="head">
+      <Hardpoint ID="0" Type="1" lookAim="0" />
+    </component>
+    <component name="centre_torso">
+      <Quirk name="all_range_multiplier" value="0.1" />
+    </component>
+    <component name="left_arm">
+      <Hardpoint ID="13" Type="0" lookAim="1" />
+      <Quirk name="internalresist_la_additive" value="10" />
+    </component>
+    <component name="left_torso">
+      <Hardpoint ID="20" Type="1" lookAim="0" />
+      <Hardpoint ID="21" Type="2" lookAim="0" />
+    </component>
+    <component name="left_leg">
+      <Quirk name="internalresist_ll_additive" value="5" />
+    </component>
+    <component name="right_leg">
+      <Quirk name="internalresist_rl_additive" value="5" />
+    </component>
+    <component name="right_torso">
+      <Hardpoint ID="31" Type="2" lookAim="0" />
+      <Quirk name="internalresist_rt_additive" value="5" />
+    </component>
+    <component name="right_arm">
+      <Hardpoint ID="44" Type="0" lookAim="1" />
+      <Quirk name="internalresist_ra_additive" value="8" />
+    </component>
+  </Set>
+</OmniPods>

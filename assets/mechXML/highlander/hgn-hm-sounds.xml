@@ -1,0 +1,16 @@
+<MechSoundDef>
+	<!-- Names of sounds MUST match enum values in enum_MechSounds.h -->
+	<PrecacheBanks>
+		<AudioBank filename="sounds/mech_highlander/mech_highlander.fsb" />
+	</PrecacheBanks>
+	<SoundList>
+		<!-- Mech Sounds-->
+		<Sound Name="OnKillSound" res="Sounds/mech_highlander:highlander_hero_music:highlander_hero_music" offset="0.0,0.0,11.5"/>
+		
+		<!-- Third Person Sounds -->
+		<Sound Name="OnKillSound_TP" res="Sounds/mech_highlander:highlander_hero_music:highlander_hero_music_tp" offset="0.0,0.0,11.5"/>
+		
+	</SoundList>
+
+	
+</MechSoundDef>

@@ -1,0 +1,897 @@
+<?xml version="1.0"?>
+<Hardpoints SearchTable="Objects/mechs/hardpointsearchcriteria.xml">
+	<!--LEFT ARM-->
+	<Hardpoint id="0">
+		<!--Left Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_arm_forearm_ppc_eh1"/>	
+			<Attachment search="Laser" AName="pir_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="1">
+		<!--Left Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_arm_forearm_ppc_eh1"/>	
+			<Attachment search="Laser" AName="pir_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="Laser" AName="pir_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="pir_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="pir_left_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<!--LEFT TORSO-->
+	<Hardpoint id="10">
+		<!--Left Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="AntiMissileSystem" AName="pir_left_torso_ams_ah1"/>
+			<Attachment search="LaserAntiMissileSystem" AName="pir_left_torso_lams_ah1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="11">
+		<!--Left Torso, 2 AMS-->
+		<WeaponSlot>
+			<Attachment search="AntiMissileSystem" AName="pir_left_torso_ams_ah1"/>
+			<Attachment search="LaserAntiMissileSystem" AName="pir_left_torso_lams_ah1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="AntiMissileSystem" AName="pir_left_torso_ams_ah2"/>
+			<Attachment search="LaserAntiMissileSystem" AName="pir_left_torso_lams_ah2" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="12">
+		<!--Left Torso, 3 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh3"/>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb1"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh3"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh3"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh3"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	<Hardpoint id="13">
+		<!--Left Torso, 5 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh3"/>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb1"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh3"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh3"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh3"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb2"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh4"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh4"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh4"/>
+		</WeaponSlot>
+		<WeaponSlot>
+		<Attachment search="Default" AName="pir_left_torso_blank_gb3"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh5"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh5"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh5"/>
+		</WeaponSlot>
+	</Hardpoint>		
+	<Hardpoint id="14">
+		<!--Left Torso, 6 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh3"/>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb1"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh3"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh3"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh3"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb2"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh4"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh4"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh4"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb3"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh5"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh5"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh5"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb4"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh6"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh6"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh6"/>
+		</WeaponSlot>
+	</Hardpoint>		
+	<Hardpoint id="15">
+		<!--Left Torso, 2 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="pir_left_torso_uac20_bh1" animated="1"/>	
+			<Attachment search="GaussRifle" AName="pir_left_torso_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="pir_left_torso_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="pir_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="pir_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="pir_left_torso_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="pir_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="pir_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh1" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh2" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh2" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="16">
+		<!--Left Torso, 3 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="pir_left_torso_uac20_bh1" animated="1"/>	
+			<Attachment search="GaussRifle" AName="pir_left_torso_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="pir_left_torso_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="pir_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="pir_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="pir_left_torso_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="pir_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="pir_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh1" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh2" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb1"/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh3" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh3" animated="1"/>
+		</WeaponSlot>		
+	</Hardpoint>	
+	<Hardpoint id="17">
+		<!--Left Torso, 4 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="pir_left_torso_uac20_bh1" animated="1"/>	
+			<Attachment search="GaussRifle" AName="pir_left_torso_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="pir_left_torso_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="pir_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="pir_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="pir_left_torso_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="pir_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="pir_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh1" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh2" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb1"/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh3" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh3" animated="1"/>
+		</WeaponSlot>	
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb2"/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh4" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh4"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh4"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh4"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh4" animated="1"/>
+		</WeaponSlot>	
+	</Hardpoint>		
+	<Hardpoint id="18">
+		<!--Left Torso, 5 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="pir_left_torso_uac20_bh1" animated="1"/>	
+			<Attachment search="GaussRifle" AName="pir_left_torso_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="pir_left_torso_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="pir_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="pir_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="pir_left_torso_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="pir_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="pir_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh1" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh2" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb1"/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh3" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh3" animated="1"/>
+		</WeaponSlot>	
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb2"/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh4" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh4"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh4"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh4"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh4" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb3"/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh5" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh5" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh5" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh5"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh5"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh5"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh5" animated="1"/>
+		</WeaponSlot>	
+	</Hardpoint>	
+	<Hardpoint id="19">
+		<!--Left Torso, 6 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="pir_left_torso_uac20_bh1" animated="1"/>	
+			<Attachment search="GaussRifle" AName="pir_left_torso_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="pir_left_torso_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="pir_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="pir_left_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="pir_left_torso_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="pir_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="pir_left_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh1" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx20_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh2" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb1"/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh3" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh3" animated="1"/>
+		</WeaponSlot>	
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb2"/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh4" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh4"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh4"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh4"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh4" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb3"/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh5" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh5" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh5" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh5"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh5"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh5"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh5" animated="1"/>
+		</WeaponSlot>	
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb4"/>
+			<Attachment search="AutoCannon2" AName="pir_left_torso_lbx2_bh6" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_left_torso_lbx2_bh6" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_left_torso_uac2_bh6" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_left_torso_hmg_bh6"/>	
+			<Attachment search="MachineGun" AName="pir_left_torso_mg_bh6"/>	
+			<Attachment search="LightMachineGun" AName="pir_left_torso_lmg_bh6"/>	
+			<Attachment search="Ballistic" AName="pir_left_torso_lbx2_bh6" animated="1"/>
+		</WeaponSlot>	
+	</Hardpoint>	
+	<Hardpoint id="191">
+		<!--Left Torso, 3 Energy, to be used with 3 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh1"/>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb2"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh4"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh4"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh4"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh2"/>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb3"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh5"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh5"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh5"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_left_torso_ppc_eh3"/>
+			<Attachment search="Default" AName="pir_left_torso_blank_gb4"/>
+			<Attachment search="Laser" AName="pir_left_torso_laser_eh6"/>
+			<Attachment search="Flamer" AName="pir_left_torso_flamer_eh6"/>
+			<Attachment search="Energy" AName="pir_left_torso_laser_eh6"/>
+		</WeaponSlot>
+	</Hardpoint>		
+	
+	<!--CENTER TORSO-->
+	<Hardpoint id="20">
+		<!--Center Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_centre_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="pir_centre_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_centre_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_centre_torso_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="21">
+		<!--Center Torso, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_centre_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="pir_centre_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_centre_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_centre_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Laser" AName="pir_centre_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="pir_centre_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="pir_centre_torso_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	
+	
+	<!--LEFT TORSO-->
+	<Hardpoint id="30">
+		<!--Left Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="AntiMissileSystem" AName="pir_right_torso_ams_ah1"/>
+			<Attachment search="LaserAntiMissileSystem" AName="pir_right_torso_lams_ah1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="31">
+		<!--Left Torso, 2 AMS-->
+		<WeaponSlot>
+			<Attachment search="AntiMissileSystem" AName="pir_right_torso_ams_ah1"/>
+			<Attachment search="LaserAntiMissileSystem" AName="pir_right_torso_lams_ah1" animated="1"/>
+		</WeaponSlot>
+			<WeaponSlot>
+			<Attachment search="AntiMissileSystem" AName="pir_right_torso_ams_ah2"/>
+			<Attachment search="LaserAntiMissileSystem" AName="pir_right_torso_lams_ah2" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="32">
+		<!--Left Torso, 3 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh3"/>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb1"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh3"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh3"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh3"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	<Hardpoint id="33">
+		<!--Left Torso, 5 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh3"/>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb1"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh3"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh3"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh3"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb2"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh4"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh4"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh4"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb3"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh5"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh5"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh5"/>
+		</WeaponSlot>
+	</Hardpoint>		
+	<Hardpoint id="34">
+		<!--Left Torso, 6 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh2"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh2"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh3"/>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb1"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh3"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh3"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh3"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb2"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh4"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh4"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh4"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb3"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh5"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh5"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh5"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb4"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh6"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh6"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh6"/>
+		</WeaponSlot>
+	</Hardpoint>		
+	<Hardpoint id="35">
+		<!--Left Torso, 2 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="pir_right_torso_uac20_bh1" animated="1"/>	
+			<Attachment search="GaussRifle" AName="pir_right_torso_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="pir_right_torso_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="pir_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="pir_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="pir_right_torso_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="pir_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="pir_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh1" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh2" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh2" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="36">
+		<!--Left Torso, 3 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="pir_right_torso_uac20_bh1" animated="1"/>	
+			<Attachment search="GaussRifle" AName="pir_right_torso_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="pir_right_torso_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="pir_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="pir_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="pir_right_torso_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="pir_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="pir_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh1" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh2" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb1"/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh3" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh3" animated="1"/>
+		</WeaponSlot>		
+	</Hardpoint>	
+	<Hardpoint id="37">
+		<!--Left Torso, 4 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="pir_right_torso_uac20_bh1" animated="1"/>	
+			<Attachment search="GaussRifle" AName="pir_right_torso_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="pir_right_torso_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="pir_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="pir_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="pir_right_torso_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="pir_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="pir_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh1" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh2" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb1"/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh3" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh3" animated="1"/>
+		</WeaponSlot>	
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb2"/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh4" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh4"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh4"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh4"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh4" animated="1"/>
+		</WeaponSlot>	
+	</Hardpoint>		
+	<Hardpoint id="38">
+		<!--Left Torso, 5 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="pir_right_torso_uac20_bh1" animated="1"/>	
+			<Attachment search="GaussRifle" AName="pir_right_torso_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="pir_right_torso_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="pir_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="pir_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="pir_right_torso_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="pir_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="pir_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh1" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh2" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb1"/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh3" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh3" animated="1"/>
+		</WeaponSlot>	
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb2"/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh4" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh4"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh4"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh4"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh4" animated="1"/>
+		</WeaponSlot>	
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb3"/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh5" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh5" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh5" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh5"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh5"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh5"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh5" animated="1"/>
+		</WeaponSlot>	
+	</Hardpoint>	
+	<Hardpoint id="39">
+		<!--Left Torso, 6 Ballistic-->
+<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="pir_right_torso_uac20_bh1" animated="1"/>	
+			<Attachment search="GaussRifle" AName="pir_right_torso_gauss_bh1"/>
+			<Attachment search="UltraAutoCannon10" AName="pir_right_torso_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon10" AName="pir_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="pir_right_torso_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="pir_right_torso_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="pir_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="pir_right_torso_lbx5_bh1" animated="1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh1" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh1" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh1"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh1"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh1"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx20_bh1" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh2" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh2" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh2"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh2"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh2"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh2" animated="1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb1"/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh3" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh3" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh3"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh3"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh3"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh3" animated="1"/>
+		</WeaponSlot>	
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb2"/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh4" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh4" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh4"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh4"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh4"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh4" animated="1"/>
+		</WeaponSlot>	
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb3"/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh5" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh5" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh5" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh5"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh5"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh5"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh5" animated="1"/>
+		</WeaponSlot>	
+		<WeaponSlot>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb4"/>
+			<Attachment search="AutoCannon2" AName="pir_right_torso_lbx2_bh6" animated="1"/>	
+			<Attachment search="LBXAutoCannon2" AName="pir_right_torso_lbx2_bh6" animated="1"/>	
+			<Attachment search="UltraAutoCannon2" AName="pir_right_torso_uac2_bh6" animated="1"/>	
+			<Attachment search="HeavyMachineGun" AName="pir_right_torso_hmg_bh6"/>	
+			<Attachment search="MachineGun" AName="pir_right_torso_mg_bh6"/>	
+			<Attachment search="LightMachineGun" AName="pir_right_torso_lmg_bh6"/>	
+			<Attachment search="Ballistic" AName="pir_right_torso_lbx2_bh6" animated="1"/>
+		</WeaponSlot>	
+	</Hardpoint>	
+	<Hardpoint id="391">
+		<!--Left Torso, 3 Energy, used with 3 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh1"/>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb2"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh4"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh4"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh4"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh2"/>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb3"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh5"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh5"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh5"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_torso_ppc_eh3"/>
+			<Attachment search="Default" AName="pir_right_torso_blank_gb4"/>
+			<Attachment search="Laser" AName="pir_right_torso_laser_eh6"/>
+			<Attachment search="Flamer" AName="pir_right_torso_flamer_eh6"/>
+			<Attachment search="Energy" AName="pir_right_torso_laser_eh6"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	
+	<!--RIGHT ARM-->
+	<Hardpoint id="40">
+		<!--Right Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="pir_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="41">
+		<!--Right Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="pir_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="pir_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="pir_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="PPC" AName="pir_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="Laser" AName="pir_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="pir_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="pir_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>	
+</Hardpoints>
+                                                 

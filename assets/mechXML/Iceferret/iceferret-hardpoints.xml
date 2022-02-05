@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<Hardpoints SearchTable="Objects/mechs/hardpointsearchcriteria.xml">
+
+	<!--CENTER TORSO-->
+	<Hardpoint id="0">
+		<!--Center Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="Laser" AName="ifr_centre_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="ifr_centre_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="ifr_centre_torso_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<!--Right TORSO-->
+	<Hardpoint id="10">
+		<!--Right Torso, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="ATM12" AName="ifr_right_torso_missile12_mh1"/>
+			<Attachment search="LRM20" AName="ifr_right_torso_missile20_mh1"/>
+			<Attachment search="ATM9" AName="ifr_right_torso_missile9_mh1"/>
+			<Attachment search="LRM15" AName="ifr_right_torso_missile15_mh1"/>
+			<Attachment search="ATM6" AName="ifr_right_torso_missile6_mh1"/>
+			<Attachment search="LRM10" AName="ifr_right_torso_missile10_mh1"/>
+			<Attachment search="ATM3" AName="ifr_right_torso_missile3_mh1"/>
+			<Attachment search="ATM6" AName="ifr_right_torso_missile6_mh1"/>
+			<Attachment search="LRM5" AName="ifr_right_torso_missile5_mh1"/>
+			<Attachment search="SRM6" AName="ifr_right_torso_missile6_mh1"/><Attachment search="StreakSRM6" AName="ifr_right_torso_missile6_mh1"/>
+			<Attachment search="SRM4" AName="ifr_right_torso_missile4_mh1"/><Attachment search="StreakSRM4" AName="ifr_right_torso_missile4_mh1"/>
+			<Attachment search="SRM2" AName="ifr_right_torso_missile2_mh1"/><Attachment search="StreakSRM2" AName="ifr_right_torso_missile2_mh1"/>
+			<Attachment search="NarcBeacon" AName="ifr_right_torso_narc_mh1"/>
+			<Attachment search="Missile" AName="ifr_right_torso_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="11">
+		<!--Right Torso, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="ifr_right_torso_ppc_eh1"/>
+			<Attachment search="Laser" AName="ifr_right_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="ifr_right_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="ifr_right_torso_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<!--LEFT TORSO-->
+	<Hardpoint id="20">
+		<!--Left Torso, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="ATM12" AName="ifr_left_torso_missile12_mh1"/>
+			<Attachment search="LRM20" AName="ifr_left_torso_missile20_mh1"/>
+			<Attachment search="ATM9" AName="ifr_left_torso_missile9_mh1"/>
+			<Attachment search="LRM15" AName="ifr_left_torso_missile15_mh1"/>
+			<Attachment search="ATM6" AName="ifr_left_torso_missile6_mh1"/>
+			<Attachment search="LRM10" AName="ifr_left_torso_missile10_mh1"/>
+			<Attachment search="LRM5" AName="ifr_left_torso_missile5_mh1"/>
+			<Attachment search="ATM3" AName="ifr_left_torso_missile3_mh1"/>
+			<Attachment search="SRM6" AName="ifr_left_torso_missile6_mh1"/><Attachment search="StreakSRM6" AName="ifr_left_torso_missile6_mh1"/>
+			<Attachment search="SRM4" AName="ifr_left_torso_missile4_mh1"/><Attachment search="StreakSRM4" AName="ifr_left_torso_missile4_mh1"/>
+			<Attachment search="SRM2" AName="ifr_left_torso_missile2_mh1"/><Attachment search="StreakSRM2" AName="ifr_left_torso_missile2_mh1"/>
+			<Attachment search="NarcBeacon" AName="ifr_left_torso_narc_mh1"/>
+			<Attachment search="Missile" AName="ifr_left_torso_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--RIGHT ARM-->
+	<Hardpoint id="30">
+		<!--Right Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="ifr_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="ifr_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="ifr_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="ifr_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="31">
+		<!--Right Arm, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="ATM12" AName="ifr_right_arm_forearm_missile12_mh1"/>
+			<Attachment search="LRM20" AName="ifr_right_arm_forearm_missile20_mh1"/>
+			<Attachment search="ATM9" AName="ifr_right_arm_forearm_missile9_mh1"/>
+			<Attachment search="LRM15" AName="ifr_right_arm_forearm_missile15_mh1"/>
+			<Attachment search="ATM6" AName="ifr_right_arm_forearm_missile6_mh1"/>
+			<Attachment search="LRM10" AName="ifr_right_arm_forearm_missile10_mh1"/>
+			<Attachment search="ATM3" AName="ifr_right_arm_forearm_missile3_mh1"/>
+			<Attachment search="LRM5" AName="ifr_right_arm_forearm_missile5_mh1"/>
+			<Attachment search="SRM6" AName="ifr_right_arm_forearm_missile6_mh1"/><Attachment search="StreakSRM6" AName="ifr_right_arm_forearm_missile6_mh1"/>
+			<Attachment search="SRM4" AName="ifr_right_arm_forearm_missile4_mh1"/><Attachment search="StreakSRM4" AName="ifr_right_arm_forearm_missile4_mh1"/>
+			<Attachment search="SRM2" AName="ifr_right_arm_forearm_missile2_mh1"/><Attachment search="StreakSRM2" AName="ifr_right_arm_forearm_missile2_mh1"/>
+			<Attachment search="NarcBeacon" AName="ifr_right_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile" AName="ifr_right_arm_forearm_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="32">
+		<!--Right Arm, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="ifr_right_arm_clavicle_lams_ah1" animated="1"/>
+			<Attachment search="AntiMissileSystem" AName="ifr_right_arm_clavicle_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="33">
+		<!--Right Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="ifr_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="ifr_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="ifr_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="ifr_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="ifr_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="Laser" AName="ifr_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="ifr_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="ifr_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="34">
+		<!--Right Arm, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="ifr_right_arm_forearm_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="ifr_right_arm_forearm_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="ifr_right_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="ifr_right_arm_forearm_gauss_bh1"/>
+			<Attachment search="AutoCannon10" AName="ifr_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="ifr_right_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="ifr_right_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="ifr_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="ifr_right_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="ifr_right_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="ifr_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="ifr_right_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="ifr_right_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="ifr_right_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="ifr_right_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="ifr_right_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="ifr_right_arm_forearm_lbx5_bh1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	<!--LEFT ARM-->
+	<Hardpoint id="40">
+		<!--Left Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="ifr_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="ifr_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="ifr_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="ifr_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="PPC" AName="ifr_left_arm_forearm_ppc_eh2"/>
+			<Attachment search="Laser" AName="ifr_left_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="ifr_left_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="ifr_left_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="41">
+		<!--Left Arm, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="ATM12" AName="ifr_left_arm_forearm_missile12_mh1"/>
+			<Attachment search="LRM20" AName="ifr_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="ATM9" AName="ifr_left_arm_forearm_missile9_mh1"/>
+			<Attachment search="LRM15" AName="ifr_left_arm_forearm_missile15_mh1"/>
+			<Attachment search="ATM6" AName="ifr_left_arm_forearm_missile6_mh1"/>
+			<Attachment search="LRM10" AName="ifr_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="ATM3" AName="ifr_left_arm_forearm_missile3_mh1"/>
+			<Attachment search="LRM5" AName="ifr_left_arm_forearm_missile5_mh1"/>
+			<Attachment search="SRM6" AName="ifr_left_arm_forearm_missile6_mh1"/><Attachment search="StreakSRM6" AName="ifr_left_arm_forearm_missile6_mh1"/>
+			<Attachment search="SRM4" AName="ifr_left_arm_forearm_missile4_mh1"/><Attachment search="StreakSRM4" AName="ifr_left_arm_forearm_missile4_mh1"/>
+			<Attachment search="SRM2" AName="ifr_left_arm_forearm_missile2_mh1"/><Attachment search="StreakSRM2" AName="ifr_left_arm_forearm_missile2_mh1"/>
+			<Attachment search="NarcBeacon" AName="ifr_left_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile" AName="ifr_left_arm_forearm_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="42">
+		<!--Left Arm, 1 Ballistic-->
+		<WeaponSlot>
+			<Attachment search="AutoCannon20" AName="ifr_left_arm_forearm_lbx20_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon20" AName="ifr_left_arm_forearm_lbx20_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon20" AName="ifr_left_arm_forearm_uac20_bh1" animated="1"/>
+			<Attachment search="GaussRifle" AName="ifr_left_arm_forearm_gauss_bh1"/>
+			<Attachment search="AutoCannon10" AName="ifr_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon10" AName="ifr_left_arm_forearm_lbx10_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon10" AName="ifr_left_arm_forearm_uac10_bh1" animated="1"/>
+			<Attachment search="AutoCannon5" AName="ifr_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon5" AName="ifr_left_arm_forearm_lbx5_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon5" AName="ifr_left_arm_forearm_uac5_bh1" animated="1"/>
+			<Attachment search="AutoCannon2" AName="ifr_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="LBXAutoCannon2" AName="ifr_left_arm_forearm_lbx2_bh1" animated="1"/>
+			<Attachment search="UltraAutoCannon2" AName="ifr_left_arm_forearm_uac2_bh1" animated="1"/>
+			<Attachment search="HeavyMachineGun" AName="ifr_left_arm_forearm_hmg_bh1"/>
+			<Attachment search="MachineGun" AName="ifr_left_arm_forearm_mg_bh1"/>
+			<Attachment search="LightMachineGun" AName="ifr_left_arm_forearm_lmg_bh1"/>
+			<Attachment search="Ballistic" AName="ifr_left_arm_forearm_lbx5_bh1" animated="1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="43">
+		<!--Left Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="PPC" AName="ifr_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="Laser" AName="ifr_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="ifr_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="ifr_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	<Hardpoint id="44">
+		<!--Left Arm, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="ifr_left_arm_clavicle_ams_ah1"/>
+			<Attachment search="AntiMissileSystem" AName="ifr_left_arm_clavicle_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+</Hardpoints>

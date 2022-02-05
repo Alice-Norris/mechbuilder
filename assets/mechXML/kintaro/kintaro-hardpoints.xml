@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<Hardpoints SearchTable="Objects/mechs/hardpointsearchcriteria.xml">
+	<!--WEAPONDOORS-->
+	<WeaponDoorSet id="1">
+		<WeaponDoor AName="kto_centre_torso_door_top" firingdelay="0.0" stayOpen="1.25" closedDamageFactor="0.8" cockpitattachment="Objects/mechs/kintaro/cockpit_standard/kintaro_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="kto_centre_torso_missile10_mh1"/>
+			<Attachment AName="kto_centre_torso_missile6_mh1"/>
+			<Attachment AName="kto_centre_torso_narc_mh1"/>
+			<Attachment AName="kto_centre_torso_missile5_mh1"/>
+			<Attachment AName="kto_centre_torso_missile4_mh1"/>
+			<Attachment AName="kto_centre_torso_missile2_mh1"/>
+			<Attachment AName="kto_centre_torso_rl20_mh1"/>
+			<Attachment AName="kto_centre_torso_missile5_mh2"/>
+			<Attachment AName="kto_centre_torso_missile4_mh2"/>
+			<Attachment AName="kto_centre_torso_missile2_mh2"/>
+			<Attachment AName="kto_centre_torso_rl20_mh2"/>
+		</WeaponDoor>
+		<WeaponDoor AName="kto_centre_torso_door_bottom" firingdelay="0.0" stayOpen="1.25" closedDamageFactor="0.8" cockpitattachment="Objects/mechs/kintaro/cockpit_standard/kintaro_a_cockpit_buttonweapondoor.cga" cockpitattachmentmaterial="Textures/mechs/cockpit/cockpit_weapondoor.mtl" cockpitattachmentbone="buttonweapondoor01">
+			<Attachment AName="kto_centre_torso_missile10_mh1"/>
+			<Attachment AName="kto_centre_torso_missile6_mh1"/>
+			<Attachment AName="kto_centre_torso_narc_mh1"/>
+			<Attachment AName="kto_centre_torso_missile5_mh1"/>
+			<Attachment AName="kto_centre_torso_missile4_mh1"/>
+			<Attachment AName="kto_centre_torso_missile2_mh1"/>
+			<Attachment AName="kto_centre_torso_rl20_mh1"/>
+			<Attachment AName="kto_centre_torso_missile5_mh2"/>
+			<Attachment AName="kto_centre_torso_missile4_mh2"/>
+			<Attachment AName="kto_centre_torso_missile2_mh2"/>
+			<Attachment AName="kto_centre_torso_rl20_mh2"/>
+		</WeaponDoor>
+	</WeaponDoorSet>
+
+	
+	<!--LEFT ARM-->	
+	<Hardpoint id="1">
+		<!--Left Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kto_left_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="kto_left_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="kto_left_arm_forearm_snppc_eh1"/>	
+			<Attachment search="LightPPC" AName="kto_left_arm_forearm_lppc_eh1"/>	
+			<Attachment search="Laser" AName="kto_left_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="kto_left_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="kto_left_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	
+	<Hardpoint id="2">
+		<!--Left Arm, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kto_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile30" AName="kto_left_arm_forearm_missile20_mh1"/>			
+			<Attachment search="Missile20" AName="kto_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile15" AName="kto_left_arm_forearm_missile15_mh1"/>
+			<Attachment search="Missile10" AName="kto_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile6" AName="kto_left_arm_forearm_missile6_mh1"/>
+			<Attachment search="NarcBeacon" AName="kto_left_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile5" AName="kto_left_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="kto_left_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="kto_left_arm_forearm_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="kto_left_arm_forearm_rl20_mh1"/>
+			<Attachment search="Missile" AName="kto_left_arm_forearm_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<Hardpoint id="3">
+		<!--Left Arm, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kto_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile30" AName="kto_left_arm_forearm_missile20_mh1"/>	
+			<Attachment search="Missile20" AName="kto_left_arm_forearm_missile20_mh1"/>
+			<Attachment search="Missile15" AName="kto_left_arm_forearm_missile15_mh1"/>
+			<Attachment search="Missile10" AName="kto_left_arm_forearm_missile10_mh1"/>
+			<Attachment search="Missile6" AName="kto_left_arm_forearm_missile6_mh1"/>
+			<Attachment search="NarcBeacon" AName="kto_left_arm_forearm_narc_mh1"/>
+			<Attachment search="Missile5" AName="kto_left_arm_forearm_missile5_mh1"/>
+			<Attachment search="Missile4" AName="kto_left_arm_forearm_missile4_mh1"/>
+			<Attachment search="Missile2" AName="kto_left_arm_forearm_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="kto_left_arm_forearm_rl20_mh1"/>
+			<Attachment search="Missile" AName="kto_left_arm_forearm_missile20_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kto_left_arm_forearm_missile20_mh2"/>
+			<Attachment search="Missile30" AName="kto_left_arm_forearm_missile20_mh2"/>
+			<Attachment search="Missile20" AName="kto_left_arm_forearm_missile20_mh2"/>
+			<Attachment search="Missile15" AName="kto_left_arm_forearm_missile15_mh2"/>
+			<Attachment search="Missile10" AName="kto_left_arm_forearm_missile10_mh2"/>
+			<Attachment search="Missile6" AName="kto_left_arm_forearm_missile6_mh2"/>
+			<Attachment search="NarcBeacon" AName="kto_left_arm_forearm_narc_mh2"/>
+			<Attachment search="Missile5" AName="kto_left_arm_forearm_missile5_mh2"/>
+			<Attachment search="Missile4" AName="kto_left_arm_forearm_missile4_mh2"/>
+			<Attachment search="Missile2" AName="kto_left_arm_forearm_missile2_mh2"/>
+			<Attachment search="RocketLauncher" AName="kto_left_arm_forearm_rl20_mh2"/>
+			<Attachment search="Missile" AName="kto_left_arm_forearm_missile20_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	
+	
+	<!--LEFT TORSO-->	
+	<Hardpoint id="10">
+		<!--Left Torso, 1 AMS-->
+		<WeaponSlot>
+			<Attachment search="LaserAntiMissileSystem" AName="kto_left_torso_lams_ah1" animated="1"/>
+			<Attachment search="AntiMissileSystem" AName="kto_left_torso_ams_ah1"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	
+	
+	<!--CENTER TORSO-->	
+	<Hardpoint id="20" WeaponDoorsId="1" NoWeaponAName="kto_centre_torso_blankdoor">
+		<!--Center Torso, 1 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile10" AName="kto_centre_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="kto_centre_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="kto_centre_torso_narc_mh1"/>
+			<Attachment search="Missile5" AName="kto_centre_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="kto_centre_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="kto_centre_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="kto_centre_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="kto_centre_torso_missile10_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+
+	<Hardpoint id="21" WeaponDoorsId="1" NoWeaponAName="kto_centre_torso_blankdoor">
+		<!--Center Torso, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile10" AName="kto_centre_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="kto_centre_torso_missile6_mh1"/>
+			<Attachment search="Missile1" AName="kto_centre_torso_narc_mh1"/>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Missile5" AName="kto_centre_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="kto_centre_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="kto_centre_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="kto_centre_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="kto_centre_torso_missile10_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Missile5" AName="kto_centre_torso_missile5_mh2"/>
+			<Attachment search="Missile4" AName="kto_centre_torso_missile4_mh2"/>
+			<Attachment search="Missile2" AName="kto_centre_torso_missile2_mh2"/>
+			<Attachment search="RocketLauncher" AName="kto_centre_torso_rl20_mh2"/>
+			<Attachment search="Missile" AName="kto_centre_torso_missile5_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<Hardpoint id="22">
+		<!--Center Torso, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="SnubNosePPC" AName="kto_centre_torso_snppc_eh1"/>	
+			<Attachment search="LightPPC" AName="kto_centre_torso_lppc_eh1"/>
+			<Attachment search="Default" AName=""/>			
+			<Attachment search="Laser" AName="kto_centre_torso_laser_eh1"/>
+			<Attachment search="Flamer" AName="kto_centre_torso_flamer_eh1"/>
+			<Attachment search="Energy" AName="kto_centre_torso_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Default" AName=""/>
+			<Attachment search="Laser" AName="kto_centre_torso_laser_eh2"/>
+			<Attachment search="Flamer" AName="kto_centre_torso_flamer_eh2"/>
+			<Attachment search="Energy" AName="kto_centre_torso_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	
+	
+	<!--RIGHT TORSO-->	
+	
+		<Hardpoint id="30">
+		<!--Right Torso, 1 Missile, non-hero variants-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kto_right_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="kto_right_torso_missile20_mh1"/>			
+			<Attachment search="Missile20" AName="kto_right_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="kto_right_torso_missile15_mh1"/>
+			<Attachment search="Missile10" AName="kto_right_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="kto_right_torso_missile6_mh1"/>
+			<Attachment search="NarcBeacon" AName="kto_right_torso_narc_mh1"/>
+			<Attachment search="Missile5" AName="kto_right_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="kto_right_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="kto_right_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="kto_right_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="kto_right_torso_missile20_mh1"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<Hardpoint id="31">
+		<!--Right Torso, 2 Missile-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kto_right_torso_missile20_mh1"/>
+			<Attachment search="Missile30" AName="kto_right_torso_missile20_mh1"/>			
+			<Attachment search="Missile20" AName="kto_right_torso_missile20_mh1"/>
+			<Attachment search="Missile15" AName="kto_right_torso_missile15_mh1"/>
+			<Attachment search="Missile10" AName="kto_right_torso_missile10_mh1"/>
+			<Attachment search="Missile6" AName="kto_right_torso_missile6_mh1"/>
+			<Attachment search="NarcBeacon" AName="kto_right_torso_narc_mh1"/>
+			<Attachment search="Missile5" AName="kto_right_torso_missile5_mh1"/>
+			<Attachment search="Missile4" AName="kto_right_torso_missile4_mh1"/>
+			<Attachment search="Missile2" AName="kto_right_torso_missile2_mh1"/>
+			<Attachment search="RocketLauncher" AName="kto_right_torso_rl20_mh1"/>
+			<Attachment search="Missile" AName="kto_right_torso_missile20_mh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kto_right_torso_missile20_mh2"/>	
+			<Attachment search="Missile30" AName="kto_right_torso_missile20_mh2"/>	
+			<Attachment search="Missile20" AName="kto_right_torso_missile20_mh2"/>
+			<Attachment search="Missile15" AName="kto_right_torso_missile15_mh2"/>
+			<Attachment search="Missile10" AName="kto_right_torso_missile10_mh2"/>
+			<Attachment search="Missile6" AName="kto_right_torso_missile6_mh2"/>
+			<Attachment search="NarcBeacon" AName="kto_right_torso_narc_mh2"/>
+			<Attachment search="Missile5" AName="kto_right_torso_missile5_mh2"/>
+			<Attachment search="Missile4" AName="kto_right_torso_missile4_mh2"/>
+			<Attachment search="Missile2" AName="kto_right_torso_missile2_mh2"/>
+			<Attachment search="RocketLauncher" AName="kto_right_torso_rl20_mh2"/>
+			<Attachment search="Missile" AName="kto_right_torso_missile20_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	<Hardpoint id="32">
+		<!--Right Torso, 1 Missile, KTO-GB hero-->
+		<WeaponSlot>
+			<Attachment search="Missile40" AName="kto_right_torso_missile20_mh2"/>	
+			<Attachment search="Missile30" AName="kto_right_torso_missile20_mh2"/>	
+			<Attachment search="Missile20" AName="kto_right_torso_missile20_mh2"/>
+			<Attachment search="Missile15" AName="kto_right_torso_missile15_mh2"/>
+			<Attachment search="Missile10" AName="kto_right_torso_missile10_mh2"/>
+			<Attachment search="Missile6" AName="kto_right_torso_missile6_mh2"/>
+			<Attachment search="NarcBeacon" AName="kto_right_torso_narc_mh2"/>
+			<Attachment search="Missile5" AName="kto_right_torso_missile5_mh2"/>
+			<Attachment search="Missile4" AName="kto_right_torso_missile4_mh2"/>
+			<Attachment search="Missile2" AName="kto_right_torso_missile2_mh2"/>
+			<Attachment search="RocketLauncher" AName="kto_right_torso_rl20_mh2"/>
+			<Attachment search="Missile" AName="kto_right_torso_missile20_mh2"/>
+		</WeaponSlot>
+	</Hardpoint>
+	
+	
+	
+	<!--RIGHT ARM-->	
+	
+	<Hardpoint id="40">
+		<!--Right Arm, 1 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kto_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="kto_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="kto_right_arm_forearm_snppc_eh1"/>	
+			<Attachment search="LightPPC" AName="kto_right_arm_forearm_lppc_eh1"/>	
+			<Attachment search="Laser" AName="kto_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="kto_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="kto_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+	</Hardpoint>	
+	
+	<Hardpoint id="41">
+		<!--Right Arm, 2 Energy-->
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kto_right_arm_forearm_hppc_eh1"/>
+			<Attachment search="PPC" AName="kto_right_arm_forearm_ppc_eh1"/>
+			<Attachment search="SnubNosePPC" AName="kto_right_arm_forearm_snppc_eh1"/>	
+			<Attachment search="LightPPC" AName="kto_right_arm_forearm_lppc_eh1"/>	
+			<Attachment search="Laser" AName="kto_right_arm_forearm_laser_eh1"/>
+			<Attachment search="Flamer" AName="kto_right_arm_forearm_flamer_eh1"/>
+			<Attachment search="Energy" AName="kto_right_arm_forearm_laser_eh1"/>
+		</WeaponSlot>
+		<WeaponSlot>
+			<Attachment search="HeavyPPC" AName="kto_right_arm_forearm_hppc_eh2"/>
+			<Attachment search="PPC" AName="kto_right_arm_forearm_ppc_eh2"/>
+			<Attachment search="SnubNosePPC" AName="kto_right_arm_forearm_snppc_eh2"/>	
+			<Attachment search="LightPPC" AName="kto_right_arm_forearm_lppc_eh2"/>	
+			<Attachment search="Laser" AName="kto_right_arm_forearm_laser_eh2"/>
+			<Attachment search="Flamer" AName="kto_right_arm_forearm_flamer_eh2"/>
+			<Attachment search="Energy" AName="kto_right_arm_forearm_laser_eh2"/>
+		</WeaponSlot>
+	</Hardpoint>		
+</Hardpoints>

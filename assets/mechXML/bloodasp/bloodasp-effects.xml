@@ -1,0 +1,40 @@
+<MechEffects>
+  <ComponentEffectsList>
+    <Component name="head"  destroyed="mech_effects.damage.explosion_a" bone="bas_head_fx"/>
+
+
+
+    <Component name="centre_torso"  destroyed="mech_effects.damage.explosion_a" bone="bas_centre_torso_fx"/>
+    <Component name="centre_torso"  mechdestroyed="mech_effects.damage.death_a" bone="bas_centre_torso_fx"/>
+    <Component name="centre_torso"  steaming="mech_effects.heatsinks.steam_a" bone="bas_centre_torso_fx"/>
+
+    <Component name="centre_torso_rear"  destroyed="mech_effects.damage.explosion_a" bone="bas_centre_torso_rear_fx"/>
+
+    <Component name="left_torso"  destroyed="mech_effects.damage.explosion_a" bone="bas_left_torso_fx"/>
+
+    <Component name="left_torso_rear"  destroyed="mech_effects.damage.explosion_a" bone="bas_left_torso_rear_fx"/>
+
+    <Component name="right_torso"  destroyed="mech_effects.damage.explosion_a" bone="bas_right_torso_fx"/>
+
+    <Component name="right_torso_rear"  destroyed="mech_effects.damage.explosion_a" bone="bas_right_torso_rear_fx"/>
+
+
+    <Component name="right_leg"  damaged="mech_effects.damage.smoke_l" bone="bas_right_leg_fx" armorThreshold="0.0" healthThreshold="0.9"/>
+    <Component name="right_leg"  destroyed="mech_effects.damage.explosion_a" bone="bas_right_leg_fx"/>
+    <Component name="right_leg"  destroyed="mech_effects.damage.smoke_l" bone="bas_right_leg_fx"/>
+
+    <Component name="left_leg"  damaged="mech_effects.damage.smoke_l" bone="bas_left_leg_fx" armorThreshold="0.0" healthThreshold="0.9"/>
+    <Component name="left_leg"  destroyed="mech_effects.damage.explosion_a" bone="bas_left_leg_fx"/>
+    <Component name="left_leg"  destroyed="mech_effects.damage.smoke_l" bone="bas_left_leg_fx"/>
+
+
+    <Component name="right_arm"  damaged="mech_effects.damage.smoke_l" bone="bas_right_arm_fx" armorThreshold="0.0" healthThreshold="0.9"/>
+    <Component name="right_arm"  destroyed="mech_effects.damage.explosion_a" bone="bas_right_arm_fx"/>
+    <Component name="right_arm"  destroyed="mech_effects.damage.smoke_l" bone="bas_right_arm_fx"/>
+
+    <Component name="left_arm"  damaged="mech_effects.damage.smoke_l" bone="bas_left_arm_fx" armorThreshold="0.0" healthThreshold="0.9"/>
+    <Component name="left_arm"  destroyed="mech_effects.damage.explosion_a" bone="bas_left_arm_fx"/>
+    <Component name="left_arm"  destroyed="mech_effects.damage.smoke_l" bone="bas_left_arm_fx"/>
+
+  </ComponentEffectsList>
+</MechEffects>                                                                                                  

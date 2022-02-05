@@ -1,0 +1,186 @@
+<!-- this is SINGLETOE TEMPLATE -->
+<MechDefinition>
+  <Mech Variant="CRB-20" MaxTons="50" BaseTons="10" MaxJumpJets="0" MinEngineRating="100" MaxEngineRating="350" />
+  <Cockpit TechSlots="1" ConsumableSlots="1" WeaponModSlots="2" BoneOffset="0.0, 0.0, 0.0" ViewOffset="0.0, -0.08, 0.0" RenderFlag="1" startup="pilot_startup_crab" poweron="pilot_poweron_crab" poweroff="pilot_poweroff_crab" CockpitItemScaleFactor="1.0">
+    <Piece>
+      <Attachment AName="cockpit" SkipMatInstancing="1" Animated="1" />
+    </Piece>
+    <Piece>
+      <Attachment AName="cockpit_prop" hideShadow="1" />
+    </Piece>
+  </Cockpit>
+  <ComponentList>
+    <Component Name="head" Slots="6" HP="15">
+      <Internal ItemID="1900" />
+      <Internal ItemID="1901" />
+      <Internal ItemID="1902" />
+      <Piece>
+        <Attachment AName="crb_head_cockpit" />
+      </Piece>
+      <Hardpoint ID="50" Type="1" lookAim="0" />
+    </Component>
+    <Component Name="centre_torso" Slots="12" HP="32" RenderFlag="2">
+      <Internal ItemID="1903" />
+      <Piece>
+        <Attachment AName="crb_centre_torso" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_centre_torso_pelvis" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_centre_torso_twist" />
+      </Piece>
+      <Hardpoint ID="1" Type="1" lookAim="0" />
+    </Component>
+    <Component Name="right_leg" Slots="6" HP="24" RenderFlag="2">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="crb_right_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_right_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_right_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_right_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_right_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_right_leg_index1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_right_leg_index2" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_right_leg_pinky1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_right_leg_pinky2" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_right_leg_talon0" />
+      </Piece>
+    </Component>
+    <Component Name="left_leg" Slots="6" HP="24" RenderFlag="2">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="crb_left_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_left_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_left_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_left_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_left_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_left_leg_pinky1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_left_leg_pinky2" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_left_leg_index1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_left_leg_index2" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_left_leg_talon0" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso" Slots="12" HP="24" RenderFlag="2">
+      <Piece>
+        <Attachment AName="crb_left_torso" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso" Slots="12" HP="24" RenderFlag="2">
+      <Piece>
+        <Attachment AName="crb_right_torso" />
+      </Piece>
+      <Hardpoint ID="11" Type="4" lookAim="0" />
+    </Component>
+    <Component Name="right_arm" Slots="12" HP="16" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Internal ItemID="1911" />
+      <Piece>
+        <Attachment AName="crb_right_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_right_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_right_arm_forearm" />
+      </Piece>
+      <Hardpoint ID="32" Type="1" lookAim="1" />
+    </Component>
+    <Component Name="left_arm" Slots="12" HP="16" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Internal ItemID="1910" />
+      <Internal ItemID="1911" />
+      <Piece>
+        <Attachment AName="crb_left_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_left_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="crb_left_arm_forearm" />
+      </Piece>
+      <Hardpoint ID="42" Type="1" lookAim="1" />
+    </Component>
+    <Component Name="left_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="crb_left_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="crb_centre_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="crb_right_torso_rear" />
+      </Piece>
+    </Component>
+  </ComponentList>
+  <MovementTuningConfiguration MovementArchetype="Small" MaxMovementSpeed="16.2" TorsoTurnSpeedYaw="108" TorsoTurnSpeedPitch="61.88" ArmTurnSpeedYaw="247.5" ArmTurnSpeedPitch="247.5" TurnLerpLowRate="1.63" TurnLerpMidRate="1.14" TurnLerpHighRate="0.87" AccelLerpLowRate="149.36" AccelLerpMidRate="33.87" AccelLerpHighRate="19.91" DecelLerpLowRate="136.54" DecelLerpMidRate="2075" DecelLerpHighRate="2075" ReverseSpeedMultiplier="0.666" MaxTorsoAngleYaw="125" MaxTorsoAnglePitch="30" MaxArmRotationYaw="35" MaxArmRotationPitch="30" TurnLerpLowSpeed="0" TurnLerpMidSpeed="0.666" TurnLerpHighSpeed="1.0" DecelLerpLowSpeed="0" DecelLerpMidSpeed="0.666" DecelLerpHighSpeed="1.0" AccelLerpLowSpeed="0" AccelLerpMidSpeed="0.666" AccelLerpHighSpeed="1.0" MaxFreeLookYaw="60" MaxFreeLookPitch="40" JumpJetSpread="1.9375" />
+  <AnimationConfiguration>
+    <ArmAim LeftArmAimYaw="BONE_ARM_L" LeftArmAimPitch="BONE_ARM_L" RightArmAimYaw="BONE_ARM_R" RightArmAimPitch="BONE_ARM_R" />
+    <TwistJointList>
+      <TwistJoint Joint="BONE_SPINE" Mode="1" />
+      <TwistJoint Joint="BONE_SPINE2" Mode="2" />
+    </TwistJointList>
+  </AnimationConfiguration>
+  <QuirkList>
+    <Quirk name="isstdlaser_duration_multiplier" value="-0.1" />
+    <Quirk name="internalresist_ct_additive" value="16" />
+    <Quirk name="internalresist_lt_additive" value="12" />
+    <Quirk name="internalresist_rt_additive" value="12" />
+    <Quirk name="internalresist_la_additive" value="8" />
+    <Quirk name="internalresist_ra_additive" value="8" />
+    <Quirk name="internalresist_ll_additive" value="12" />
+    <Quirk name="internalresist_rl_additive" value="12" />
+  </QuirkList>
+</MechDefinition>
+<!--                                                               -->
+<!--                                                               -->

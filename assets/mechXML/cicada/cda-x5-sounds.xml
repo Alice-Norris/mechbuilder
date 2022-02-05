@@ -1,0 +1,15 @@
+<MechSoundDef>
+	<!-- Names of sounds MUST match enum values in enum_MechSounds.h -->
+	<PrecacheBanks>
+		<AudioBank filename="sounds/mech_cicada/mech_cicada.fsb" />
+	</PrecacheBanks>
+	<SoundList>
+		<!-- Mech Sounds-->
+		<Sound Name="Mech_Engine" res="Sounds/mech_cicada:cicada_X5:X5_engine" offset="0.0,0.0,9.5"/>
+		
+		<!-- Third Person Sounds -->
+		<Sound Name="Mech_Engine_TP" res="Sounds/mech_cicada:cicada_X5:X5_engine_tp" offset="0.0,0.0,9.5"/>
+	</SoundList>
+
+	
+</MechSoundDef>

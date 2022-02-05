@@ -1,0 +1,145 @@
+<MechDefinition>
+  <Mech Variant="JR7-D(S)" VariantType="Sarah" VariantParent="3" MaxTons="35" BaseTons="6.5" MaxJumpJets="5" CanEquipECM="0" MinEngineRating="100" MaxEngineRating="300" PrivateMatchVariantItemID="3" />
+  <Cockpit TechSlots="1" ConsumableSlots="1" WeaponModSlots="2" BoneOffset="0,0,0" ViewOffset="0,-0.08,0" RenderFlag="1" ShakeDamping="0.9" startup="pilot_startup_jenner" poweron="pilot_poweron_jenner" poweroff="pilot_poweroff_jenner" CockpitItemScaleFactor="0.540368">
+    <Piece>
+      <Attachment AName="cockpit" SkipMatInstancing="1" Animated="1" />
+    </Piece>
+  </Cockpit>
+  <ComponentList>
+    <Component Name="head" Slots="6" HP="15" RenderFlag="2">
+      <Internal ItemID="1900" />
+      <Internal ItemID="1901" />
+      <Internal ItemID="1902" />
+      <Piece>
+        <Attachment AName="jr7_head_cockpit" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso" Slots="12" HP="22">
+      <Internal ItemID="1903" />
+      <Piece>
+        <Attachment AName="jr7_centre_torso_pelvis" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_centre_torso" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_centre_torso_twist" />
+      </Piece>
+      <Hardpoint ID="21" Type="2" Slots="1" lookAim="0" />
+    </Component>
+    <Component Name="right_leg" Slots="6" HP="16">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="jr7_right_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_right_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_right_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_right_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_right_leg_hip" />
+      </Piece>
+    </Component>
+    <Component Name="left_leg" Slots="6" HP="16">
+      <Internal ItemID="1904" />
+      <Internal ItemID="1905" />
+      <Internal ItemID="1906" />
+      <Internal ItemID="1907" />
+      <Piece>
+        <Attachment AName="jr7_left_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_left_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_left_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_left_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_left_leg_hip" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso" Slots="12" HP="16">
+      <Piece>
+        <Attachment AName="jr7_left_torso" />
+      </Piece>
+      <Hardpoint ID="10" Type="4" Slots="1" lookAim="0" />
+    </Component>
+    <Component Name="right_torso" Slots="12" HP="16">
+      <Piece>
+        <Attachment AName="jr7_right_torso" />
+      </Piece>
+    </Component>
+    <Component Name="right_arm" Slots="12" HP="12" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Piece>
+        <Attachment AName="jr7_right_arm_forearm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_right_arm_forearm_blank_gb1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_right_clavicle" permanentPiece="1" />
+      </Piece>
+      <Hardpoint ID="40" Type="1" Slots="2" lookAim="1" />
+    </Component>
+    <Component Name="left_arm" Slots="12" HP="12" destroyedMeshSuffix="_damaged">
+      <Internal ItemID="1908" />
+      <Internal ItemID="1909" />
+      <Piece>
+        <Attachment AName="jr7_left_arm_forearm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_left_arm_forearm_blank_gb1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="jr7_left_clavicle" permanentPiece="1" />
+      </Piece>
+      <Hardpoint ID="0" Type="1" Slots="2" lookAim="1" />
+    </Component>
+    <Component Name="left_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="jr7_left_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="jr7_centre_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="jr7_right_torso_rear" />
+      </Piece>
+    </Component>
+  </ComponentList>
+  <MovementTuningConfiguration MovementArchetype="Small" MaxMovementSpeed="16.2" TorsoTurnSpeedYaw="202.5" TorsoTurnSpeedPitch="126.56" ArmTurnSpeedYaw="506.25" ArmTurnSpeedPitch="506.25" TurnLerpLowRate="2.81" TurnLerpMidRate="1.97" TurnLerpHighRate="1.5" AccelLerpLowRate="362.96" AccelLerpMidRate="82.3" AccelLerpHighRate="48.4" DecelLerpLowRate="245.78" DecelLerpMidRate="3575" DecelLerpHighRate="3575" ReverseSpeedMultiplier="0.666" MaxTorsoAngleYaw="120" MaxTorsoAnglePitch="30" MaxArmRotationYaw="0" MaxArmRotationPitch="30" TurnLerpLowSpeed="0" TurnLerpMidSpeed="0.666" TurnLerpHighSpeed="1.0" DecelLerpLowSpeed="0" DecelLerpMidSpeed="0.666" DecelLerpHighSpeed="1.0" AccelLerpLowSpeed="0" AccelLerpMidSpeed="0.666" AccelLerpHighSpeed="1.0" MaxFreeLookYaw="55" MaxFreeLookPitch="40" JumpJetSpread="1.25" />
+  <AnimationConfiguration>
+    <ArmAim LeftArmAimYaw="BONE_ARM_L" LeftArmAimPitch="BONE_ARM_L" RightArmAimYaw="BONE_ARM_R" RightArmAimPitch="BONE_ARM_R" />
+    <TwistJointList>
+      <TwistJoint Joint="BONE_SPINE2" Mode="3" />
+    </TwistJointList>
+  </AnimationConfiguration>
+  <QuirkList>
+    <Quirk name="all_cooldown_multiplier" value="-0.15" />
+    <Quirk name="missile_velocity_multiplier" value="0.1" />
+    <Quirk name="internalresist_ct_additive" value="11" />
+    <Quirk name="armorresist_ct_additive" value="11" />
+    <Quirk name="armorresist_lt_additive" value="10" />
+    <Quirk name="armorresist_rt_additive" value="10" />
+	<Quirk name="armorresist_ll_additive" value="8" />
+    <Quirk name="armorresist_rl_additive" value="8" />
+	<Quirk name="overheatdamage_multiplier" value="-0.2" />
+  </QuirkList>
+</MechDefinition>

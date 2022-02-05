@@ -1,0 +1,204 @@
+<!-- this is SINGLETOE TEMPLATE -->
+<MechDefinition Version="1" ModelPath="Objects/mechs/kitfox/kitfox.cdf" CommonPath="Objects/mechs/kitfox/kitfox-common.xml" EffectsPath="Objects/mechs/kitfox/kitfox-effects.xml" SoundPath="Objects/mechs/kitfox/kitfox-sounds.xml" HardpointPath="Objects/mechs/kitfox/kitfox-hardpoints.xml">
+  <Mech Variant="KFX-PRIMEG" VariantType="Special" VariantParent="175" MaxTons="30" BaseTons="10" MaxJumpJets="0" MinEngineRating="180" MaxEngineRating="180" TPOffset="0,0,1.25" TPAng="-0.09,0,0" />
+  <Cockpit TechSlots="1" ConsumableSlots="1" WeaponModSlots="2" BoneOffset="0.0, 0.0, 0.0" ViewOffset="0.0, -0.08, 0.0" RenderFlag="1" startup="pilot_startup_kitfox" poweron="pilot_poweron_kitfox" poweroff="pilot_poweroff_kitfox" ShakeDamping="0.9" CockpitItemScaleFactor="1.3">
+    <Piece>
+      <Attachment AName="cockpit" SkipMatInstancing="1" Animated="1" />
+    </Piece>
+  </Cockpit>
+  <ComponentList>
+    <Component Name="head" Slots="6" HP="15" RenderFlag="2" OmniSlot="1">
+      <Internal ItemID="1900" />
+      <!--Life Support-->
+      <Internal ItemID="1901" />
+      <!--Sensors-->
+      <Internal ItemID="1902" />
+      <Internal ItemID="1912" />
+      <!--Cockpit-->
+      <Piece>
+        <Attachment AName="kfx_head_cockpit" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso" Slots="12" HP="20" RenderFlag="2" OmniSlot="1" OmniPod="30075">
+      <Internal ItemID="1903" />
+      <Fixed ItemID="3434" />
+      <Fixed ItemID="3004" />
+      <!--Gyro-->
+      <Piece>
+        <Attachment AName="kfx_centre_torso" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_centre_torso_pelvis" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_centre_torso_twist" />
+      </Piece>
+      <Piece>
+        <Attachment AName="ktx_centre_torso_hero" />
+      </Piece>
+    </Component>
+    <Component Name="right_leg" Slots="6" HP="14" OmniSlot="1">
+      <Internal ItemID="1904" />
+      <!--Hip-->
+      <Internal ItemID="1905" />
+      <!--Upper Leg Actuator-->
+      <Internal ItemID="1906" />
+      <!--Lower Leg Actuator-->
+      <Internal ItemID="1907" />
+      <!--Foot Actuator-->
+      <Piece>
+        <Attachment AName="kfx_right_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_right_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_right_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_right_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_right_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_right_leg_talon_index1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_right_leg_talon0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_right_leg_talon_pinky1" />
+      </Piece>
+    </Component>
+    <Component Name="left_leg" Slots="6" HP="14" OmniSlot="1">
+      <Internal ItemID="1904" />
+      <!--Hip-->
+      <Internal ItemID="1905" />
+      <!--Upper Leg Actuator-->
+      <Internal ItemID="1906" />
+      <!--Lower Leg Actuator-->
+      <Internal ItemID="1907" />
+      <!--Foot Actuator-->
+      <Piece>
+        <Attachment AName="kfx_left_leg_hip" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_leg_thigh" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_leg_calf" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_leg_foot" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_leg_toe0" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_leg_talon_pinky1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_leg_talon_index1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_leg_talon0" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso" Slots="12" HP="14" OmniSlot="1">
+      <Piece>
+        <Attachment AName="kfx_left_torso" />
+      </Piece>
+      <Internal ItemID="1913" />
+      <Internal ItemID="1913" />
+      <Internal ItemID="1912" />
+      <Internal ItemID="1912" />
+      <Fixed ItemID="3004" />
+      <Fixed ItemID="3004" />
+    </Component>
+    <Component Name="right_torso" Slots="12" HP="14" OmniSlot="1">
+      <Piece>
+        <Attachment AName="kfx_right_torso" />
+      </Piece>
+      <Internal ItemID="1913" />
+      <Internal ItemID="1913" />
+      <Internal ItemID="1913" />
+      <Internal ItemID="1912" />
+      <Internal ItemID="1912" />
+    </Component>
+    <Component Name="right_arm" Slots="12" HP="10" destroyedMeshSuffix="_damaged" OmniSlot="1">
+      <Internal ItemID="1908" />
+      <!--Shoulder-->
+      <Internal ItemID="1909" />
+      <Internal ItemID="1913" />
+      <Internal ItemID="1912" />
+      <!--Upper Arm Actuator-->
+      <Piece>
+        <Attachment AName="kfx_right_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_right_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_right_arm_forearm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_right_arm_forearm_hand" ToggleModule="1911" />
+      </Piece>
+    </Component>
+    <Component Name="left_arm" Slots="12" HP="10" destroyedMeshSuffix="_damaged" OmniSlot="1">
+      <Internal ItemID="1908" />
+      <!--Shoulder-->
+      <Internal ItemID="1909" />
+      <!--Upper Arm Actuator-->
+      <!--Lower Arm Actuator-->
+      <Internal ItemID="1913" />
+      <Internal ItemID="1912" />
+      <!--Hand Arm Actuator-->
+      <Piece>
+        <Attachment AName="kfx_left_arm_clavicle" permanentPiece="1" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_arm_upperarm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_arm_forearm" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_arm_elbow" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_arm_forearm_hand" ToggleModule="1911" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_left_arm_forearm_hero" />
+      </Piece>
+    </Component>
+    <Component Name="left_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="kfx_left_torso_rear" />
+      </Piece>
+    </Component>
+    <Component Name="centre_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="kfx_centre_torso_rear" />
+      </Piece>
+      <Piece>
+        <Attachment AName="kfx_centre_torso_pelvis_rear" />
+      </Piece>
+    </Component>
+    <Component Name="right_torso_rear" Slots="0" HP="0">
+      <Piece>
+        <Attachment AName="kfx_right_torso_rear" />
+      </Piece>
+    </Component>
+  </ComponentList>
+  <MovementTuningConfiguration MovementArchetype="Small" MaxMovementSpeed="16.2" TorsoTurnSpeedYaw="184.5" TorsoTurnSpeedPitch="87.19" ArmTurnSpeedYaw="348.75" ArmTurnSpeedPitch="348.75" TurnLerpLowRate="2.5" TurnLerpMidRate="1.75" TurnLerpHighRate="1.33" AccelLerpLowRate="322.28" AccelLerpMidRate="73.08" AccelLerpHighRate="42.97" DecelLerpLowRate="207.55" DecelLerpMidRate="3050" DecelLerpHighRate="3050" ReverseSpeedMultiplier="0.666" MaxTorsoAngleYaw="130" MaxTorsoAnglePitch="30" MaxArmRotationYaw="40" MaxArmRotationPitch="30" TurnLerpLowSpeed="0" TurnLerpMidSpeed="0.666" TurnLerpHighSpeed="1.0" DecelLerpLowSpeed="0" DecelLerpMidSpeed="0.666" DecelLerpHighSpeed="1.0" AccelLerpLowSpeed="0" AccelLerpMidSpeed="0.666" AccelLerpHighSpeed="1.0" MaxFreeLookYaw="60" MaxFreeLookPitch="40" JumpJetSpread="1.25" MaxArmActuators="2" MaxArmYawAcutatorNone="0" MaxArmYawActuatorOne="10" />
+  <AnimationConfiguration>
+    <ArmAim LeftArmAimYaw="BONE_FOREARM_L" LeftArmAimPitch="BONE_ARM_PITCH_L" RightArmAimYaw="BONE_ARM_R" RightArmAimPitch="BONE_ARM_R" />
+    <TwistJointList>
+      <TwistJoint Joint="BONE_SPINE" Mode="1" />
+      <TwistJoint Joint="BONE_SPINE2" Mode="2" />
+    </TwistJointList>
+  </AnimationConfiguration>
+</MechDefinition>

@@ -1,0 +1,26 @@
+<MechSoundDef sharedpath="Objects/mechs/shared-sounds.xml">
+	<PrecacheBanks>
+		<AudioBank filename="sounds/mech_commando/mech_commando.fsb" />
+	</PrecacheBanks>
+	<SoundList>	
+		<!-- Names of sounds MUST match enum values in enum_MechSounds.h -->
+
+		<!-- Mech Sounds -->
+		<Sound Name="Torso_Twist_Pitch" res="Sounds/mech_commando:commando:commando_pitch" offset="0.0,0.0,5.0"/>
+		<Sound Name="Torso_Twist_Yaw" res="Sounds/mech_commando:commando:commando_yaw" offset="0.0,0.0,5.0"/>
+		<Sound Name="Mech_Engine" res="Sounds/mech_commando:commando:commando_engine" offset="0.0,0.0,7.0"/>
+		<Sound Name="Mech_Powerup" res="Sounds/mech_commando:commando:commando_powerup" offset="0.0,0.0,7.0"/>
+		<Sound Name="Mech_Powerdown" res="Sounds/mech_commando:commando:commando_powerdown" offset="0.0,0.0,7.0"/>
+		<Sound Name="Cockpit_Immersion" res="Sounds/mech_commando:commando:commando_immersion"/>
+
+		<!-- Third Person Sounds -->
+		<Sound Name="Torso_Twist_Pitch_TP" res="Sounds/mech_commando:commando:commando_pitch_tp" offset="0.0,0.0,5.0"/>
+		<Sound Name="Torso_Twist_Yaw_TP" res="Sounds/mech_commando:commando:commando_yaw_tp" offset="0.0,0.0,5.0"/>
+		<Sound Name="Mech_Engine_TP" res="Sounds/mech_commando:commando:commando_engine_tp" offset="0.0,0.0,7.0"/>
+		<Sound Name="Mech_Powerup_TP" res="Sounds/mech_commando:commando:commando_powerup_tp" offset="0.0,0.0,7.0"/>
+		<Sound Name="Mech_Powerdown_TP" res="Sounds/mech_commando:commando:commando_powerdown_tp" offset="0.0,0.0,7.0"/>	
+		
+		<!-- base footstep effect name -->
+		<Footstep res="footstep_commando" />
+	</SoundList>
+</MechSoundDef>
