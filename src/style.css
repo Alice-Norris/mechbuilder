@@ -138,10 +138,16 @@ div > footer{
     text-align:center;
 }
 
-h4{
+footer > h4{
     font-family: HeavyMetal;
     color: darkorange;
     font-size: 1.3em;
-    background-color: red;  
+    vertical-align: center;
+}
+
+footer > h4:hover{
+    font-family: HeavyMetal;
+    color: rgb(78, 0, 0);
+    font-size: 1.3em;
     vertical-align: center;
 }
