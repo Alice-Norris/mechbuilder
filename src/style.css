@@ -4,53 +4,87 @@
     src: url(../assets/fonts/Hvymtl2.ttf);
 }
 
+::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #4b361f60;
+    box-shadow: inset 0 0 0.3vw #4b361f;
+    border-radius: 0.5vw;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #816c3f;
+    border-radius: 0.5vw;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: darkorange;
+    border-radius: 0.5vw;
+  }
+
 body {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: hidden;
     background-image: url(../assets/images/loading_mechlab.png);
     background-position: center;
+    height: 100%;
+    margin: 0;
 }
 
 header{
-    flex: 1 1;
+    max-height: 10vh;
+    min-height: 10vh;
+    flex: 0 1 5%;
     background-image: url(../assets/images/concrete.png);
+}
+
+header > h1 {
+    max-height: 8vh;
+    min-height: 8vh;
+    text-align: center;
+    font-family: HeavyMetal;
+    font-size: 2em;
+    color: rgb(78, 0, 0);
+    margin:0;
 }
 
  nav{
     flex: 1 1;
-    height: 100%;
+    max-height: 2vh;
+    min-height: 2vh;
     display: flex;
     justify-content:space-around;
     background-image: url(../assets/images/mechbay_floors_b_spc.png);
 }
 
-header > h1 {
-    text-align: center;
-    font-family: HeavyMetal;
-    font-size: 2.3em;
-    color: rgb(78, 0, 0);
-}
-
-nav > a {
+a {
     font-family: HeavyMetal;
     color: darkorange;
 }
 
-nav > a:visited{
+a:visited{
     font-family: HeavyMetal;
     color: darkgoldenrod;
 }
 
-nav > a:hover {
+a:hover {
     color: orange;
 }
-nav a:visited {
+a:visited {
     color: darkgoldenrod;
 }
 /*START MAIN APP AREA CSS */
 #appMain{
+    max-height: 85vh;
+    min-height: 85vh;
     flex: 1 0 400px;
     display: flex;
     justify-content: space-around;
@@ -62,7 +96,13 @@ nav a:visited {
     overflow-y: visible;
 }
 
-#selectForm{
+fieldset{
+    border: 3px solid #816c3f;
+    border-radius: 4px;
+    background-color:#4b361f60;
+}
+
+form{
     display: flex;
     flex-direction: column;
     color: darkgoldenrod;
@@ -70,37 +110,38 @@ nav a:visited {
     font-size: .80em;
 }
 
-#selectForm > h5{
+form#selectForm{
+    max-height: 85vh;
+    overflow-y:auto;
+}
+
+form > h5{
     float: left;
     padding: 0;
     margin: 0;
     font-size: 1.2em;
 }
 
-#selectform > #biglabel{
-    float: left;
-    padding: 0;
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-#selectForm > label{
+form > label{
+    width: 95%;
     text-indent: 5%;
 }
 
 select {
-    width: 90%;
-    padding: 0 12px 0 12px;
-    margin: 8px 0;
+    width: 100%;
+    padding: 0 5%;
     display: inline-block;
-    border: 1px solid #816c3f;
+    border: 2px solid #816c3f;
     background-color:#4b361f;
     border-radius: 4px;
     box-sizing: border-box;
     font-family: HeavyMetal;
     color: darkorange;
     font-size: 1.1em;
+  }
+
+  select:hover{
+    border: 2px solid darkorange;
   }
 
 #mechs{
@@ -114,10 +155,11 @@ select {
 }
 
 #mechOutline{
+    max-height: 80vh;
     max-width: 100%;
     object-fit:scale-down;
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
     align-content: center;
 
 }
@@ -128,13 +170,15 @@ select {
 /*END MAIN APP AREA CSS*/
 
 #footerDiv{
+    max-height: 5vh;
+    min-height: 5vh;
     flex: 1 1 100%;
     display: flex;
+    background-image: url(../assets/images/concrete.png);
+    background-repeat: repeat;
 }
 div > footer{
     flex: 1 0 100%;
-    background-image: url(../assets/images/concrete.png);
-    background-repeat: repeat;
     text-align:center;
 }
 
@@ -143,11 +187,10 @@ footer > h4{
     color: darkorange;
     font-size: 1.3em;
     vertical-align: center;
+    margin:0;
+    padding:5px;
 }
 
-footer > h4:hover{
-    font-family: HeavyMetal;
+footer > h4 > a:hover{
     color: rgb(78, 0, 0);
-    font-size: 1.3em;
-    vertical-align: center;
 }

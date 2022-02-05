@@ -12,7 +12,7 @@ function createWindow() {
         }
     })
 
-    window.setAspectRatio(1),
+    //window.setAspectRatio(1),
     window.loadFile('.\\src\\index.html'),
     window.setMenuBarVisibility(false)
     window.webContents.openDevTools()
