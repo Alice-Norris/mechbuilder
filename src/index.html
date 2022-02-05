@@ -24,20 +24,27 @@
         <div id="appMain">
             <div id = "eqSelection">
                 <form id = "selectForm">
-                    <label for="mechs" class="biglabel">Choose a chassis:</label>
-                    <select name = "mechs" id = "mech">
-                        <option value="none"> ——— NAME ——— </option>
-                    </select>
-                    <label for="subtype" class="biglabel">Choose a subtype:</label>
-                    <select name = "subtype" id = "subtype">
-                        <option value = "none"> ——— NAME ——— </option>
-                    </select>
-                        <h5>Head:</h5>
+                    
+                    <fieldset>
+                        <legend>Chassis</legend> 
+                        <label for="mechs" class="biglabel">Choose a chassis:</label>
+                        <select name = "mechs" id = "mech">
+                            <option value="none"> ——— NAME ——— </option>
+                        </select>
+                        <label for="subtype" class="biglabel">Choose a subtype:</label>
+                        <select name = "subtype" id = "subtype">
+                            <option value = "none"> ——— NAME ——— </option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Head:</legend>
                         <Label for = "head">Head Options:</Label>
                         <Select name = "head">
                             <option value ="none"> ——— NAME ——— </option>
                         </Select>
-                        <h5>Torso:</h5>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Torso:</legend>
                         <label for="leftTorso">Left Torso:</label>
                         <select name = "leftTorso">
                             <option value="none">——— NAME ———</option>
@@ -50,7 +57,9 @@
                         <select name = "rightTorso">
                             <option value="none">——— NAME ———</option>
                         </select>
-                        <h5>Arms:</h5>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Arms:</legend>
                         <label for="leftArm">Left Arm:</label>
                         <select name = "leftArm">
                             <option value="none">——— NAME ———</option>
@@ -59,7 +68,9 @@
                         <select name = "rightArm">
                             <option value="none">——— NAME ———</option>
                         </select>
-                        <h5>Legs:</h5>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Legs:</legend>
                         <label for="leftLeg">Left Leg:</label>
                         <select name = "leftLeg">
                             <option value="none">——— NAME ———</option>
@@ -68,6 +79,7 @@
                         <select name = "rightLeg">
                             <option value="none">——— NAME ———</option>
                         </select>
+                    </fieldset>
                 </form>
             </div >
             <div id = "mechOutlineDiv">
