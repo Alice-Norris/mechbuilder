@@ -33,7 +33,7 @@ const MechSubtypeFunc = async function addSubtypes() {
         let form = document.getElementById("subtype");
         const opt = document.createElement('option');
         opt.innerText = mechElement.getAttribute("Variant");
-        opt.value = fileName;
+        opt.value = subtype;
         form.appendChild(opt);
     }
 
