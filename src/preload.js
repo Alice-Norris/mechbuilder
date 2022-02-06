@@ -1,6 +1,7 @@
 const { systemPreferences } = require("electron");
 const path = require("path");
 const fs = require("fs/promises");
+const { remove } = require("lodash");
 var currentMechDef = null;
 var jquery = null;
 const Parser = new DOMParser();
@@ -62,6 +63,9 @@ const autoFillPartsFunc = async function autoFillParts(){
     currentMechDef = jquery(jquery.parseXML(mechFileData));
     //let components = currentMechDef.find("Component[Name='centre_torso'] > Piece > Attachment");
     for (select of document.getElementsByClassName("componentSelect")){
+        for (remove of select.getElementsByClassName("formOption")){
+        remove.remove;
+        }
         console.log("Component[Name='" + select.name + "']");
         let component = currentMechDef.find("Component[Name*='" + select.name + "'] > Piece > Attachment");      
         component.each(function(index) {
