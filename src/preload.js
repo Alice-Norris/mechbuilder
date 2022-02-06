@@ -27,6 +27,9 @@ const MechSubtypeFunc = async function addSubtypes() {
     let mechChassis = document.getElementById("mech");
     let mechChoice = mechChassis.options[mechChassis.selectedIndex].text;
     const subtypeSelect = document.getElementById("subtype");
+    while (subtypeSelect.firstChild){
+        subtypeSelect.removeChild(subtypeSelect.lastChild);
+    }
     let defaultOpt = document.createElement("option")
     defaultOpt.value = "default";
     defaultOpt.innerText = " ——— VARIANT NAME ———"
