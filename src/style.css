@@ -37,49 +37,46 @@ body {
     background-position: center;
     height: 100%;
     margin: 0;
+    color: darkgoldenrod;
+    font-family:HeavyMetal;
 }
 
 header{
     max-height: 10vh;
     min-height: 10vh;
     flex: 0 1 5%;
-    background-image: url(../assets/images/concrete.png);
+    /*background-image: url(../assets/images/concrete.png);*/
+    background-image: url(../assets/images/mechbay_floors_b_spc.png);
 }
 
 header > h1 {
-    max-height: 8vh;
-    min-height: 8vh;
+    max-height: 7vh;
+    min-height: 7vh;
     text-align: center;
-    font-family: HeavyMetal;
-    font-size: 2em;
-    color: rgb(78, 0, 0);
+    font-size: 6vh;
     margin:0;
 }
 
  nav{
+    font-size: 2.5vh;
     flex: 1 1;
-    max-height: 2vh;
-    min-height: 2vh;
+    max-height: 3vh;
+    min-height: 3vh;
     display: flex;
     justify-content:space-around;
-    background-image: url(../assets/images/mechbay_floors_b_spc.png);
+    /* background-image: url(../assets/images/mechbay_floors_b_spc.png); */
 }
 
 a {
-    font-family: HeavyMetal;
-    color: darkorange;
+    color:darkorange;
 }
 
 a:visited{
-    font-family: HeavyMetal;
-    color: darkgoldenrod;
+    color:coral;
 }
 
 a:hover {
     color: orange;
-}
-a:visited {
-    color: darkgoldenrod;
 }
 /*START MAIN APP AREA CSS */
 #appMain{
@@ -106,11 +103,7 @@ form{
     display: flex;
     flex-direction: column;
     color: darkgoldenrod;
-    font-family: HeavyMetal;
     font-size: .80em;
-}
-
-form#selectForm{
     max-height: 85vh;
     overflow-y:auto;
 }
@@ -174,7 +167,8 @@ select {
     min-height: 5vh;
     flex: 1 1 100%;
     display: flex;
-    background-image: url(../assets/images/concrete.png);
+    /* background-image: url(../assets/images/concrete.png); */
+    background-image: url(../assets/images/mechbay_floors_b_spc.png);
     background-repeat: repeat;
 }
 div > footer{
@@ -183,14 +177,12 @@ div > footer{
 }
 
 footer > h4{
-    font-family: HeavyMetal;
-    color: darkorange;
-    font-size: 1.3em;
+    font-size: 2vh;
     vertical-align: center;
     margin:0;
-    padding:5px;
+    padding:0;
 }
 
-footer > h4 > a:hover{
-    color: rgb(78, 0, 0);
+footer > h4.disclaimer{
+    font-weight: lighter;
 }
