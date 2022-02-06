@@ -24,60 +24,50 @@
         <div id="appMain">
             <div id = "eqSelection">
                 <form id = "selectForm">
-                    
                     <fieldset>
                         <legend>Chassis</legend> 
                         <label for="mechs" class="biglabel">Choose a chassis:</label>
-                        <select name = "mechs" id = "mech">
-                            <option value="none"> ——— NAME ——— </option>
+                        <select name = "mechs" id = "mech" > 
+                            <option selected disabled> CHASSIS </option>
                         </select>
                         <label for="subtype" class="biglabel">Choose a subtype:</label>
                         <select name = "subtype" id = "subtype">
-                            <option value = "none"> ——— NAME ——— </option>
                         </select>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="components">
                         <legend>Head:</legend>
-                        <Label for = "head">Head Options:</Label>
-                        <Select name = "head">
-                            <option value ="none"> ——— NAME ——— </option>
+                        <Label for = "head" class = "components">Head Options:</label>
+                        <Select class = "componentSelect" name = "head" multiple size="1" id="head">
                         </Select>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class= "components">
                         <legend>Torso:</legend>
-                        <label for="leftTorso">Left Torso:</label>
-                        <select name = "leftTorso">
-                            <option value="none">——— NAME ———</option>
+                        <label for="left_torso" id="left_torso">Left Torso:</label>
+                        <select class = "componentSelect" name = "left_torso" multiple size="1">
                         </select>
-                        <label for = "centerTorso">Center Torso:</label>
-                        <select name = "centerTorso">
-                            <option value="none">——— NAME ———</option>
+                        <label for = "centre_torso">Center Torso:</label>
+                        <select class = "componentSelect" name = "centre_torso" id = "centre_torso" multiple size="1">
                         </select>
-                        <label for="rightTorso">Right Torso:</label>
-                        <select name = "rightTorso">
-                            <option value="none">——— NAME ———</option>
+                        <label for="right_torso">Right Torso:</label>
+                        <select class = "componentSelect" name = "right_torso" multiple size="1">
                         </select>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class= "components">
                         <legend>Arms:</legend>
-                        <label for="leftArm">Left Arm:</label>
-                        <select name = "leftArm">
-                            <option value="none">——— NAME ———</option>
+                        <label for="left_arm">Left Arm:</label>
+                        <select class = "componentSelect" name = "left_arm" id="left_arm" multiple size="1">
                         </select>
-                        <label for="rightArm">Right Arm:</label>
-                        <select name = "rightArm">
-                            <option value="none">——— NAME ———</option>
+                        <label for="right arm">Right Arm:</label>
+                        <select class = "componentSelect" name = "right_arm" id = "right_arm" multiple size="1">
                         </select>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class= "components">
                         <legend>Legs:</legend>
-                        <label for="leftLeg">Left Leg:</label>
-                        <select name = "leftLeg">
-                            <option value="none">——— NAME ———</option>
+                        <label for="left_leg">Left Leg:</label>
+                        <select class = "componentSelect" name = "left_leg" id="left_leg" multiple size="1">
                         </select>
-                        <label for="rightLeg">Right Leg:</label>
-                        <select name = "rightLeg">
-                            <option value="none">——— NAME ———</option>
+                        <label for="right_leg">Right Leg:</label>
+                        <select class = "componentSelect" name = "right_leg" multiple size="1">
                         </select>
                     </fieldset>
                 </form>
