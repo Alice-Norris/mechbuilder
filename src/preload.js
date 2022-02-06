@@ -63,8 +63,8 @@ const autoFillPartsFunc = async function autoFillParts(){
     currentMechDef = jquery(jquery.parseXML(mechFileData));
     //let components = currentMechDef.find("Component[Name='centre_torso'] > Piece > Attachment");
     for (select of document.getElementsByClassName("componentSelect")){
-        for (remove of select.getElementsByClassName("formOption")){
-        remove.remove;
+        for (removee of select.getElementsByClassName("formOption")){
+        removee.remove;
         }
         console.log("Component[Name='" + select.name + "']");
         let component = currentMechDef.find("Component[Name*='" + select.name + "'] > Piece > Attachment");      
