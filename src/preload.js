@@ -64,7 +64,8 @@ const autoFillPartsFunc = async function autoFillParts(){
     //let components = currentMechDef.find("Component[Name='centre_torso'] > Piece > Attachment");
     for (select of document.getElementsByClassName("componentSelect")){
         for (removee of select.getElementsByClassName("formOption")){
-        removee.remove;
+            console.log('removing '+removee);
+            removee.remove;
         }
         console.log("Component[Name='" + select.name + "']");
         let component = currentMechDef.find("Component[Name*='" + select.name + "'] > Piece > Attachment");      
