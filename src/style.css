@@ -4,26 +4,50 @@
     src: url(../assets/fonts/Hvymtl2.ttf);
 }
 
+:root {
+    --main-bg-color: #4b361f;
+    --main-line-color: #816c3f;
+    --semitrans-bg-color: #4b361f60;
+    --hover-color: darkorange;
+    --visited-color:coral;
+    --font-color: darkgoldenrod;
+    --mechlab-bg: url(../assets/images/loading_mechlab.png);
+    --banner-bg: url(../assets/images/mechbay_floors_b_spc.png);
+    --interface-bg: url(../assets/images/mechbay_wall_df.png);
+  }
+
+a {
+    color:var(--font-color);
+}
+
+a:visited{
+    color:var(--visited-color);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
 ::-webkit-scrollbar {
     width: 1vw;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #4b361f60;
-    box-shadow: inset 0 0 0.3vw #4b361f;
+    background: var(--semitrans-bg-color);
+    box-shadow: inset 0 0 0.3vw var(--main-bg-color);
     border-radius: 0.5vw;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #816c3f;
+    background: var(--main-line-color);
     border-radius: 0.5vw;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: darkorange;
+    background: var(--hover-color);
     border-radius: 0.5vw;
   }
 
@@ -33,11 +57,11 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-image: url(../assets/images/loading_mechlab.png);
+    background-image: var(--mechlab-bg);
     background-position: center;
     height: 100%;
     margin: 0;
-    color: darkgoldenrod;
+    color: var(--font-color);
     font-family:HeavyMetal;
 }
 
@@ -45,8 +69,7 @@ header{
     max-height: 10vh;
     min-height: 10vh;
     flex: 0 1 5%;
-    /*background-image: url(../assets/images/concrete.png);*/
-    background-image: url(../assets/images/mechbay_floors_b_spc.png);
+    background-image: var(--banner-bg);
 }
 
 header > h1 {
@@ -64,20 +87,8 @@ header > h1 {
     min-height: 3vh;
     display: flex;
     justify-content:space-around;
-    /* background-image: url(../assets/images/mechbay_floors_b_spc.png); */
 }
 
-a {
-    color:darkorange;
-}
-
-a:visited{
-    color:coral;
-}
-
-a:hover {
-    color: orange;
-}
 /*START MAIN APP AREA CSS */
 #appMain{
     max-height: 85vh;
@@ -94,15 +105,15 @@ a:hover {
 }
 
 fieldset{
-    border: 3px solid #816c3f;
+    border: 3px solid var(--main-line-color);
     border-radius: 4px;
-    background-color:#4b361f60;
+    background-color:var(--semitrans-bg-color);
 }
 
 form{
     display: flex;
     flex-direction: column;
-    color: darkgoldenrod;
+    color: var(--font-color);
     font-size: .80em;
     max-height: 85vh;
     overflow-y:auto;
@@ -126,23 +137,23 @@ select {
     display: inline-block;
     border-radius: 4px;
     box-sizing: border-box;
-    border: 2px solid #816c3f;
-    background-color:#4b361f;
+    border: 2px solid var(--main-line-color);
+    background-color:var(--main-bg-color);
     font-family: HeavyMetal;
-    color: darkorange;
+    color: var(--font-color);
     font-size: 1.1em;
   }
 
   .formOption{
-    background-color:#4b361f;
+    background-color:var(--main-bg-color);
     font-family: HeavyMetal;
-    color: darkorange;
+    color: var(--font-color);
     font-size: 1.1em;
     overflow:visible;
 }
 
   select:hover{
-    border: 2px solid darkorange;
+    border: 2px solid var(--hover-color);
   }
 
 #mechs{
@@ -151,7 +162,7 @@ select {
 
 #mechOutlineDiv{
     flex: 2 0 200px;
-    background-image: url(../assets/images/mechbay_wall_df.png);
+    background-image: var(--interface-bg);
     background-repeat: center;
 }
 
@@ -175,8 +186,7 @@ select {
     min-height: 5vh;
     flex: 1 1 100%;
     display: flex;
-    /* background-image: url(../assets/images/concrete.png); */
-    background-image: url(../assets/images/mechbay_floors_b_spc.png);
+    background-image: var(--banner-bg);
     background-repeat: repeat;
 }
 div > footer{
@@ -194,3 +204,40 @@ footer > h4{
 footer > h4.disclaimer{
     font-weight: lighter;
 }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: var(--main-bg-color); /* Fallback color */
+    background-color: var(--semitrans-bg-color); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+.modal-content {
+    background-color: var(--main-bg-color);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 3px solid var(--main-line-color);
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: var(--main-line-color);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--hover-color);
+    text-decoration: none;
+    cursor: pointer;
+  }

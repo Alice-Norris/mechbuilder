@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; secript-src 'self'">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="svg.js"></script>
+        <title>Mech Builder</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id = "header">
+            <h1>Mech Builder</h1>
+            <nav id = "topnav">
+                <a href="/new">New Mech</a>
+                <a href="/edit">Edit Mech</a>
+                <a href="#save-load">Save/Load Mech</a>
+            </nav>
+        </header>
+
+
+        <div id="appMain">
+            <div id = "eqSelection">
+                <form id = "selectForm">
+                    <fieldset>
+                        <legend>Chassis</legend> 
+                        <label for="mechs" class="biglabel">Choose a chassis:</label>
+                        <select name = "mechs" id = "mech" > 
+                            <option selected disabled> CHASSIS </option>
+                        </select>
+                        <label for="subtype" class="biglabel">Choose a subtype:</label>
+                        <select name = "subtype" id = "subtype">
+                        </select>
+                    </fieldset>
+                    <fieldset class="components">
+                        <legend>Head:</legend>
+                        <Label for = "head" class = "components">Head Options:</label>
+                        <Select class = "componentSelect" name = "head" multiple size="1" id="head">
+                        </Select>
+                    </fieldset>
+                    <fieldset class= "components">
+                        <legend>Torso:</legend>
+                        <label for="left_torso" id="left_torso">Left Torso:</label>
+                        <select class = "componentSelect" name = "left_torso" multiple size="1">
+                        </select>
+                        <label for = "centre_torso">Center Torso:</label>
+                        <select class = "componentSelect" name = "centre_torso" id = "centre_torso" multiple size="1">
+                        </select>
+                        <label for="right_torso">Right Torso:</label>
+                        <select class = "componentSelect" name = "right_torso" multiple size="1">
+                        </select>
+                    </fieldset>
+                    <fieldset class= "components">
+                        <legend>Arms:</legend>
+                        <label for="left_arm">Left Arm:</label>
+                        <select class = "componentSelect" name = "left_arm" id="left_arm" multiple size="1">
+                        </select>
+                        <label for="right arm">Right Arm:</label>
+                        <select class = "componentSelect" name = "right_arm" id = "right_arm" multiple size="1">
+                        </select>
+                    </fieldset>
+                    <fieldset class= "components">
+                        <legend>Legs:</legend>
+                        <label for="left_leg">Left Leg:</label>
+                        <select class = "componentSelect" name = "left_leg" id="left_leg" multiple size="1">
+                        </select>
+                        <label for="right_leg">Right Leg:</label>
+                        <select class = "componentSelect" name = "right_leg" multiple size="1">
+                        </select>
+                    </fieldset>
+                </form>
+            </div >
+            <div id = "mechOutlineDiv">
+                <object id = "mechOutline" data = "../assets/images/mech_outline.svg" type="image/svg+xml"></object>
+            </div>
+            <div id = "eqOutput">
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Modal</button>
+            </div>
+        </div>
+        <div id = "footerDiv">
+            <footer id = "footer">
+                <h4 class="disclaimer">This app is for educational purposes only.</h4>
+                <h4 class="authors">&lt;3 <a href = "https://github.com/ChrisCrossChaos">Chris Cross</a> & <a href = "https://github.com/Alice-Norris">Alice Kneller</a> &lt;3</h4>
+            </footer>
+            </div>
+    </body>
+</html>
+
+<!-- The Modal -->
+<div id="modalAlert" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+
+  </div>
+
+</div>
