@@ -27,9 +27,7 @@ const MechSubtypeFunc = async function addSubtypes() {
     let mechChassis = document.getElementById("mech");
     let mechChoice = mechChassis.options[mechChassis.selectedIndex].text;
     const subtypeSelect = document.getElementById("subtype");
-    while (subtypeSelect.firstChild){
-        subtypeSelect.removeChild(subtypeSelect.lastChild);
-    }
+    clearSelectBox(subtypeSelect);
     let defaultOpt = document.createElement("option")
     defaultOpt.value = "default";
     defaultOpt.innerText = " ——— VARIANT NAME ———"
@@ -66,10 +64,7 @@ const autoFillPartsFunc = async function autoFillParts(){
     currentMechDef = jquery(jquery.parseXML(mechFileData));
     //let components = currentMechDef.find("Component[Name='centre_torso'] > Piece > Attachment");
     for (select of document.getElementsByClassName("componentSelect")){
-        for (removee of select.getElementsByClassName("formOption")){
-            console.log('removing '+removee);
-            removee.remove;
-        }
+        clearSelectBox(select);
         console.log("Component[Name='" + select.name + "']");
         let component = currentMechDef.find("Component[Name*='" + select.name + "'] > Piece > Attachment");      
         component.each(function(index) {
@@ -85,7 +80,11 @@ const autoFillPartsFunc = async function autoFillParts(){
         })
     };
 }
-
+function clearSelectBox(select){
+    while (select.firstChild){
+        select.removeChild(select.lastChild);
+    }
+}
 const scriptSetupFunc = function scriptSetup(){
     MechChassisFunc();
     jquery = require("jquery");
