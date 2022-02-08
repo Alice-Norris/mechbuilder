@@ -1,53 +1,48 @@
 const { systemPreferences } = require("electron");
 const path = require("path");
 const fs = require("fs/promises");
-const { remove } = require("lodash");
-var currentMechDef = null;
-var jquery = null;
+const { mech } = require("./mechClass");
 const Parser = new DOMParser();
+var currentMechDef = null;
+var currentMech;
 
-const MechChassisFunc = async function addMechChassis() {
+async function addMechChassis() {
         try{
-            const directoryPath = path.join(__dirname, '..\\assets\\cdf\\stock\\');
-            const chassis_array = await fs.readdir(directoryPath, { withFileTypes: false});
+            var directoryPath = path.join(__dirname, '..\\assets\\cdf\\stock\\');
+            var chassis_array = await fs.readdir(directoryPath, { withFileTypes: false});
+            var mechSelect = document.getElementById("mech");
             for (fileName of chassis_array){
-                let form = document.getElementById("mech");
-                const opt = document.createElement('option');
+                let opt = document.createElement('option');
                 opt.setAttribute('class', 'formOption');
                 opt.innerText = path.parse(fileName).name;
                 opt.value = fileName;
-                form.appendChild(opt);
+                mechSelect.appendChild(opt);
             }
         } catch (err) {
                 console.error(err);
         }
     }
     
-const MechSubtypeFunc = async function addSubtypes() {
-    let mechChassis = document.getElementById("mech");
-    let mechChoice = mechChassis.options[mechChassis.selectedIndex].text;
-    const subtypeSelect = document.getElementById("subtype");
+async function addSubtypes(event) {
+    //get mechChassis select control, get te
+    var mechChoice = event.target.options[event.target.selectedIndex].text
+    currentMech.chassis = mechChoice;
+    var subtypeSelect = document.getElementById("subtype");
     clearSelectBox(subtypeSelect);
-    let defaultOpt = document.createElement("option")
+    //create and add default option
+    var defaultOpt = document.createElement("option")
     defaultOpt.value = "default";
     defaultOpt.innerText = " ——— VARIANT NAME ———"
     defaultOpt.disabled = true;
     defaultOpt.selected = true;
     subtypeSelect.appendChild(defaultOpt);
-    const directoryPath = path.join(__dirname, '..\\assets\\mdf\\', mechChoice +  '\\')
-    const subtype_array = await fs.readdir(directoryPath, {withFileTypes: false});
+    var directoryPath = path.join(__dirname, '..\\assets\\mdf\\', mechChoice +  '\\')
+    var  subtype_array = await fs.readdir(directoryPath, {withFileTypes: false});
     for (subtype of subtype_array){
         fileData = await fs.readFile(directoryPath+subtype, 'utf-8');
-        const doc = Parser.parseFromString(fileData, 'text/xml').getRootNode();
-        const mechVariant = doc.evaluate(
-            'string(MechDefinition/Mech/@Variant)',
-            doc,
-            null,
-            XPathResult.ANY_TYPE,
-            null
-        )
-        let subtypeSelect = document.getElementById("subtype");
-        const opt = document.createElement('option');
+        let doc = Parser.parseFromString(fileData, 'text/xml').getRootNode();
+        let mechVariant = doc.evaluate('string(MechDefinition/Mech/@Variant)', doc)
+        let opt = document.createElement('option');
         opt.value = subtype;
         opt.innerText = mechVariant.stringValue
         subtypeSelect.appendChild(opt);
@@ -55,41 +50,56 @@ const MechSubtypeFunc = async function addSubtypes() {
 
 } 
 
-const autoFillPartsFunc = async function autoFillParts(){
-    let subtypeChoice = document.getElementById("subtype");
-    let fileName = subtypeChoice.options[subtypeChoice.selectedIndex].value;
-    let chassisName = jquery("#mech option:selected")[0].text;
-    let directoryPath = path.join(__dirname, '..\\assets\\mdf\\', chassisName, fileName);
-    mechFileData = await fs.readFile(directoryPath, 'utf-8');
-    currentMechDef = jquery(jquery.parseXML(mechFileData));
-    //let components = currentMechDef.find("Component[Name='centre_torso'] > Piece > Attachment");
+async function autoFillParts(){
+    var subtypeSelect = document.getElementById("subtype");
+    var subtypeChoice = subtypeSelect.options[subtypeSelect.selectedIndex]
+    var fileName = subtypeChoice.value;
+    var chassisName = currentMech.chassis;
+    console.log(currentMech.chassis);
+    currentMech.subtype = subtypeChoice.text;
+    await currentMech.readMdfFile();
     for (select of document.getElementsByClassName("componentSelect")){
-        clearSelectBox(select);
-        console.log("Component[Name='" + select.name + "']");
-        let component = currentMechDef.find("Component[Name*='" + select.name + "'] > Piece > Attachment");      
-        component.each(function(index) {
-            let newOpt = document.createElement("option");
-            let attachmentName = jquery(component.get(index), "Attachment").attr("AName");
-            newOpt.value = attachmentName;
-            newOpt.innerHTML = attachmentName;
-            newOpt.selected = 'true';
-            newOpt.setAttribute('class', 'formOption');
-            console.log(newOpt);
-            select.appendChild(newOpt);
-            select.setAttribute('size', component.length);
-        })
+        let component = currentMech.structure.find(component => {return component.name === select.getAttribute("name")})
+        for (attachment of component.attachments){
+             let newOpt = document.createElement("option");
+             newOpt.value = attachment;
+             newOpt.innerText = attachment;
+             newOpt.selected = 'true';
+             newOpt.setAttribute('class', 'formOption');
+             select.appendChild(newOpt);
+         }
     };
+    for (hardpoint of currentMech.hardpoints){
+        console.log(hardpoint);
+    }
+    // let directoryPath = path.join(__dirname, '..\\assets\\mdf\\', chassisName, fileName);
+    // mechFileData = await fs.readFile(directoryPath, 'utf-8');
+    // currentMechDef = jquery(jquery.parseXML(mechFileData));
+    // //let components = currentMechDef.find("Component[Name='centre_torso'] > Piece > Attachment");
+    // for (select of document.getElementsByClassName("componentSelect")){
+    //     clearSelectBox(select);
+    //     let component = currentMechDef.find("Component[Name*='" + select.name + "'] > Piece > Attachment");      
+    //     component.each(function(index) {
+    //         let newOpt = document.createElement("option");
+    //         let attachmentName = jquery(component.get(index), "Attachment").attr("AName");
+    //         newOpt.value = attachmentName;
+    //         newOpt.innerHTML = attachmentName;
+    //         newOpt.selected = 'true';
+    //         newOpt.setAttribute('class', 'formOption');
+    //         select.appendChild(newOpt);
+    //         select.setAttribute('size', component.length);
+    //     })
+    // };
 }
 function clearSelectBox(select){
     while (select.firstChild){
         select.removeChild(select.lastChild);
     }
 }
-const scriptSetupFunc = function scriptSetup(){
-    MechChassisFunc();
-    jquery = require("jquery");
-    document.getElementById("mech").addEventListener('change', MechSubtypeFunc);
-    document.getElementById("subtype").addEventListener('change', autoFillPartsFunc);
+function scriptSetup(){
+    addMechChassis();
+    document.getElementById("mech").addEventListener('input', addSubtypes);
+    document.getElementById("subtype").addEventListener('input', autoFillParts);
 }
 
-window.addEventListener('DOMContentLoaded', scriptSetupFunc);
+window.addEventListener('DOMContentLoaded', scriptSetup);
