@@ -25,10 +25,7 @@ async function addMechChassis() {
     
 async function addSubtypes(event) {
     //get mechChassis select control, get te
-    var mechChoice = event.target.options[event.target.selectedIndex].text
-    var subtypeSelect = document.getElementById("subtype");
-    var subtypeChoice = subtypeSelect.options[subtypeSelect.selectedIndex].text;
-    currentMech = new mech(mechChoice, subtypeChoice);
+    subtypeSelect = document.getElementById("subtype");
     clearSelectBox(subtypeSelect);
     //create and add default option
     var defaultOpt = document.createElement("option")
