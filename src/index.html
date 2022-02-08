@@ -17,6 +17,7 @@
                 <a href="/new">New Mech</a>
                 <a href="/edit">Edit Mech</a>
                 <a href="#save-load">Save/Load Mech</a>
+                <a href="#modal" id="myBtn">Open Modal</a>
             </nav>
         </header>
 
@@ -84,5 +85,47 @@
                 <h4 class="authors">&lt;3 <a href = "https://github.com/ChrisCrossChaos">Chris Cross</a> & <a href = "https://github.com/Alice-Norris">Alice Kneller</a> &lt;3</h4>
             </footer>
             </div>
+        <!-- The Modal -->
+<div id="modalAlert" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <svg id="modalSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 100 50" xml:space="preserve">
+          <rect id="modalBox" class="drawnElement" width="95" height="45" rx="5" x="2.5" y="2.5" />
+          <svg class="modalText" viewBox="0 0 70 50" x="-10">
+          <rect class="debugborder" width="65" height="7.5" y="5"/>
+          <text id="modalTitle" y="10" >Mech Builder Alert!</text>
+          <foreignObject y="15" width="65" height="32.5">
+              <p id="modalDescription" xmlns="http://www.w3.org/1999/xhtml">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </foreignObject>
+          <rect class="debugborder" width="65" height="32.5" y="12.5"/>
+          </svg>
+          <svg class="modalSidebar" viewBox="0 0 30 50" x="35">
+              <rect class="debugborder" width="25" height="40" y="5"/>
+              <svg class="modalCancel" viewBox="-2.5 -2.5 10 10" height="10" y="2.5" x="7.5">
+                  <path class="modalClose" d="M 0,0
+                  L 5,0
+                  L 5,5
+                  L 0,5
+                  L 0,0
+                  L 5,0
+                  M 5,0
+                  L 0,5
+                  M 0,0
+                  L 5,5
+                  z"/>
+              </svg>
+              <svg class="modalButtons" viewBox="0 0 30 10" x="0" y="-5">
+                  <text id="button3Text" class="buttonText" y="10" x="3">Yes</text>
+                  <rect id="button3" class="modalButton" width="20" height="6" x="2.5" y="6" rx="2"/>
+                  <text id="button2Text" class="buttonText" y="18" x="3">No</text>
+                  <rect id="button2" class="modalButton" width="20" height="6" x="2.5" y="14" rx="2"/>
+                  <text id="button1Text" class="buttonText" y="26" x="3">OK</text>
+                  <rect id="button1" class="modalButton" width="20" height="6" x="2.5" y="22" rx="2"/>
+              </svg>
+          </svg>
+      </svg>
+    </div>
     </body>
 </html>
