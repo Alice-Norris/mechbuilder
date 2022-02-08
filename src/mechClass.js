@@ -72,6 +72,7 @@ class mech {
             console.log("It's not even an OmniMech...");
         } else {
             this.omniMech = true;
+            console.log("It's an omnimech");
             await this.getOmnipodData();
         }
     }
@@ -84,10 +85,9 @@ class mech {
 
     async getStructureData(){
         var tempStructure = [];
-        var structureNodes = this.mdfData.getElementsByTagNameNS(null, "Component");
-        
-        for (let structureNode of structureNodes){
-            console.log(structureNode);
+        var structureNodes = this.mdfData.evaluate("//Component", this.mdfData);
+        var structureNode;
+        while((structureNode = structureNodes.iterateNext()) != null){
             let location = structureNode.getAttributeNS(null, "Name");
             let slots = structureNode.getAttributeNS(null, "Slots");
             let hp = structureNode.getAttributeNS(null, "HP");
@@ -95,28 +95,30 @@ class mech {
             if (structureNode.getAttributeNS(null, "CanEquipECM") === null){
                 ecm = true;
             };
+            let attachments = []
             for (let attachment of structureNode.getElementsByTagNameNS(null, "Attachment")){
-                newComponent.attachments.push(attachment.getAttributeNS(null, "AName"));
+                console.log(attachment.getAttributeNS(null, "AName"));
+                attachments.push(attachment.getAttributeNS(null, "AName"));
             };
-            newComponent.push(tempStructure);
-            console.log("newComponent: ", newComponent);
+            var newComponent = new component(location, slots, hp, ecm, attachments);
+            tempStructure.push(newComponent);   
             this.structure = tempStructure;
         }
     }
 
     async getOmnipodData(){
-        
+        var tempOmnipods = [];
         var omnipodFile = await fs.readFile(path.join(__dirname, "..\\assets\\mechXML\\", this.chassis, "\\", this.chassis + "-omnipods.xml"), 'utf-8');
-        let omnipodData = Parser.parseFromString(omnipodFile, 'text/xml');
-        let subtypeOmnipods = omnipodData.getElementsByName(this.subtype.toLowerCase());   
-        
-        for (let child of subtypeOmnipods.item(0).getElementsByTagNameNS(null, "component")){
-            let currentOmnipod = new omnipod();
-            currentOmnipod.location = child.getAttributeNS(null, "name");
+        var omnipodData = Parser.parseFromString(omnipodFile, 'text/xml');
+        var omnipodNodes = omnipodData.evaluate("/Omnipods/Set[@name='" + this.subtype.toLowerCase() + "']/component", omnipodData);
+        var omnipodNode;
+        while((omnipodNode = omnipodNodes.iterateNext()) != null){
+            currentOmnipod.location = omnipodNode.getAttributeNS(null, "name");
             for (let quirk of child.getElementsByTagNameNS(null, "Quirk")){
                 let quirkName = quirk.getAttributeNS(null, "name");
                 let quirkValue = quirk.getAttributeNS(null, "value");
                 let quirkObject = {"Quirk Name" : quirkName, "Quirk Value" : quirkValue };
+                console.log(quirkName, quirkValue, quirkObject);
                 currentOmnipod.quirks.push(quirkObject);
                 
             };
