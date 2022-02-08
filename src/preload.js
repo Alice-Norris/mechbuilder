@@ -25,15 +25,12 @@ async function addMechChassis() {
     
 async function addSubtypes(event) {
     //get mechChassis select control, get te
-    subtypeSelect = document.getElementById("subtype");
+    var mechSelect = document.getElementById("mech");
+    var mechChoice = mechSelect.options[mechSelect.selectedIndex].text; 
+    var subtypeSelect = document.getElementById("subtype");
     clearSelectBox(subtypeSelect);
     //create and add default option
-    var defaultOpt = document.createElement("option")
-    defaultOpt.value = "default";
-    defaultOpt.innerText = " ——— VARIANT NAME ———"
-    defaultOpt.disabled = true;
-    defaultOpt.selected = true;
-    subtypeSelect.appendChild(defaultOpt);
+    subtypeSelect.disabled = false;
     var directoryPath = path.join(__dirname, '..\\assets\\mdf\\', mechChoice +  '\\')
     var  subtype_array = await fs.readdir(directoryPath, {withFileTypes: false});
     for (subtype of subtype_array){
@@ -49,45 +46,15 @@ async function addSubtypes(event) {
 } 
 
 async function autoFillParts(){
+    var chassisSelect = document.getElementById("mech");
+    var chassisChoice = chassisSelect.options[chassisSelect.selectedIndex];
     var subtypeSelect = document.getElementById("subtype");
-    var subtypeChoice = subtypeSelect.options[subtypeSelect.selectedIndex]
+    var subtypeChoice = subtypeSelect.options[subtypeSelect.selectedIndex];
     var fileName = subtypeChoice.value;
-    var chassisName = currentMech.chassis;
-    console.log(currentMech.chassis);
+    currentMech = new mech(chassisChoice.text, subtypeChoice.text);
+    console.log(currentMech.chassis, currentMech.subtype);
     currentMech.subtype = subtypeChoice.text;
-    await currentMech.readMdfFile();
-    for (select of document.getElementsByClassName("componentSelect")){
-        let component = currentMech.structure.find(component => {return component.name === select.getAttribute("name")})
-        for (attachment of component.attachments){
-             let newOpt = document.createElement("option");
-             newOpt.value = attachment;
-             newOpt.innerText = attachment;
-             newOpt.selected = 'true';
-             newOpt.setAttribute('class', 'formOption');
-             select.appendChild(newOpt);
-         }
-    };
-    for (hardpoint of currentMech.hardpoints){
-        console.log(hardpoint);
-    }
-    // let directoryPath = path.join(__dirname, '..\\assets\\mdf\\', chassisName, fileName);
-    // mechFileData = await fs.readFile(directoryPath, 'utf-8');
-    // currentMechDef = jquery(jquery.parseXML(mechFileData));
-    // //let components = currentMechDef.find("Component[Name='centre_torso'] > Piece > Attachment");
-    // for (select of document.getElementsByClassName("componentSelect")){
-    //     clearSelectBox(select);
-    //     let component = currentMechDef.find("Component[Name*='" + select.name + "'] > Piece > Attachment");      
-    //     component.each(function(index) {
-    //         let newOpt = document.createElement("option");
-    //         let attachmentName = jquery(component.get(index), "Attachment").attr("AName");
-    //         newOpt.value = attachmentName;
-    //         newOpt.innerHTML = attachmentName;
-    //         newOpt.selected = 'true';
-    //         newOpt.setAttribute('class', 'formOption');
-    //         select.appendChild(newOpt);
-    //         select.setAttribute('size', component.length);
-    //     })
-    // };
+    await currentMech.buildMech();
 }
 function clearSelectBox(select){
     while (select.firstChild){

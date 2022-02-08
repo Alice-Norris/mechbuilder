@@ -55,19 +55,19 @@ class mech {
     weapons;
     structure;
 
-    constructor(chassis, subtype, omniMech = false, mdfData = null, omnipods = [], weapons = [], structure = []){
+    constructor(chassis, subtype, omniMech = false, mdfData = null){
         this.chassis = chassis;
         this.omniMech = omniMech;
         this.subtype = subtype;
-        //this.mdfData = this.readMdfFile();
-        this.omnipods = omnipods;
-        this.weapons = weapons;
-        this.structure = structure;
+        this.mdfData = mdfData;
+        this.omnipods = [];
+        this.weapons = [];
+        this.structure = [];
     }
     
     async buildMech(){
+        await this.readMdfFile();
         await this.getStructureData();
-
         if (!this.mdfData.getElementsByTagNameNS(null, "MechDefinition").item(0).getAttributeNS(null, "Version")){
             console.log("It's not even an OmniMech...");
         } else {
@@ -83,16 +83,24 @@ class mech {
     }
 
     async getStructureData(){
-        var structureInfo = this.mdfData.getElementsByTagNameNS(null, "Component");
-        for (let componentInfo of structureInfo){
-            let newComponent = new component();
-            newComponent.name = componentInfo.getAttributeNS(null, "Name");
-            newComponent.slots = componentInfo.getAttributeNS(null, "Slots");
-            newComponent.hp = componentInfo.getAttributeNS(null, "HP");            
-            for (let attachment of componentInfo.getElementsByTagNameNS(null, "Attachment")){
+        var tempStructure = [];
+        var structureNodes = this.mdfData.getElementsByTagNameNS(null, "Component");
+        
+        for (let structureNode of structureNodes){
+            console.log(structureNode);
+            let location = structureNode.getAttributeNS(null, "Name");
+            let slots = structureNode.getAttributeNS(null, "Slots");
+            let hp = structureNode.getAttributeNS(null, "HP");
+            let ecm = false;
+            if (structureNode.getAttributeNS(null, "CanEquipECM") === null){
+                ecm = true;
+            };
+            for (let attachment of structureNode.getElementsByTagNameNS(null, "Attachment")){
                 newComponent.attachments.push(attachment.getAttributeNS(null, "AName"));
             };
-            let iteration = this.structure.push(newComponent);
+            newComponent.push(tempStructure);
+            console.log("newComponent: ", newComponent);
+            this.structure = tempStructure;
         }
     }
 
