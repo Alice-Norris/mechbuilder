@@ -3,6 +3,7 @@ const fs = require("fs/promises");
 const { off } = require("process");
 const Parser = new DOMParser();
 
+
 class omnipod {
     component;
     quirks;
@@ -47,14 +48,14 @@ class component{
 
 class mech {
     chassis;
-    omniMech;
     subtype;
+    omniMech;
     mdfData;
     omnipods;
     weapons;
     structure;
 
-    constructor(chassis = "none", omniMech = false, subtype = "none", mdfData = null, omnipods = [], weapons = [], structure = []){
+    constructor(chassis, subtype, omniMech = false, mdfData = null, omnipods = [], weapons = [], structure = []){
         this.chassis = chassis;
         this.omniMech = omniMech;
         this.subtype = subtype;
