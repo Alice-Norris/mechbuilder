@@ -255,6 +255,7 @@ footer > h4.disclaimer{
     stroke:var(--main-line-color);
     fill:var(--semitrans-bg-color);
     stroke-width: var(--thin-stroke);
+    pointer-events: visiblePainted;
 }
 .modalButton:hover, .modalClose:hover{
     stroke:var(--hover-color);
@@ -282,4 +283,5 @@ svg text.buttonText{
     fill:#00000000;
     stroke-width: var(--thin-stroke);
     stroke:#00000000;
+    pointer-events: visiblePainted;
 }
