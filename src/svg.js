@@ -109,7 +109,6 @@ class modalAlertManager {
 window.addEventListener("load", function () { // Get the modal
     let modalLayer = document.getElementById("modalAlert");
     let btn = document.getElementById("myBtn");
-    let btn2 = document.getElementById("myBtn2");
     let closeButton = document.getElementsByClassName("modalClose")[0];
     let modalSVG = document.getElementById("modalSVG");
     let alertManager = new modalAlertManager(modalSVG);
@@ -119,10 +118,6 @@ window.addEventListener("load", function () { // Get the modal
 
     // Test Button
     btn.onclick = function () {
-      alertManager.getButton(1).addEventListener("pointerup", alertManager.forceHideModal);
-      alertManager.generate("Sample Modal Alert", "You can close this window now.", true, true, false, false, "Close", "button2Text", "button3Text");
-    }
-    btn2.onclick = function () {
       alertManager.getButton(1).addEventListener("pointerup", modalSpam1);
       alertManager.generate("Nya Nya!", "You can't close this box uwu", false, true, false, false, "What?", "button2Text", "button3Text");
     }

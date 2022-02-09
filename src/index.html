@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; secript-src 'self'">
+        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="svg.js"></script>
         <title>Mech Builder</title>
@@ -17,8 +17,7 @@
                 <a href="/new">New Mech</a>
                 <a href="/edit">Edit Mech</a>
                 <a href="#save-load">Save/Load Mech</a>
-                <a href="#modal" id="myBtn">Open Modal</a>
-                <a href="#modal" id="myBtn2">Open Forced Modal</a>
+                <a href="#modal" id="myBtn">Modal Test</a>
             </nav>
         </header>
 
@@ -110,7 +109,7 @@
           <svg id="modalSidebar" class="modalSidebar" viewBox="0 0 30 50" x="35">
               <rect class="debugborder" width="25" height="40" y="5"/>
               <svg class="modalCancel" viewBox="-2.5 -2.5 10 10" height="10" y="2.5" x="7.5">
-                  <path id="modalClose" class="modalClose" pointer-events="visiblePainted" tabindex="4" d="M 0,0
+                  <path id="modalClose" class="modalClose" pointer-events="visiblePainted" d="M 0,0
                   L 5,0
                   L 5,5
                   L 0,5
@@ -124,11 +123,11 @@
               </svg>
               <svg class="modalButtons" viewBox="0 0 30 10" x="0" y="-5">
                   <text id="button3Text" class="buttonText" y="10" x="3">Yes</text>
-                  <rect id="button3" class="modalButton" tabindex="1" width="20" height="6" x="2.5" y="6" rx="2"/>
+                  <rect id="button3" class="modalButton" width="20" height="6" x="2.5" y="6" rx="2"/>
                   <text id="button2Text" class="buttonText" y="18" x="3">No</text>
-                  <rect id="button2" class="modalButton" tabindex="2" width="20" height="6" x="2.5" y="14" rx="2"/>
+                  <rect id="button2" class="modalButton" width="20" height="6" x="2.5" y="14" rx="2"/>
                   <text id="button1Text" class="buttonText" y="26" x="3">OK</text>
-                  <rect id="button1" class="modalButton" tabindex="3" width="20" height="6" x="2.5" y="22" rx="2"/>
+                  <rect id="button1" class="modalButton" width="20" height="6" x="2.5" y="22" rx="2"/>
               </svg>
           </svg>
       </svg>
