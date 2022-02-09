@@ -18,6 +18,7 @@
                 <a href="/edit">Edit Mech</a>
                 <a href="#save-load">Save/Load Mech</a>
                 <a href="#modal" id="myBtn">Open Modal</a>
+                <a href="#modal" id="myBtn2">Open Forced Modal</a>
             </nav>
         </header>
 
@@ -92,7 +93,12 @@
     <div class="modal-content">
       <svg id="modalSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 100 50" xml:space="preserve">
-          <rect id="modalBox" class="drawnElement" width="95" height="45" rx="5" x="2.5" y="2.5" />
+          <rect id="modalBox" class="drawnElement" width="95" height="45" rx="5" x="2.5" y="2.5">
+            <animate attributeName="stroke" id="animFrame1" from="#816c3f" to="#b30000" dur="0.25s" repeatCount="1" restart="whenNotActive" begin="indefinite" fill="freeze"/>
+            <animate attributeName="stroke" id="animFrame2" to="#816c3f" from="#b30000" dur="0.25s" repeatCount="1" restart="whenNotActive" begin="animFrame1.begin+0.25s" fill="freeze"/>
+            <animate attributeName="stroke" id="animFrame3" from="#816c3f" to="#b30000" dur="0.25s" repeatCount="1" restart="whenNotActive" begin="animFrame2.begin+0.25s" fill="freeze"/>
+            <animate attributeName="stroke" id="animFrame4" to="#816c3f" from="#b30000" dur="0.25s" repeatCount="1" restart="whenNotActive" begin="animFrame3.begin+0.25s" fill="freeze"/>
+          </rect>
           <svg class="modalText" viewBox="0 0 70 50" x="-10">
           <rect class="debugborder" width="65" height="7.5" y="5"/>
           <text id="modalTitle" y="10" >Mech Builder Alert!</text>
@@ -101,10 +107,10 @@
               </foreignObject>
           <rect class="debugborder" width="65" height="32.5" y="12.5"/>
           </svg>
-          <svg class="modalSidebar" viewBox="0 0 30 50" x="35">
+          <svg id="modalSidebar" class="modalSidebar" viewBox="0 0 30 50" x="35">
               <rect class="debugborder" width="25" height="40" y="5"/>
               <svg class="modalCancel" viewBox="-2.5 -2.5 10 10" height="10" y="2.5" x="7.5">
-                  <path class="modalClose" pointer-events="visiblePainted" tabindex="4" d="M 0,0
+                  <path id="modalClose" class="modalClose" pointer-events="visiblePainted" tabindex="4" d="M 0,0
                   L 5,0
                   L 5,5
                   L 0,5
