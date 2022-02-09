@@ -119,13 +119,15 @@ class mech {
                     let hardpointType = hardpointInfoNode.getAttributeNS(null, "Type");
                     let hardpointSlots = hardpointInfoNode.getAttributeNS(null, "Slots");
                     let hardpointLocation = location;
-                    let hardpointInfoObject = {"ID" : hardpointID, "Type" : hardpointType, "Slots" : hardpointSlots, "Location" : location};
-                    hardpointInfoObjects.push(hardpointInfoObject);
+                    let hardpointInfoObject = {"ID" : hardpointID, "Type" : hardpointType, "Slots" : hardpointSlots, "Location" : hardpointLocation};
+                    let arrayLength = hardpointInfoObjects.push(hardpointInfoObject);
+                    console.log("hardpointInfoObjects length = "+arrayLength)
                 };
                 var newComponent = new component(location, slots, hp, ecm, attachments, hardpointInfoObjects);
             } else {
                 var newComponent = new component(location, slots, hp, ecm, attachments);
             };
+            console.log(newComponent);
             tempStructure.push(newComponent);
             this.structure = tempStructure;
             }
@@ -175,6 +177,8 @@ class mech {
         let weaponSlots = [];
         while(hardpointNode = hardpointNodes.iterateNext()){
             hardpointID = hardpointNode.getAttributeNS(null, "id");
+            console.log(hardpointNode);
+            console.log(hardpointID);
             this.matchHardpointToLocation(hardpointID);
             const weaponSlotNodes = hardpointData.evaluate("/Hardpoints/Hardpoint[@id='" + hardpointID + "']/WeaponSlot/Attachment", hardpointData, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
             let weaponSlotNode;
@@ -206,11 +210,21 @@ class mech {
     }
 
     matchHardpointToLocation = function(hardpointID){
-        let searchArray = "fuck!";
+        let searchArray = [];
+        console.log(this.structure);
+        console.log(this.structure.hardpointInfo);
         if(this.omniMech === false){
-            searchArray = this.structure.hardpointInfo;
+            for(let componentNode of this.structure){
+                searchArray.push(componentNode.hardpointInfo);
+                console.log(componentNode.hardpointInfo);
+                //searchArray = this.structure.hardpointInfo;
+            }
         } else {
-            searchArray = this.omnipods.hardpointInfo;
+            for(let componentNode of this.omnipods){
+                searchArray.push(componentNode.hardpointInfo);
+                console.log(hardpointID);
+                //searchArray = this.omnipods.hardpointInfo;
+            }
         }
         console.log(searchArray);
         searchArray.filter(function(item) {
