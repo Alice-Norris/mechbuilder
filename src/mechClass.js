@@ -175,12 +175,7 @@ class mech {
         let weaponSlots = [];
         while(hardpointNode = hardpointNodes.iterateNext()){
             hardpointID = hardpointNode.getAttributeNS(null, "id");
-            if (this.omniMech === true){
-                searchArray = this.omnipods.hardpointInfo;
-            } else {
-                searchArray = this.structure.hardpointInfo;
-            }
-            console.log(searchArray);
+            this.matchHardpointToLocation(hardpointID);
             const weaponSlotNodes = hardpointData.evaluate("/Hardpoints/Hardpoint[@id='" + hardpointID + "']/WeaponSlot/Attachment", hardpointData, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
             let weaponSlotNode;
             while (weaponSlotNode=weaponSlotNodes.iterateNext()){
@@ -208,6 +203,20 @@ class mech {
         //     tempHardpoints.push(newHardpoin  t);
         // };
         this.hardpoints = tempHardpoints;  
+    }
+
+    matchHardpointToLocation = function(hardpointID){
+        let searchArray = "fuck!";
+        if(this.omniMech === false){
+            searchArray = this.structure.hardpointInfo;
+        } else {
+            searchArray = this.omnipods.hardpointInfo;
+        }
+        console.log(searchArray);
+        searchArray.filter(function(item) {
+            console.log(item);
+        })
+        
     }
 }
 
