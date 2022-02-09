@@ -62,7 +62,9 @@ async function autoFillParts(){
                     let newOpt = document.createElement("option");
                     newOpt.text = attachment;
                     select.appendChild(newOpt);
-                }            
+                }
+                select.setAttribute("size", select.children.length);  
+                select.parentElement.setAttribute("class", "components");
             };
         };
     };

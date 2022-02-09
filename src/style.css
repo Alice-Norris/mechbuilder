@@ -283,6 +283,12 @@ svg text.buttonText{
     stroke: var(--hover-color);
     fill: var(--font-color);
 }
+fieldset.componentshide, fieldset.componentshide legend, fieldset.componentshide select{
+    display:none;
+}
+fieldset.components, fieldset.components legend, fieldset.components select{
+    display:block;
+}
 .debugborder{
     stroke:var(--hover-color);
     fill:#00000000;
