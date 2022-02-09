@@ -8,9 +8,9 @@ var currentMech;
 
 async function addMechChassis() {
         try{
-            var directoryPath = path.join(__dirname, '..\\assets\\cdf\\stock\\');
-            var chassis_array = await fs.readdir(directoryPath, { withFileTypes: false});
-            var mechSelect = document.getElementById("mech");
+            const directoryPath = path.join(__dirname, '..\\assets\\cdf\\stock\\');
+            const chassis_array = await fs.readdir(directoryPath, { withFileTypes: false});
+            const mechSelect = document.getElementById("mech");
             for (fileName of chassis_array){
                 let opt = document.createElement('option');
                 opt.setAttribute('class', 'formOption');
@@ -19,7 +19,6 @@ async function addMechChassis() {
                 mechSelect.appendChild(opt);
             }
         } catch (err) {
-                console.error(err);
         }
     }
     
@@ -46,25 +45,42 @@ async function addSubtypes(event) {
 } 
 
 async function autoFillParts(){
+    currentMech = null;
     var chassisSelect = document.getElementById("mech");
     var chassisChoice = chassisSelect.options[chassisSelect.selectedIndex];
     var subtypeSelect = document.getElementById("subtype");
     var subtypeChoice = subtypeSelect.options[subtypeSelect.selectedIndex];
     var fileName = subtypeChoice.value;
     currentMech = new mech(chassisChoice.text, subtypeChoice.text);
-    console.log(currentMech.chassis, currentMech.subtype);
-    currentMech.subtype = subtypeChoice.text;
     await currentMech.buildMech();
+    for (select of document.getElementsByClassName("componentSelect")){
+        clearSelectBox(select);
+        for (component of currentMech.structure){
+            let componentRegex = new RegExp(select.id)
+            if (componentRegex.test(component.location) === true) {
+                for (attachment of component.attachments){
+                    let newOpt = document.createElement("option");
+                    newOpt.text = attachment;
+                    select.appendChild(newOpt);
+                }            
+            };
+        };
+    };
+    for (hardpoint of currentMech.hardpoints){
+        //console.log(hardpoint);
+    }
+    
 }
+
 function clearSelectBox(select){
     while (select.firstChild){
         select.removeChild(select.lastChild);
     }
 }
 function scriptSetup(){
-    addMechChassis();
+    
     document.getElementById("mech").addEventListener('input', addSubtypes);
     document.getElementById("subtype").addEventListener('input', autoFillParts);
 }
-
+window.addEventListener('DOMContentLoaded', addMechChassis);    
 window.addEventListener('DOMContentLoaded', scriptSetup);
