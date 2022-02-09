@@ -225,8 +225,6 @@ footer > h4.disclaimer{
   /* Modal Content/Box */
 .modal-content {
     flex-direction: column;
-    /*background-color: var(--main-bg-color);
-    border: 3px solid var(--main-line-color);*/
     margin: 15vh auto; 
     max-width: 70vw;
     max-height: 70vh;
@@ -255,8 +253,13 @@ footer > h4.disclaimer{
     stroke:var(--main-line-color);
     fill:var(--semitrans-bg-color);
     stroke-width: var(--thin-stroke);
+    pointer-events: visiblePainted;
 }
 .modalButton:hover, .modalClose:hover{
+    stroke:var(--hover-color);
+    cursor:pointer;
+}
+.modalButton:focus, .modalClose:focus{
     stroke:var(--hover-color);
     cursor:pointer;
 }
@@ -276,10 +279,14 @@ svg text.buttonText{
     font-size: 2pt;
     font-family:HeavyMetal;
 }
-
+#mechGoesSpinny path{
+    stroke: var(--hover-color);
+    fill: var(--font-color);
+}
 .debugborder{
     stroke:var(--hover-color);
     fill:#00000000;
     stroke-width: var(--thin-stroke);
     stroke:#00000000;
+    pointer-events: none;
 }
