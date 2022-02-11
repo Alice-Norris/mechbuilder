@@ -15,7 +15,7 @@
     --banner-bg: url(../assets/images/mechbay_floors_b_spc.png);
     --interface-bg: url(../assets/images/mechbay_wall_df.png);
     --big-stroke: 1;
-    --thin-stroke: 0.5;
+    --thin-stroke: 0.4;
   }
 
 a {
@@ -272,7 +272,12 @@ svg text.buttonText{
     fill:var(--font-color);
     pointer-events: none;
 }
-#buttonTemplate{
+svg text.buttonTextSmall{
+    fill:var(--font-color);
+    pointer-events: none;
+    font-size:2pt;
+}
+#buttonTemplate1, #buttonTemplate2{
     visibility:hidden;
 }
 foreignObject{

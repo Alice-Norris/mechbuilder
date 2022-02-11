@@ -2,7 +2,7 @@
 class svgButton {
   constructor(buttonTemplate, buttonNumber, buttonText, buttonEventCallback){
     console.log("new button instantiated");
-    this.template = buttonTemplate;
+    this.buttonTemplate = buttonTemplate;
     this.button = buttonTemplate.cloneNode(true);
     this.enabled = null;
     this.number = null;
@@ -68,7 +68,7 @@ class modalAlertManager {
         this.ns = "http://www.w3.org/2000/svg";
         this.loadingAnim = null;
         this.buttons = [];
-        this.buttons.push(this.svgObject.getElementById("buttonTemplate"));
+        this.buttons.push(this.svgObject.getElementById("buttonTemplate1"));
         this.setButton(1, true, "Close", this.forceHideModal);
     }
     setLoadingAnim(animSVG) {
@@ -220,7 +220,7 @@ window.addEventListener("load", function () { // Get the modal
       alertManager.setButton(3, true, "Disable", disableButtons);
     }
     function testFormChange(){
-      let sampleText = "Chris + Alice Forever! ";
+      let sampleText = "chaos+nova together 4ever ";
       alertManager.setTitle(sampleText);
       sampleText = sampleText+sampleText;
       sampleText = sampleText+sampleText;
