@@ -1,4 +1,64 @@
 /*classes*/
+class svgButton {
+  constructor(buttonTemplate, buttonNumber, buttonText, buttonEventCallback){
+    console.log("new button instantiated");
+    this.template = buttonTemplate;
+    this.button = buttonTemplate.cloneNode(true);
+    this.enabled = null;
+    this.number = null;
+    this.id = null;
+    this.text = null;
+    this.eventCallback = null;
+    this.setButtonNumber(buttonNumber);
+    this.setText(buttonText);
+    this.setEventCallback(buttonEventCallback);
+    this.disable();
+  }
+  setButtonNumber(buttonNumber){
+    let yInterval = parseInt(this.buttonTemplate.getAttributeNS(null,"height"));
+    let yBaseline = parseInt(this.buttonTemplate.getAttributeNS(null,"y"));
+    let newY = yBaseline-(yInterval*(buttonNumber-1));
+    this.number = buttonNumber;
+    this.id = `button${buttonNumber}`;
+    this.button.setAttributeNS(null,"id",this.id);
+    this.button.setAttributeNS(null,"y",newY);
+  }
+  setText(buttonText){
+    this.text = buttonText;
+    this.button.getElementsByTagName("text")[0].innerHTML = buttonText;
+  }
+  setEventCallback(buttonEventCallback){
+    if(this.eventCallback){this.unsetEventCallback();}
+    this.eventCallback = buttonEventCallback;
+    this.button.addEventListener("pointerup", this.eventCallback);
+  }
+  unsetEventCallback(){
+    this.button.removeEventListener("pointerup", this.eventCallback);
+  }
+  disable(){
+    this.unsetEventCallback();
+    this.button.setAttributeNS(null, "visibility", "hidden");
+    this.enabled = false;
+  }
+  enable(){
+    this.setEventCallback(this.eventCallback);
+    this.button.setAttributeNS(null, "visibility", "visible");
+    this.enabled = true;
+  }
+  setTemplate (buttonTemplate){
+    let parent = this.button.parentElement;
+    this.buttonTemplate = buttonTemplate;
+    parent.removeChild(this.button);
+    this.button = buttonTemplate.cloneNode(true);
+    this.setButtonNumber(this.buttonNumber);
+    this.setText(this.buttonText);
+    this.setEventCallback(this.buttonEventCallback);
+    parent.appendChild(this.button);
+  }
+  remove(){
+    this.button.parentElement.removeChild(this.button);
+  }
+}
 class modalAlertManager {
     constructor(svgObject) {
         this.title = null;
@@ -7,6 +67,9 @@ class modalAlertManager {
         this.svgObject = svgObject;
         this.ns = "http://www.w3.org/2000/svg";
         this.loadingAnim = null;
+        this.buttons = [];
+        this.buttons.push(this.svgObject.getElementById("buttonTemplate"));
+        this.setButton(1, true, "Close", this.forceHideModal);
     }
     setLoadingAnim(animSVG) {
       this.loadingAnim = animSVG.cloneNode(true);
@@ -16,15 +79,19 @@ class modalAlertManager {
       this.loadingAnim.setAttributeNS(null, "id", "mechGoesSpinny");
       let animation = this.loadingAnim.getElementById("loadingAnim");
       animation.setAttributeNS(null, "id", "rightRoundBaby");
-      this.loadingAnim.setAttributeNS(null, "height", "10");
-      this.loadingAnim.setAttributeNS(null, "width", "10");
-      this.loadingAnim.setAttributeNS(null, "x", "10");
-      this.loadingAnim.setAttributeNS(null, "y", "10");
+      this.loadingAnim.setAttributeNS(null, "height", "7.5");
+      this.loadingAnim.setAttributeNS(null, "width", "7.5");
+      this.loadingAnim.setAttributeNS(null, "x", "0");
+      this.loadingAnim.setAttributeNS(null, "y", "0");
+      let structurePaths = this.loadingAnim.getElementsByClassName("structurePath");
+      while(structurePaths.length > 0){
+        structurePaths[0].parentNode.removeChild(structurePaths[0]);
+      }
       let group = this.loadingAnim.getElementById("animationGroup")
       group.setAttributeNS(null, "id", "animationGronp");
-      let sidebar = this.svgObject.getElementById("modalSidebar");
+      let cancelArea = this.svgObject.getElementById("cancelArea");
       this.setVisibility(this.loadingAnim, !this.getCanEscape());
-      sidebar.prepend(this.loadingAnim);
+      cancelArea.prepend(this.loadingAnim);
       animation = this.loadingAnim.getElementById("rightRoundBaby");
       animation.beginElement();
     }
@@ -38,14 +105,14 @@ class modalAlertManager {
       return this.svgObject;
     }
     setTitle(string) {
-        this.svgObject.getElementById("modalTitle").innerHTML = string;
+        this.svgObject.getElementById("headerAreaText").innerHTML = string;
         this.title = string;
     }
     getTitle() {
         return this.title;
     }
     setDescription(string) {
-        this.svgObject.getElementById("modalDescription").innerHTML = string;
+        this.svgObject.getElementById("descriptionAreaText").innerHTML = string;
         this.description = string;
     }
     getDescription() {
@@ -53,21 +120,33 @@ class modalAlertManager {
     }
     setCanEscape(boolean) {
         this.canEscape = boolean;
-        this.setVisibility(this.svgObject.getElementById("modalClose"), boolean);
+        this.setVisibility(this.svgObject.getElementById("cancelPath"), boolean);
         if(this.loadingAnim){this.setVisibility(this.loadingAnim, !boolean);}
     }
     getCanEscape() {
         return this.canEscape;
     }
-    setButton(buttonNumber, boolean, string) {
-      let buttonObj = this.svgObject.getElementById("button"+buttonNumber);
-      let buttonTextObj = this.svgObject.getElementById("button"+buttonNumber+"Text");
-      buttonTextObj.innerHTML = string;
-      this.setVisibility(buttonObj, boolean);
-      this.setVisibility(buttonTextObj, boolean);
+    setButton(buttonNumber, enabled, buttonText, buttonEventCallback) {
+      console.log("setting button number: "+buttonNumber);
+      if(buttonNumber == 0){buttonNumber = 1;}
+      if(this.buttons[buttonNumber]){
+        let currentButton = this.buttons[buttonNumber];
+        currentButton.setText(buttonText);
+        currentButton.setEventCallback(buttonEventCallback);
+        if(enabled){currentButton.enable();}
+        else{currentButton.disable();}
+      }else{
+      let newButton = new svgButton(this.buttons[0], buttonNumber, buttonText, buttonEventCallback);
+      if(enabled){newButton.enable();}
+      this.buttons[buttonNumber] = newButton;
+      this.svgObject.getElementById("inputArea").appendChild(newButton.button);
+      }
     }
     getButton(buttonNumber){
-      return this.svgObject.getElementById(`button${buttonNumber}`);
+      return this.buttons[buttonNumber];
+    }
+    disableButtons(){
+
     }
     setVisibility(element, boolean){
       if(boolean){
@@ -78,68 +157,82 @@ class modalAlertManager {
       }
     }
     displayModal () {
-      document.getElementById("modalAlert").style.display = "block";
+      document.getElementById("modalLayer").style.display = "block";
     }
     hideModal () {
       if(this.canEscape){
-        document.getElementById("modalAlert").style.display = "none";
+        document.getElementById("modalLayer").style.display = "none";
       } else{
         let animation1 = this.svgObject.getElementById("animFrame1");
         animation1.beginElement();}
       }
     forceHideModal() {
-      document.getElementById("modalAlert").style.display = "none";
+      document.getElementById("modalLayer").style.display = "none";
     }
-    generate(title, description, canEscape, button1, button2, button3, button1Text, button2Text, button3Text) {
+    buttonData(){
+      let array = [];
+
+    }
+    generate(title, description, canEscape, button1, button2, button3, button1Text, button2Text, button3Text, callback1, callback2, callback3) {
         this.setTitle(title);
         this.setDescription(description);
         this.setCanEscape(canEscape);
-        this.setButton(1, button1, button1Text);
-        this.setButton(2, button2, button2Text);
-        this.setButton(3, button3, button3Text);
+        this.setButton(1, button1, button1Text, callback1);
+        this.setButton(2, button2, button2Text, callback2);
+        this.setButton(3, button3, button3Text, callback3);
         this.displayModal();
     }
 }
 /*onLoad*/
 window.addEventListener("load", function () { // Get the modal
-    let modalLayer = document.getElementById("modalAlert");
+    let modalLayer = document.getElementById("modalLayer");
     let btn = document.getElementById("myBtn");
-    let closeButton = document.getElementsByClassName("modalClose")[0];
+    let closeButton = document.getElementById("cancelPath");
     let modalSVG = document.getElementById("modalSVG");
     let alertManager = new modalAlertManager(modalSVG);
-    let svgObject = document.getElementById('mechOutline').contentDocument;
-    let mechSVG = svgObject.getElementById('mechSVG');
+    let mechOutline = document.getElementById('mechOutline');
+    console.log(mechOutline.contentDocument);
+    let mechSVG = mechOutline.contentDocument.getElementById('mechSVG');
     alertManager.setLoadingAnim(mechSVG);
 
     // Test Button
     btn.onclick = function () {
-      alertManager.getButton(1).addEventListener("pointerup", modalSpam1);
-      alertManager.generate("Nya Nya!", "You can't close this box uwu", false, true, false, false, "What?", "button2Text", "button3Text");
-    }
-    function modalSpam1(){
-      alertManager.forceHideModal();
-      alertManager.getButton(1).removeEventListener("pointerup", modalSpam1);
-      alertManager.getButton(2).addEventListener("pointerup", modalSpam2);
-      alertManager.generate("NYAAAAAAAAA", "I said you can't close this box! UWU!", false, false, true, false, "What?", "NOOOOO!", "button3Text");
-    }
-    function modalSpam2(){
-      alertManager.getButton(2).removeEventListener("pointerup", modalSpam2);
-      alertManager.getButton(3).addEventListener("pointerup", modalSpam3);
-      alertManager.generate("GIVE UP, MORTAL!", "Give up now or lose your soul, mind, and body forever (a really long time)!", false, false, false, true, "What?", "NOOOOO!", "I give!");
-    }
-    function modalSpam3(){
-      alertManager.getButton(3).removeEventListener("pointerup", modalSpam3);
-      alertManager.generate("Fine...", "You may go now.", true, true, true, false, "Thanks!", "Never!", "Turtles");
+      alertManager.generate("Modal Box Test 1", "Use the buttons to test", false, true, false, false, "Begin", "button2Text", "button3Text", testButtons, null, null);;
     }
     // When the user clicks on <span> (x), close the modal
     closeButton.onclick = function () {
-        alertManager.hideModal();
+        closeModal();
     }
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
       //console.log(event.target);
         if (event.target == modalLayer) {
-          alertManager.hideModal();
+          closeModal();
         }
+    }
+    function closeModal(){
+      alertManager.hideModal();
+    }
+    function testButtons(){
+      console.log("button test triggered");
+      alertManager.setButton(1, true, "Close", closeModal);
+      alertManager.setButton(2, true, "Change", testFormChange);
+      alertManager.setButton(3, true, "Disable", disableButtons);
+    }
+    function testFormChange(){
+      let sampleText = "Chris + Alice Forever! ";
+      alertManager.setTitle(sampleText);
+      sampleText = sampleText+sampleText;
+      sampleText = sampleText+sampleText;
+      sampleText = sampleText+sampleText;
+      sampleText = sampleText+sampleText;
+      sampleText = sampleText+sampleText;
+      alertManager.setDescription(sampleText);
+      alertManager.setCanEscape(true);
+    }
+    function disableButtons(){
+      alertManager.getButton(1).disable();
+      alertManager.getButton(2).disable();
+      alertManager.getButton(3).disable();
     }
 });
