@@ -86,7 +86,7 @@ async function autoFillParts(){
                     weaponSlotLabel = document.createElement("label")
                     weaponSlotLabel.innerText = "WeaponSlot " + index;
                     weaponSlotLabel.setAttribute("for", "WeaponSlot" + index);
-                    componentLegend.appendChild(weaponSlotLabel);
+                    componentFieldset.appendChild(weaponSlotLabel);
                     weaponSlotSelect = document.createElement("select");
                     weaponSlotSelect.setAttribute("class", "weaponSelect");
                     weaponSlotSelect.setAttribute("id", component.location + "WeaponSlot" + index);
@@ -96,7 +96,7 @@ async function autoFillParts(){
                         weaponOption.value = weapon["Attachment"]
                         weaponSlotSelect.appendChild(weaponOption);
                     }
-                    componentLegend.appendChild(weaponSlotSelect);
+                    componentFieldset.appendChild(weaponSlotSelect);
                     
                 }
             }
