@@ -1,8 +1,8 @@
 /*classes*/
 class modalAlertManager {
     constructor(svgObject) {
-        this.title = "Alert";
-        this.description = "Processing, please wait..."
+        this.title = null;
+        this.description = null;
         this.canEscape = false;
         this.svgObject = svgObject;
         this.ns = "http://www.w3.org/2000/svg";
@@ -24,10 +24,8 @@ class modalAlertManager {
       group.setAttributeNS(null, "id", "animationGronp");
       let sidebar = this.svgObject.getElementById("modalSidebar");
       this.setVisibility(this.loadingAnim, !this.getCanEscape());
-      console.log(this.loadingAnim);
       sidebar.prepend(this.loadingAnim);
       animation = this.loadingAnim.getElementById("rightRoundBaby");
-      console.log(animation);
       animation.beginElement();
     }
     getLoadingAnim() {
@@ -72,8 +70,6 @@ class modalAlertManager {
       return this.svgObject.getElementById(`button${buttonNumber}`);
     }
     setVisibility(element, boolean){
-      console.log(element);
-      console.log("Setting visibility to "+boolean);
       if(boolean){
         element.setAttributeNS(null, "visibility", "visible");
       }
@@ -88,7 +84,6 @@ class modalAlertManager {
       if(this.canEscape){
         document.getElementById("modalAlert").style.display = "none";
       } else{
-        console.log("hiding modal alert is disabled!");
         let animation1 = this.svgObject.getElementById("animFrame1");
         animation1.beginElement();}
       }
@@ -142,7 +137,7 @@ window.addEventListener("load", function () { // Get the modal
     }
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
-      console.log(event.target);
+      //console.log(event.target);
         if (event.target == modalLayer) {
           alertManager.hideModal();
         }
