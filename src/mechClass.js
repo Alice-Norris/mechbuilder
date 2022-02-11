@@ -3,21 +3,21 @@ const fs = require("fs/promises");
 const { off } = require("process");
 const Parser = new DOMParser();
 
-
+//contains hardpoints, not present in IS mechs, held in components
 class omnipod {
-    location;
-    quirks;
-    hardpointInfo;
-    ecm;
+    location; //location on mech body
+    quirks; //quirks data, future use???
+    hardpoints; //holds hardpoint objects
+    ecm; //can equip ecm?
 
     constructor(location = null, quirks = [], hardpointInfo = [], ecm = false){    
         this.location = location;
         this.quirks = quirks;
-        this.hardpointInfo = hardpointInfo;
+        this.hardpoints = hardpoints;
         this.ecm = ecm;
     }
 }
-
+//contained in omnipod if clan mech, contained in component if not
 class hardpoint {
     location;
     weaponSlots;
@@ -25,26 +25,26 @@ class hardpoint {
 
     constructor(location = null, weaponSlots = [], id = 0){
         this.location = location;
-        this.weaponSlots = weaponSlots
-        this.id = 0
+        this.weaponSlots = weaponSlots;
+        this.id = id;
     }
 }
 
 class component{
-    location;
-    slots;
-    hp;
-    ecm;
-    attachments;
-    hardpointInfo;
+    location; //location on mech
+    slots; 
+    hp; 
+    ecm; //can this component equip ECM? false if clan mech
+    attachments; //attachments for structure
+    hardpoints = [];
 
-    constructor(location = "none", slots = 0, hp = 0, ecm = false, attachments = [], hardpointInfo = []){
+    constructor(location = "none", slots = 0, hp = 0, ecm = false, attachments = [], hardpoints = []){
         this.location = location;
         this.slots = slots;
         this.hp = hp;
         this.ecm = ecm;
         this.attachments = attachments;
-        this.hardpointInfo = hardpointInfo;
+        this.hardpoints = hardpoints;
     }
 }
 
@@ -53,173 +53,165 @@ class mech {
     subtype;
     omniMech;
     mdfData;
-    omnipods;
+    cdfData;
+    omnipodData;
+    hardpointData;
     hardpoints;
     structure;
 
-    constructor(chassis, subtype, omniMech = false, mdfData = null){
+    constructor(chassis, subtype, mdfFileName = null){
         this.chassis = chassis;
-        this.omniMech = omniMech;
+        this.omniMech = false;
         this.subtype = subtype;
-        this.mdfData = mdfData;
-        this.omnipods = [];
         this.hardpoints = [];
         this.structure = [];
+        this.mdfFileName = mdfFileName;
     }
     
+    //function to get all mech data by calling helper functions
     async buildMech(){
-        await this.readMdfFile();
-        await this.getStructureData();
-        if (this.omniMech === false){
+        await this.readFileData()
+        await this.getStructureData(); //wait for structure to get filled
+        if (this.omniMech === false){ //if this is an omni mech,
             console.log("It's not even an OmniMech...");
-        } else {
-            this.omniMech = true;
-            await this.getOmnipodData();
         }
-        await this.getHardpointData();
     }
 
-    async readMdfFile() {
-        let mdfFile = await fs.readFile(path.join(__dirname, "..\\assets\\mdf\\", this.chassis, "\\" ,this.subtype + ".mdf"), 'utf-8');
-        let hardpointIDs = [];
-        this.mdfData =  Parser.parseFromString(mdfFile, 'text/xml');           
+    async readFileData() {
+        try{
+            let mdfFile = await fs.readFile(path.join(__dirname, "..\\assets\\mdf\\", this.chassis, "\\", this.mdfFileName), 'utf-8');
+            this.mdfData = Parser.parseFromString(mdfFile, 'text/xml');
+            if (this.mdfData.documentElement.getAttributeNS(null, "Version") == 1){
+                this.omniMech = true;
+            }
+            console.log(this.subtype, "MDF file loaded!")
+
+            let cdfFile = await fs.readFile(path.join(__dirname, "..\\assets\\cdf\\stock\\" + this.chassis + ".cdf"), 'utf-8');
+            this.cdfData = Parser.parseFromString(cdfFile, 'text/xml');
+            console.log(this.subtype, " CDF file loaded!");
+            
+            let hardpointXML = await fs.readFile(path.join(__dirname, "..\\assets\\MechXML\\" + this.chassis + "\\" + this.chassis + "-hardpoints.xml"), 'utf-8');
+            this.hardpointData = Parser.parseFromString(hardpointXML, 'text/xml');
+            console.log("Hardpoint Data Loaded!");
+
+            if (this.omniMech === true){
+                let omnipodXML = await fs.readFile(path.join(__dirname, "..\\assets\\MechXML\\" + this.chassis + "\\" + this.chassis + "-omnipods.xml"), 'utf-8');
+                this.omnipodData = Parser.parseFromString(omnipodXML, 'text/xml');
+                console.log("Omnipod Data Loaded!");
+            }
+        } catch(err) {
+            console.error(err);
+        }
     }
 
     async getStructureData(){
-        let clanMechCheck = this.mdfData.evaluate("count(/MechDefinition[@Version])", this.mdfData)
-        if (clanMechCheck.numberValue === 1){
-            this.omniMech = true;
-        };
-        var tempStructure = [];
-        var structureNodes = this.mdfData.evaluate("/MechDefinition/ComponentList/Component", this.mdfData);
-        var structureNode;
+        //get structure elements from mdfdata
+        const structureNodes = this.mdfData.evaluate("/MechDefinition/ComponentList/Component", this.mdfData);
+        //temp variable to hold individual nodes while iterating
+        let structureNode;
+        //iterate over all Component nodes in structureNodes
         while((structureNode = structureNodes.iterateNext()) != null){
-            let location = structureNode.getAttributeNS(null, "Name");
-            let slots = structureNode.getAttributeNS(null, "Slots");
+            //location, number of slots, HP, whether an ECM is equippable, 
+            let location = structureNode.getAttributeNS(null, "Name"); //location of component (e.g., head, center torso, etc.)
+            let slots = structureNode.getAttributeNS(null, "Slots"); 
             let hp = structureNode.getAttributeNS(null, "HP");
-            let ecm = false;
-            let hardpointInfoObjects = [];
-            if (structureNode.getAttributeNS(null, "CanEquipECM") === null){
-                ecm = true;
-            };
+            let ecm; 
             let attachments = []
-            for (let attachment of structureNode.getElementsByTagNameNS(null, "Attachment")){
-                attachments.push(attachment.getAttributeNS(null, "AName"));
-            };
-            if (this.omniMech === false){
-                let hardpointInfo;
-                const hardpointInfoNodes = this.mdfData.evaluate("/MechDefinition/ComponentList/Component[@Name='" + location + "']/Hardpoint",
-                                                                this.mdfData,
-                                                                null,
-                                                                XPathResult.UNORDERED_NODE_ITERATOR_TYPE,
-                                                                null);
-                let hardpointInfoNode;
-                while(hardpointInfoNode = hardpointInfoNodes.iterateNext()){
-                    let hardpointID = hardpointInfoNode.getAttributeNS(null, "ID");
-                    let hardpointType = hardpointInfoNode.getAttributeNS(null, "Type");
-                    let hardpointSlots = hardpointInfoNode.getAttributeNS(null, "Slots");
-                    let hardpointLocation = location;
-                    let hardpointInfoObject = {"ID" : hardpointID, "Type" : hardpointType, "Slots" : hardpointSlots, "Location" : location};
-                    hardpointInfoObjects.push(hardpointInfoObject);
-                };
-                var newComponent = new component(location, slots, hp, ecm, attachments, hardpointInfoObjects);
+            let attachmentNodes = structureNode.getElementsByTagNameNS(null, "Attachment");
+            let hardpointIDs = [];
+            for (let attachmentNode of attachmentNodes){
+                let attachment = attachmentNode.getAttributeNS(null, "AName");
+                attachments.push(attachment);
+            }
+            if ( this.omniMech == false){
+                if (structureNode.getAttributeNS(null, "CanEquipECM") != null){
+                    this.ecm = true;
+                }
+                //get all Hardpoint elements, if any
+                let hardpointNodes = structureNode.getElementsByTagNameNS(null, "Hardpoint");
+                //if there are hardpoint nodes...
+                if (hardpointNodes.length > 0){
+                    //add all hardpoint IDs to the list of hardpoint Ids
+                    for (let hardpointNode of hardpointNodes){
+                        hardpointIDs.push(hardpointNode.getAttributeNS(null, "ID"));
+                    }
+                    //pass location and hardpoint IDs to create hardpoints
+                    this.createISHardpoints(location, hardpointIDs); 
+                }
             } else {
-                var newComponent = new component(location, slots, hp, ecm, attachments);
-            };
-            tempStructure.push(newComponent);
-            this.structure = tempStructure;
+                hardpointIDs = this.createClanHardpoints(location);
             }
-        }   
-
-    async getOmnipodData(){
-        const tempOmnipods = [];
-        const omnipodFile = await fs.readFile(path.join(__dirname, "..\\assets\\mechXML\\", this.chassis, "\\", this.chassis + "-omnipods.xml"), 'utf-8');
-        const omnipodData = Parser.parseFromString(omnipodFile, 'text/xml');
-        const omnipodNodes = omnipodData.evaluate("/OmniPods/Set[@name='" + this.subtype.toLowerCase() + "']/component", omnipodData);
-        let omnipodNode;
-        while((omnipodNode = omnipodNodes.iterateNext()) != null){
-            let quirks = [];
-            let hardpointInfoObjects = [];
-            let location = omnipodNode.getAttributeNS(null, "name");
-            let ecm = false;
-            const quirkNodes = omnipodData.evaluate("/OmniPods/Set[@name='" + this.subtype.toLowerCase() + "']/component[@Name='" + location + "']/Quirk", omnipodData);
-            let quirkNode;
-            while((quirkNode = quirkNodes.iterateNext()) != null){
-                let quirk;
-                let quirkName = quirkNode.getAttributeNS(null, "name");
-                let quirkValue = quirkNode.getAttributeNS(null, "value");
-                let quirkObject = {"Quirk Name" : quirkName, "Quirk Value" : quirkValue };
-                quirks.push(quirkObject);
-            };
-            const hardpointInfoNodes = omnipodData.evaluate("/OmniPods/Set[@name='" + this.subtype.toLowerCase() + "']/component[@Name='" + location + "']/Hardpoint", omnipodData);
-            let hardpointInfoNode;
-            while((hardpointInfoNode = hardpointInfoNodes.iterateNext()) != null){    
-                let hardpointInfoID = hardpointInfoNode.getAttributeNS(null, "ID");
-                let hardpointInfoType = hardpointInfoNode.getAttributeNS(null, "Type");
-                let hardpointLocation = location;
-                let hardpointInfoObject = {"Hardpoint ID" : hardpointInfoID, "Hardpoint Type" : hardpointInfoType, "Hardpoint Location" : hardpointLocation};
-                console.log(hardpointInfoID);
-            }
-            const newOmnipod = new omnipod(location, quirks, hardpointInfoObjects, ecm);
-            this.omnipods.push(newOmnipod);
+            let newComponent = new component(location, slots, hp, ecm, attachments, hardpointIDs);
+            this.structure.push(newComponent)
         }
     }
 
-    async getHardpointData(){
-        const tempHardpoints = [];
-        const hardpointFile = await fs.readFile(path.join(__dirname, "..\\assets\\mechXML\\", this.chassis, "\\", this.chassis + "-hardpoints.xml"), 'utf-8');
-        const hardpointData = Parser.parseFromString(hardpointFile, 'text/xml');
-        const hardpointNodes = hardpointData.evaluate("/Hardpoints/Hardpoint", hardpointData, null, XPathResult.ORDERED_NODE_ITERATE_TYPE, null);
-        let hardpointID;
-        let hardpointNode;
-        let hardpointLocation;
-        let weaponSlots = [];
-        while(hardpointNode = hardpointNodes.iterateNext()){
-            hardpointID = hardpointNode.getAttributeNS(null, "id");
-            this.matchHardpointToLocation(hardpointID);
-            const weaponSlotNodes = hardpointData.evaluate("/Hardpoints/Hardpoint[@id='" + hardpointID + "']/WeaponSlot/Attachment", hardpointData, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
+    //creates hardpoints for non-clan mechs
+    createISHardpoints(location, hardpointIDs){
+        let weaponSlots = []
+        for (let hardpointID of hardpointIDs){
+            //get all weaponslots for the hardpoint with this id
+            let weaponSlotNodes = this.hardpointData.evaluate("/Hardpoints/Hardpoint[@id='" + hardpointID + "']/WeaponSlot",
+                                                        this.hardpointData,
+                                                        null,
+                                                        XPathResult.ORDERED_NODE_ITERATOR_TYPE);
+            //holder for individual weaponslot nodes
             let weaponSlotNode;
-            while (weaponSlotNode=weaponSlotNodes.iterateNext()){
-                let weaponName = weaponSlotNode.getAttributeNS(null, "search");
-                let attachmentName =weaponSlotNode.getAttributeNS(null, "AName");
-                let weaponSlotObject = {"Weapon Name" : weaponName, "Asset Name" : attachmentName};
-                weaponSlots.push(weaponSlotObject);
-            };
-            let newHardpoint = new hardpoint(hardpointLocation, weaponSlots, hardpointID);
-            tempHardpoints.push(newHardpoint);
-        };
-        // while(hardpointNode = hardpointNodes.iterateNext()){
-        //     hardpointID = hardpointNode.getAttributeNS(null, "id");
-        //     let weaponSlots = [];
-        //     const weaponSlotNodes = hardpointData.evaluate("Hardpoints/Hardpoint[@id='" + hardpointID + "']/WeaponSlot/Attachment", hardpointData);
-        //     let weaponSlotNode;
-        //     while( (weaponSlotNode = hardpointNodes.iterateNext()) != null){
-        //         let weaponName = weaponSlotNode.getAttributeNS(null, "search");
-        //         let attachmentName = weaponSlotNode.getAttributeNS(null, "AName");
-        //         let weaponSlotObject = {"Weapon Name" : weaponName, "Asset Name" : attachmentName};
-        //         weaponSlots.push(weaponSlotObject);
-        //     };  
-        //     let newHardpoint = new hardpoint(hardpointID, weaponSlots);
-        //     tempHardpoints.push(newHardpoin  t);
-        // };
-        this.hardpoints = tempHardpoints;  
+            //get another weaponslot element while there is one
+            while((weaponSlotNode = weaponSlotNodes.iterateNext()) != null){
+                //get all attachments inside of the weaponslot
+                let weaponList = weaponSlotNode.getElementsByTagNameNS(null, "Attachment");
+                //array of weapons for this hardpoint
+                let weaponSlot = []; 
+                //for each weapon in the list of weapons from XML...
+                for (let weapon of weaponList){
+                    //create a JSON object of that weapon
+                    let attachment = {"Weapon Name" : weapon.getAttributeNS(null, "search"), "Attachment" : weapon.getAttributeNS(null, "AName")}
+                    //add it to the weaponSlot
+                    weaponSlot.push(attachment);      
+                }
+                //add weaponSlot to the list of weaponSlots
+                weaponSlots.push(weaponSlot);       
+            }
+            let newHardpoint = new hardpoint(location, weaponSlots, hardpointID);
+            this.hardpoints.push(newHardpoint);
+        }
     }
 
-    matchHardpointToLocation = function(hardpointID){
-        let searchArray;
-        if(this.omniMech === false){
-            searchArray = this.structure;
-        } else {
-            searchArray = this.omnipods;
-        }
-        for(let element of searchArray){
-            let hardpointLocation = element.hardpointInfo.find(hardpoint => {
-                if(hardpoint["Hardpoint ID"] === hardpointID)
-                    return location;
-                })
-            return hardpointLocation;
+    createClanHardpoints(location){
+        
+        let hardpointNodes = this.omnipodData.evaluate("/OmniPods/Set[@name ='" + this.subtype.toLowerCase() + "']/component[@name = '" + location + "']/Hardpoint",
+                                                       this.omnipodData,
+                                                       null,
+                                                       XPathResult.ORDERED_NODE_ITERATOR_TYPE);
+        let hardpointNode;
+        let hardpointIDs = [];
+            while((hardpointNode = hardpointNodes.iterateNext()) != null){
+                hardpointIDs.push(hardpointNode.getAttributeNS(null, "ID"));
+            };
+        if (hardpointIDs.length !=0){
+            let weaponSlots = [];
+            for (let hardpointID of hardpointIDs){
+                let weaponSlotNodes = this.hardpointData.evaluate("/Hardpoints/Hardpoint[@id='" + hardpointID + "']/WeaponSlot",
+                                            this.hardpointData,
+                                            null,
+                                            XPathResult.ORDERED_NODE_ITERATOR_TYPE);
+                let weaponSlotNode;
+                let weaponSlot = [];
+                while((weaponSlotNode = weaponSlotNodes.iterateNext()) != null){
+                    let weaponsList = weaponSlotNode.getElementsByTagNameNS(null, "Attachment");
+                    for (let weapon of weaponsList){
+                            weaponSlot.push({"Weapon Name" : weapon.getAttributeNS(null, "search"), "Attachment": weapon.getAttributeNS(null, "AName")})
+                    }
+                weaponSlots.push(weaponSlot);
+                }
+                let newHardpoint = new hardpoint(location, weaponSlots, hardpointID);
+                this.hardpoints.push(newHardpoint); 
+            }
+        return hardpointIDs;
         }
     }
 }
+
 
 module.exports = {mech};
