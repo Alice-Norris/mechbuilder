@@ -234,7 +234,7 @@ footer > h4.disclaimer{
 }
 
 .modal {
-    display: none; /* Hidden by default */
+    display: hidden; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -246,6 +246,9 @@ footer > h4.disclaimer{
     overflow: auto; /* Enable scroll if needed */
     background-color: var(--main-bg-color); /* Fallback color */
     background-color: var(--semitrans-bg-color); /* Black w/ opacity */
+  }
+  .modal svg{
+      outline:none;
   }
 
   /* Modal Content/Box */
@@ -280,13 +283,15 @@ footer > h4.disclaimer{
     fill:var(--semitrans-bg-color);
     stroke-width: var(--thin-stroke);
     pointer-events: visiblePainted;
+    outline:none;
 }
 .modalButton:hover, .modalClose:hover{
     stroke:var(--hover-color);
+    fill:var(--main-bg-color);
     cursor:pointer;
 }
 .modalButton:focus, .modalClose:focus{
-    stroke:var(--hover-color);
+    stroke:var(--font-color);
     cursor:pointer;
 }
 svg text{
@@ -306,8 +311,9 @@ svg text.buttonTextSmall{
 #buttonTemplate1, #buttonTemplate2{
     visibility:hidden;
 }
-foreignObject{
-font-size: 2pt;
+foreignObject, foreignObject div{
+font-size: 18pt;
+display: flex;
 }
 foreignObject p{
     margin-block-start: 0em;
@@ -317,7 +323,38 @@ foreignObject p{
     max-width: 100%;
     max-height: 100%;
     overflow:auto;
+    flex: 0 0 100%;
 }
+foreignObject label{
+    text-align: right;
+}
+foreignObject label, foreignObject input[type=text]{
+    flex: 1 0 30%;
+    min-width: 30%;
+    margin-top: auto;
+}
+input[type=text]{
+    max-width:70%;
+    font-size:1em;
+    border: 0.2em solid var(--main-line-color);
+    border-radius: 0.3em;
+    background-color:var(--semitrans-bg-color);
+  }
+  input[type=text]:hover, input[type=text]:focus:hover{
+    border: 0.2em solid var(--hover-color);
+    border-radius: 0.3em;
+    background-color:var(--main-bg-color);
+  }
+  input[type=text]:focus{
+    border: 0.2em solid var(--font-color);
+    border-radius: 0.3em;
+    background-color:var(--main-bg-color);
+  }
+foreignObject input[type=text], foreignObject input[type=text]:focus{
+    height: 1em;
+    outline-style:none;
+    color:var(--font-color);
+    }
 #modalTitle{
     font-size: 0.4em;
 }

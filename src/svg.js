@@ -4,6 +4,9 @@ class svgButton {
     console.log("new button instantiated");
     this.buttonTemplate = buttonTemplate;
     this.button = buttonTemplate.cloneNode(true);
+    this.button.setAttributeNS(null,"visibility","visible");
+    this.button.setAttributeNS(null,"class","inputButton");
+    this.rectangle = this.button.getElementsByClassName("modalButton")[0];
     this.enabled = null;
     this.number = null;
     this.id = null;
@@ -20,6 +23,8 @@ class svgButton {
     let newY = yBaseline-(yInterval*(buttonNumber-1));
     this.number = buttonNumber;
     this.id = `button${buttonNumber}`;
+    this.rectangle.setAttribute("tabindex", 1+buttonNumber);
+    this.rectangle.setAttribute("id", `${this.id}Rectangle`);
     this.button.setAttributeNS(null,"id",this.id);
     this.button.setAttributeNS(null,"y",newY);
   }
@@ -30,7 +35,7 @@ class svgButton {
   setEventCallback(buttonEventCallback){
     if(this.eventCallback){this.unsetEventCallback();}
     this.eventCallback = buttonEventCallback;
-    this.button.addEventListener("pointerup", this.eventCallback);
+    this.rectangle.addEventListener("pointerup", this.eventCallback);
   }
   unsetEventCallback(){
     this.button.removeEventListener("pointerup", this.eventCallback);
@@ -68,8 +73,10 @@ class modalAlertManager {
         this.ns = "http://www.w3.org/2000/svg";
         this.loadingAnim = null;
         this.buttons = [];
+        this.input = null;
         this.buttons.push(this.svgObject.getElementById("buttonTemplate1"));
         this.setButton(1, true, "Close", this.forceHideModal);
+        this.setInput(true, "Save as:");
     }
     setLoadingAnim(animSVG) {
       this.loadingAnim = animSVG.cloneNode(true);
@@ -118,6 +125,13 @@ class modalAlertManager {
     getDescription() {
         return this.description;
     }
+    setInput(boolean, string){
+      this.input = boolean;
+      this.svgObject.getElementById("modalFormLabel").innerHTML = string;
+      this.setVisibility(this.svgObject.getElementById("modalFormInput"), boolean);
+      if(boolean){this.svgObject.getElementById("htmlObject").setAttributeNS(null,"height","300")}
+      else{this.svgObject.getElementById("htmlObject").setAttributeNS(null,"height","375")}
+    }
     setCanEscape(boolean) {
         this.canEscape = boolean;
         this.setVisibility(this.svgObject.getElementById("cancelPath"), boolean);
@@ -145,9 +159,6 @@ class modalAlertManager {
     getButton(buttonNumber){
       return this.buttons[buttonNumber];
     }
-    disableButtons(){
-
-    }
     setVisibility(element, boolean){
       if(boolean){
         element.setAttributeNS(null, "visibility", "visible");
@@ -156,31 +167,47 @@ class modalAlertManager {
         element.setAttributeNS(null, "visibility", "hidden")
       }
     }
-    displayModal () {
+    displayModal (event) {
       document.getElementById("modalLayer").style.display = "block";
+      if(event){event.preventDefault()};
+      if(this.input){console.log("focusing textbox");this.svgObject.getElementById("modalInputElement").focus();}
+      else{
+        if(this.svgObject.querySelectorAll(".inputButton .modalButton")[0]){
+          this.svgObject.querySelectorAll(".inputButton .modalButton")[0].focus();
+        }}
+      let focusableElements = document.querySelectorAll("a,select,input");
+      for(let element of focusableElements){
+        element.setAttribute("tabindex","-1");
+      }
     }
     hideModal () {
       if(this.canEscape){
         document.getElementById("modalLayer").style.display = "none";
+        let focusableElements = document.querySelectorAll("a,select,input");
+        for(let element of focusableElements){
+        element.setAttribute("tabindex","0");
+        }
       } else{
         let animation1 = this.svgObject.getElementById("animFrame1");
         animation1.beginElement();}
       }
     forceHideModal() {
       document.getElementById("modalLayer").style.display = "none";
+      let focusableElements = document.querySelectorAll("a,select,input");
+      for(let element of focusableElements){
+        element.setAttribute("tabindex","0");
+      }
     }
-    buttonData(){
-      let array = [];
-
-    }
-    generate(title, description, canEscape, button1, button2, button3, button1Text, button2Text, button3Text, callback1, callback2, callback3) {
+    generate(event, title, description, canEscape, inputField, inputLabel, button1, button1Text, callback1, button2, button2Text, callback2, button3, button3Text, callback3) {
         this.setTitle(title);
         this.setDescription(description);
         this.setCanEscape(canEscape);
         this.setButton(1, button1, button1Text, callback1);
         this.setButton(2, button2, button2Text, callback2);
         this.setButton(3, button3, button3Text, callback3);
-        this.displayModal();
+        this.setInput(inputField, inputLabel);
+        this.displayModal(event);
+        return this;
     }
 }
 /*onLoad*/
@@ -196,13 +223,11 @@ window.addEventListener("load", function () { // Get the modal
     alertManager.setLoadingAnim(mechSVG);
 
     // Test Button
-    btn.onclick = function () {
-      alertManager.generate("Unsaved Changes!", "You've made changes to this mech that you haven't exported. Would you like to save this mech definition?", true, true, true, false, "Cancel", "Save", "button3Text", testButtons, null, null);;
+    btn.onclick = function (event) {
+      alertManager.generate(event, "Unsaved Changes!", "You've made changes to this mech that you haven't exported. Would you like to save this mech definition?", true, true, "Save as:", true, "Cancel", testButtons, true, "Save", saveAsDialog);;
     }
     // When the user clicks on <span> (x), close the modal
-    closeButton.onclick = function () {
-        closeModal();
-    }
+    closeButton.addEventListener("pointerup",closeModal);
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
       //console.log(event.target);
@@ -210,18 +235,23 @@ window.addEventListener("load", function () { // Get the modal
           closeModal();
         }
     }
+    function saveAsDialog(){
+
+    }
     function closeModal(){
       alertManager.hideModal();
     }
-    function testButtons(){
+    function testButtons(event){
       console.log("button test triggered");
       alertManager.setButton(1, true, "Close", closeModal);
       alertManager.setButton(2, true, "Change", testFormChange);
       alertManager.setButton(3, true, "Disable", disableButtons);
+      alertManager.displayModal(event);
     }
-    function testFormChange(){
+    function testFormChange(event){
       let sampleText = "chaos+nova together 4ever ";
       alertManager.setTitle(sampleText);
+      alertManager.setInput(false,"");
       sampleText = sampleText+sampleText;
       sampleText = sampleText+sampleText;
       sampleText = sampleText+sampleText;
@@ -229,10 +259,14 @@ window.addEventListener("load", function () { // Get the modal
       sampleText = sampleText+sampleText;
       alertManager.setDescription(sampleText);
       alertManager.setCanEscape(true);
+      alertManager.displayModal(event);
     }
-    function disableButtons(){
+    function disableButtons(event){
       alertManager.getButton(1).disable();
       alertManager.getButton(2).disable();
       alertManager.getButton(3).disable();
+      alertManager.setInput(false,"");
+      alertManager.setCanEscape(true);
+      alertManager.displayModal(event);
     }
 });

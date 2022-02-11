@@ -10,7 +10,7 @@
         <title>Mech Builder</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body id="body">
         <header id = "header">
             <h1>Mech Builder</h1>
             <nav id = "topnav">
@@ -90,35 +90,42 @@
           </rect>
         <svg id="contentArea" viewBox="0 0 95 45" width="95" height="45" x="5" y="5">
             <rect class="debugborder" width="95" height="45"/>
-        <svg id="headerArea" viewBox="0 0 95 7.5" width="95" height="7.5">
-            <rect class="debugborder" width="95" height="7.5"/>
-            <text id="headerAreaText" y="6.5">Mech Builder Alert!</text>
-            <svg id="cancelArea" viewBox="-0.25 -0.25 7.5 7.5" height="7.5" x="43.75">
-                <rect class="debugborder" width="7.5" height="7.5" x="-0.25" y="-0.25"/>
-                <path id="cancelPath" class="modalClose" pointer-events="visiblePainted" d="M 0,0
-                L 7,0
-                L 7,7
-                L 0,7
-                L 0,0
-                L 7,0
-                M 7,0
-                L 0,7
-                M 0,0
-                L 7,7
-                z"/>
+            <svg id="headerArea" viewBox="0 0 95 7.5" width="95" height="7.5">
+                <rect class="debugborder" width="95" height="7.5"/>
+                <text id="headerAreaText" y="6.5">Mech Builder Alert!</text>
+                <svg id="cancelArea" viewBox="-0.25 -0.25 7.5 7.5" height="7.5" x="43.75">
+                    <rect class="debugborder" width="7.5" height="7.5" x="-0.25" y="-0.25"/>
+                    <path id="cancelPath" class="modalClose" pointer-events="visiblePainted" tabindex="10" 
+                    d="M 0,0
+                    L 7,0
+                    L 7,7
+                    L 0,7
+                    L 0,0
+                    L 7,0
+                    M 7,0
+                    L 0,7
+                    M 0,0
+                    L 7,7
+                    z"/>
+                </svg>
             </svg>
-        </svg>
-        <svg id="descriptionArea" viewBox="0 0 70 37.5" y="7.5" width="70" height="37.5">
-            <rect class="debugborder" width="70" height="37.5"/>
-            <foreignObject id="htmlObject" width="70" height="37" y=".25">
+        <svg id="descriptionArea" viewBox="0 0 700 375" y="7.5" width="70" height="37.5">
+            <rect class="debugborder" width="700" height="375"/>
+            <foreignObject id="htmlObject" width="700" height="300">
                 <p id="descriptionAreaText" xmlns="http://www.w3.org/1999/xhtml">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar rutrum placerat. Phasellus pulvinar turpis ipsum, in aliquam tellus euismod ac. Nulla facilisi. Nam ultrices ipsum vitae arcu viverra ultricies. Praesent convallis magna quis mi suscipit feugiat et et felis. Integer quis congue tellus, at fermentum eros. Nullam quis mollis ipsum. Vivamus elementum id lacus nec hendrerit. Mauris sapien tortor, aliquam vitae nunc in, mattis posuere augue. Proin bibendum, dui a pretium aliquam, felis tellus laoreet ante, a tempor urna magna ut sapien. Suspendisse fermentum arcu risus, at maximus magna convallis dictum. Integer ut nisi vitae urna tristique aliquet sed a enim.
 
                     Vestibulum ullamcorper vestibulum mauris sit amet elementum. Donec justo urna, egestas eget aliquet id, viverra at risus. Nullam efficitur ultrices tempor. Donec quis est laoreet, mollis ipsum vitae, maximus nisi. Aliquam sit amet elit non orci mattis pretium hendrerit eget magna. Nulla sit amet sodales lorem, ac eleifend quam. Cras a arcu non nisl dictum congue at in odio. Vivamus ullamcorper a dolor et egestas. Proin sagittis dolor vitae imperdiet pharetra. Donec diam nisl, pharetra ac dui ut, ornare venenatis neque. Etiam at nunc congue, aliquet tellus in, euismod ante. Vestibulum dictum dapibus nulla ut cursus. Sed vel ullamcorper leo. Nulla vulputate sapien accumsan ex fermentum varius.</p>
             </foreignObject>
+            <foreignObject id="modalFormInput" width="700" height="75" y="300">
+                <div>
+                    <label for="modalInput" id="modalFormLabel">You shouldn't be seeing this!</label>
+                    <input id="modalInputElement" name="modalInput" type="text" tabindex="1">
+                </div>
+            </foreignObject>
         </svg>
         <svg id="inputArea" viewBox="0 0 25 37.5" y="7.5" x="70" width="25" height="37.5">
             <rect class="debugborder" width="25" height="37.5"/>
-            <svg class="inputButton" id="buttonTemplate1"  viewBox="0 0 25 5.5" x="0" y="32" width="25" height="5.5">
+            <svg class="inputButtonTemplate" id="buttonTemplate1"  viewBox="0 0 25 5.5" x="0" y="32" width="25" height="5.5" visibility="hidden">
                 <rect class="debugborder" width="25" height="5"/>
                 <rect class="modalButton" width="24" height="4.5" x="0.5" y=".5" rx="2"/>
                 <svg class="buttonTextHolder" viewBox="0 -4 22 5" width="22" height="5" x="1.5">
@@ -126,7 +133,7 @@
                     <text class="buttonText" text-anchor="middle" x="11">Yes</text>
                 </svg>
             </svg>
-            <svg class="inputButton" id="buttonTemplate2"  viewBox="0 0 25 4" x="0" y="33" width="25" height="4">
+            <svg class="inputButtonTemplate" id="buttonTemplate2"  viewBox="0 0 25 4" x="0" y="33" width="25" height="4" visibility="hidden">
                 <rect class="debugborder" width="25" height="4"/>
                 <rect class="modalButton" width="24" height="3.4" x="0.5" y=".5" rx="1.5"/>
                 <svg class="buttonTextHolder" viewBox="0 -3 22 4" width="22" height="4" x="1.5">
@@ -135,6 +142,7 @@
                 </svg>
             </svg>
           </svg>
+
         </svg>
       </svg>
     </div>

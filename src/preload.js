@@ -74,12 +74,12 @@ async function autoFillParts(){
                     checkbox.checked = true;
                     checkbox.id = attachment;
                     checkbox.type = "checkbox";
-                    
-                    label.setAttribute("for", attachment)
+                    label.setAttribute("for", attachment);
                     labelDiv.appendChild(checkbox);
                     labelDiv.appendChild(labelSpan);
                     label.appendChild(labelDiv);
                     fieldset.appendChild(label);
+                    checkbox.addEventListener('beforeinput', checkboxChanged);
                 }
                 fieldset.style.display = "block";
             };
@@ -120,6 +120,10 @@ async function autoFillParts(){
             weaponForm.appendChild(componentFieldset);
         }
     }
+}
+
+function checkboxChanged(event){
+    console.log(event);
 }
 
 function clearSelectBox(select){
