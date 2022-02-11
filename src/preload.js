@@ -80,8 +80,6 @@ async function autoFillParts(){
             componentLegend = document.createElement("Legend");
             componentLegend.innerText = component.location + " hardpoints";
             //add elements to document
-            componentFieldset.appendChild(componentLegend);
-            weaponForm.appendChild(componentFieldset);
             for (hardpointID of component.hardpoints){
                 currentHardpoint = currentMech.hardpoints.find(hardpoint => hardpoint["id"] === hardpointID);
                 for (let [index, weaponSlot] of currentHardpoint.weaponSlots.entries()){
@@ -101,14 +99,11 @@ async function autoFillParts(){
                     componentFieldset.appendChild(weaponSlotSelect);
                     
                 }
-                
             }
-            
-
-            
+            componentFieldset.appendChild(componentLegend);
+            weaponForm.appendChild(componentFieldset);
         }
     }
-    
 }
 
 function clearSelectBox(select){
