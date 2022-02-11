@@ -68,12 +68,17 @@ async function autoFillParts(){
                 for (attachment of component.attachments){
                     let checkbox = document.createElement("input");
                     let label = document.createElement("label");
+                    let labelDiv = document.createElement("div");
+                    let labelSpan = document.createElement("span");
+                    labelSpan.innerHTML = attachment;
                     checkbox.checked = true;
                     checkbox.id = attachment;
                     checkbox.type = "checkbox";
-                    label.setAttribute("for", attachment);
-                    label.innerHTML = attachment;
-                    fieldset.appendChild(checkbox);
+                    
+                    label.setAttribute("for", attachment)
+                    labelDiv.appendChild(checkbox);
+                    labelDiv.appendChild(labelSpan);
+                    label.appendChild(labelDiv);
                     fieldset.appendChild(label);
                 }
                 fieldset.style.display = "block";

@@ -139,6 +139,10 @@ fieldset > label{
     font-size:1.5vh;
 }
 
+label > div{
+    width: 100%;
+}
+
 select {
     width: 100%;
     padding: 0 5%;
