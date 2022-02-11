@@ -81,7 +81,8 @@ class mech {
         try{
             let mdfFile = await fs.readFile(path.join(__dirname, "..\\assets\\mdf\\", this.chassis, "\\", this.mdfFileName), 'utf-8');
             this.mdfData = Parser.parseFromString(mdfFile, 'text/xml');
-            if (this.mdfData.documentElement.getAttributeNS(null, "Version") == 1){
+            let omnislots = this.mdfData.evaluate("count(//*[@OmniSlot])", this.mdfData)
+            if (omnislots.numberValue > 0){
                 this.omniMech = true;
             }
             console.log(this.subtype, "MDF file loaded!")
