@@ -111,6 +111,9 @@ fieldset{
     border-radius: 4px;
     background-color:var(--semitrans-bg-color);
 }
+.componentFieldset{
+    display:none;
+}
 
 form{
     display: flex;
@@ -128,9 +131,10 @@ form > h5{
     font-size: 1.2em;
 }
 
-form > label{
+fieldset > label{
     width: 95%;
     text-indent: 5%;
+    color: var(--font-color);
 }
 
 select {
@@ -144,6 +148,21 @@ select {
     font-family: HeavyMetal;
     color: var(--font-color);
     font-size: 1.1em;
+  }
+  input[type=checkbox]{
+    border: 0.5vh solid var(--main-line-color);
+    border-radius: 1vh;
+    background-color:var(--semitrans-bg-color);
+  }
+  input[type=checkbox]:hover, input[type=checkbox]:checked:hover{
+    border: 0.5vh solid var(--hover-color);
+    border-radius: 1vh;
+    background-color:var(--main-bg-color);
+  }
+  input[type=checkbox]:checked{
+    border: 1vh solid var(--main-line-color);
+    border-radius: 1vh;
+    background-color:var(--semitrans-bg-color);
   }
 
   .formOption{

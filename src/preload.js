@@ -55,19 +55,26 @@ async function autoFillParts(){
     await currentMech.buildMech();
     console.log(currentMech);
     clearSelectBox(document.getElementById("weaponSelectForm"))
-    for (select of document.getElementsByClassName("componentSelect")){
-        clearSelectBox(select);
+    for (fieldset of document.getElementsByClassName("componentFieldset")){
+        clearSelectBox(fieldset);
         for (component of currentMech.structure){
-            let componentRegex = new RegExp(select.id)
+            console.log(fieldset.name);
+            let componentRegex = new RegExp(fieldset.name)
             if (componentRegex.test(component.location) === true) {
                 for (attachment of component.attachments){
-                    let newOpt = document.createElement("option");
-                    newOpt.text = attachment;
-                    select.appendChild(newOpt);
+                    let checkbox = document.createElement("input");
+                    let label = document.createElement("label");
+                    checkbox.checked = true;
+                    checkbox.id = attachment;
+                    checkbox.type = "checkbox";
+                    label.setAttribute("for", attachment);
+                    label.innerHTML = attachment;
+                    fieldset.appendChild(checkbox);
+                    fieldset.appendChild(label);
                 }
-                select.setAttribute("size", select.children.length);  
-                select.parentElement.setAttribute("class", "components");
+                fieldset.style.display = "block";
             };
+
         };
     };
     let weaponForm = document.getElementById("weaponSelectForm");
