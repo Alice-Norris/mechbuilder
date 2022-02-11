@@ -197,7 +197,7 @@ window.addEventListener("load", function () { // Get the modal
 
     // Test Button
     btn.onclick = function () {
-      alertManager.generate("Modal Box Test 1", "Use the buttons to test", false, true, false, false, "Begin", "button2Text", "button3Text", testButtons, null, null);;
+      alertManager.generate("Unsaved Changes!", "You've made changes to this mech that you haven't exported. Would you like to save this mech definition?", true, true, true, false, "Cancel", "Save", "button3Text", testButtons, null, null);;
     }
     // When the user clicks on <span> (x), close the modal
     closeButton.onclick = function () {
