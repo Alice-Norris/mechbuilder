@@ -23,7 +23,7 @@
 
 
         <div id="appMain">
-            <div id = "eqSelection">
+            <div id = "eqSelection" class="scrollForm">
                 <form id = "selectForm">
                     <fieldset>
                         <legend>Chassis</legend> 
@@ -89,50 +89,67 @@
             </footer>
             </div>
         <!-- The Modal -->
-<div id="modalAlert" class="modal">
+<div id="modalLayer" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
       <svg id="modalSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    viewBox="0 0 100 50" xml:space="preserve">
-          <rect id="modalBox" class="drawnElement" width="95" height="45" rx="5" x="2.5" y="2.5">
+    viewBox="0 0 105 55" xml:space="preserve">
+        <rect class="debugborder" width="105" height="55"/>
+        <rect id="modalBox" class="drawnElement" width="100" height="50" rx="5" x="2.5" y="2.5">
             <animate attributeName="stroke" id="animFrame1" from="#816c3f" to="#b30000" dur="0.25s" repeatCount="1" restart="whenNotActive" begin="indefinite" fill="freeze"/>
             <animate attributeName="stroke" id="animFrame2" to="#816c3f" from="#b30000" dur="0.25s" repeatCount="1" restart="whenNotActive" begin="animFrame1.begin+0.25s" fill="freeze"/>
             <animate attributeName="stroke" id="animFrame3" from="#816c3f" to="#b30000" dur="0.25s" repeatCount="1" restart="whenNotActive" begin="animFrame2.begin+0.25s" fill="freeze"/>
             <animate attributeName="stroke" id="animFrame4" to="#816c3f" from="#b30000" dur="0.25s" repeatCount="1" restart="whenNotActive" begin="animFrame3.begin+0.25s" fill="freeze"/>
           </rect>
-          <svg class="modalText" viewBox="0 0 70 50" x="-10">
-          <rect class="debugborder" width="65" height="7.5" y="5"/>
-          <text id="modalTitle" y="10" >Mech Builder Alert!</text>
-          <foreignObject y="15" width="65" height="32.5">
-              <p id="modalDescription" xmlns="http://www.w3.org/1999/xhtml">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </foreignObject>
-          <rect class="debugborder" width="65" height="32.5" y="12.5"/>
+        <svg id="contentArea" viewBox="0 0 95 45" width="95" height="45" x="5" y="5">
+            <rect class="debugborder" width="95" height="45"/>
+        <svg id="headerArea" viewBox="0 0 95 7.5" width="95" height="7.5">
+            <rect class="debugborder" width="95" height="7.5"/>
+            <text id="headerAreaText" y="6.5">Mech Builder Alert!</text>
+            <svg id="cancelArea" viewBox="-0.25 -0.25 7.5 7.5" height="7.5" x="43.75">
+                <rect class="debugborder" width="7.5" height="7.5" x="-0.25" y="-0.25"/>
+                <path id="cancelPath" class="modalClose" pointer-events="visiblePainted" d="M 0,0
+                L 7,0
+                L 7,7
+                L 0,7
+                L 0,0
+                L 7,0
+                M 7,0
+                L 0,7
+                M 0,0
+                L 7,7
+                z"/>
+            </svg>
+        </svg>
+        <svg id="descriptionArea" viewBox="0 0 70 37.5" y="7.5" width="70" height="37.5">
+            <rect class="debugborder" width="70" height="37.5"/>
+            <foreignObject id="htmlObject" width="70" height="37" y=".25">
+                <p id="descriptionAreaText" xmlns="http://www.w3.org/1999/xhtml">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar rutrum placerat. Phasellus pulvinar turpis ipsum, in aliquam tellus euismod ac. Nulla facilisi. Nam ultrices ipsum vitae arcu viverra ultricies. Praesent convallis magna quis mi suscipit feugiat et et felis. Integer quis congue tellus, at fermentum eros. Nullam quis mollis ipsum. Vivamus elementum id lacus nec hendrerit. Mauris sapien tortor, aliquam vitae nunc in, mattis posuere augue. Proin bibendum, dui a pretium aliquam, felis tellus laoreet ante, a tempor urna magna ut sapien. Suspendisse fermentum arcu risus, at maximus magna convallis dictum. Integer ut nisi vitae urna tristique aliquet sed a enim.
+
+                    Vestibulum ullamcorper vestibulum mauris sit amet elementum. Donec justo urna, egestas eget aliquet id, viverra at risus. Nullam efficitur ultrices tempor. Donec quis est laoreet, mollis ipsum vitae, maximus nisi. Aliquam sit amet elit non orci mattis pretium hendrerit eget magna. Nulla sit amet sodales lorem, ac eleifend quam. Cras a arcu non nisl dictum congue at in odio. Vivamus ullamcorper a dolor et egestas. Proin sagittis dolor vitae imperdiet pharetra. Donec diam nisl, pharetra ac dui ut, ornare venenatis neque. Etiam at nunc congue, aliquet tellus in, euismod ante. Vestibulum dictum dapibus nulla ut cursus. Sed vel ullamcorper leo. Nulla vulputate sapien accumsan ex fermentum varius.</p>
+            </foreignObject>
+        </svg>
+        <svg id="inputArea" viewBox="0 0 25 37.5" y="7.5" x="70" width="25" height="37.5">
+            <rect class="debugborder" width="25" height="37.5"/>
+            <svg class="inputButton" id="buttonTemplate"  viewBox="0 0 25 5.5" x="0" y="32" width="25" height="5.5">
+                <rect class="debugborder" width="25" height="5"/>
+                <rect class="modalButton" width="24" height="4.5" x="0.5" y=".5" rx="2"/>
+                <svg class="buttonTextHolder" viewBox="0 -4 22 5" width="22" height="5" x="1.5">
+                    <rect class="debugborder" width="22" height="5" y="-4"/>
+                    <text class="buttonText" text-anchor="middle" x="11">Yes</text>
+                </svg>
+            </svg>
+            <svg class="inputButton" id="buttonTemplate2"  viewBox="0 0 25 4" x="0" y="32" width="25" height="4">
+                <rect class="debugborder" width="25" height="2.5"/>
+                <rect class="modalButton" width="24" height="2" x="0.5" y=".5" rx="2"/>
+                <svg class="buttonTextHolder" viewBox="0 -4 22 5" width="22" height="5" x="1.5">
+                    <rect class="debugborder" width="22" height="5" y="-4"/>
+                    <text class="buttonText" text-anchor="middle" x="11">Yes</text>
+                </svg>
+            </svg>
           </svg>
-          <svg id="modalSidebar" class="modalSidebar" viewBox="0 0 30 50" x="35">
-              <rect class="debugborder" width="25" height="40" y="5"/>
-              <svg class="modalCancel" viewBox="-2.5 -2.5 10 10" height="10" y="2.5" x="7.5">
-                  <path id="modalClose" class="modalClose" pointer-events="visiblePainted" d="M 0,0
-                  L 5,0
-                  L 5,5
-                  L 0,5
-                  L 0,0
-                  L 5,0
-                  M 5,0
-                  L 0,5
-                  M 0,0
-                  L 5,5
-                  z"/>
-              </svg>
-              <svg class="modalButtons" viewBox="0 0 30 10" x="0" y="-5">
-                  <text id="button3Text" class="buttonText" y="10" x="3">Yes</text>
-                  <rect id="button3" class="modalButton" width="20" height="6" x="2.5" y="6" rx="2"/>
-                  <text id="button2Text" class="buttonText" y="18" x="3">No</text>
-                  <rect id="button2" class="modalButton" width="20" height="6" x="2.5" y="14" rx="2"/>
-                  <text id="button1Text" class="buttonText" y="26" x="3">OK</text>
-                  <rect id="button1" class="modalButton" width="20" height="6" x="2.5" y="22" rx="2"/>
-              </svg>
-          </svg>
+        </svg>
       </svg>
     </div>
     </body>
