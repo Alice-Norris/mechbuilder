@@ -2,9 +2,12 @@ const { systemPreferences } = require("electron");
 const path = require("path");
 const fs = require("fs/promises");
 const { mech } = require("./mechClass");
+const { modalAlertManager } = require("./svg");
 const Parser = new DOMParser();
 var currentMechDef = null;
 var currentMech;
+var warningDisplayed = false;
+var alertManager = null;
 
 async function addMechChassis() {
         try{
@@ -79,7 +82,7 @@ async function autoFillParts(){
                     labelDiv.appendChild(labelSpan);
                     label.appendChild(labelDiv);
                     fieldset.appendChild(label);
-                    checkbox.addEventListener('beforeinput', checkboxChanged);
+                    checkbox.addEventListener('input', checkboxChanged);
                 }
                 fieldset.style.display = "block";
             };
@@ -122,8 +125,74 @@ async function autoFillParts(){
     }
 }
 
+function alertManagerSetup() { // Get the modal
+    let modalLayer = document.getElementById("modalLayer");
+    let btn = document.getElementById("myBtn");
+    let closeButton = document.getElementById("cancelPath");
+    let modalSVG = document.getElementById("modalSVG");
+    alertManager = new modalAlertManager(modalSVG);
+    let mechOutline = document.getElementById('mechOutline');
+    console.log(mechOutline.contentDocument);
+    let mechSVG = mechOutline.contentDocument.getElementById('mechSVG');
+    alertManager.setLoadingAnim(mechSVG);
+    // Test Button
+    btn.addEventListener("pointerup",modalTester);
+    // Close Button
+    closeButton.addEventListener("pointerup",closeModal);
+    // Defocus Close
+    window.addEventListener("pointerup",clickParser) 
+    console.log(alertManager);
+    return alertManager;
+  }
+  function modalTester(event) {
+    console.log(alertManager);
+    alertManager.generate(event, "Unsaved Changes!", "You've made changes to this mech that you haven't exported. Would you like to save this mech definition?", true, true, "Save as:", true, "Cancel", testButtons, true, "Save", saveAsDialog);;
+  }
+  function clickParser(event) {
+    //console.log(event.target);
+      if (event.target == modalLayer) {
+        closeModal();
+      }
+  }
+  function closeModal(){
+    console.log(alertManager)
+    alertManager.hideModal();
+  }
+  function testButtons(event){
+    console.log("button test triggered");
+    alertManager.setButton(1, true, "Close", closeModal);
+    alertManager.setButton(2, true, "Change", testFormChange);
+    alertManager.setButton(3, true, "Disable", disableButtons);
+    alertManager.displayModal(event);
+  }
+  function testFormChange(event){
+    let sampleText = "chaos+nova together 4ever ";
+    alertManager.setTitle(sampleText);
+    alertManager.setInput(false,"");
+    sampleText = sampleText+sampleText;
+    sampleText = sampleText+sampleText;
+    sampleText = sampleText+sampleText;
+    sampleText = sampleText+sampleText;
+    sampleText = sampleText+sampleText;
+    alertManager.setDescription(sampleText);
+    alertManager.setCanEscape(true);
+    alertManager.displayModal(event);
+  }
+  function disableButtons(event){
+    alertManager.getButton(1).disable();
+    alertManager.getButton(2).disable();
+    alertManager.getButton(3).disable();
+    alertManager.setInput(false,"");
+    alertManager.setCanEscape(true);
+    alertManager.displayModal(event);
+  }
+  function saveAsDialog(){
+    /*functionality*/
+  }
 function checkboxChanged(event){
-    console.log(event);
+    if(!warningDisplayed && !event.target.checked){
+        alertManager.alert("WARNING!", "", true, event)
+    }
 }
 
 function clearSelectBox(select){
@@ -131,10 +200,12 @@ function clearSelectBox(select){
         select.removeChild(select.lastChild);
     }
 }
+
 function scriptSetup(){
-    
     document.getElementById("mech").addEventListener('input', addSubtypes);
     document.getElementById("subtype").addEventListener('change', autoFillParts);
 }
+
 window.addEventListener('DOMContentLoaded', addMechChassis);    
 window.addEventListener('DOMContentLoaded', scriptSetup);
+window.addEventListener('load', alertManagerSetup);

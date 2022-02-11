@@ -198,75 +198,24 @@ class modalAlertManager {
         element.setAttribute("tabindex","0");
       }
     }
-    generate(event, title, description, canEscape, inputField, inputLabel, button1, button1Text, callback1, button2, button2Text, callback2, button3, button3Text, callback3) {
+    generate(event, title, description, canEscape, inputNeeded, inputLabelText, button1, button1Text, callback1, button2, button2Text, callback2, button3, button3Text, callback3) {
         this.setTitle(title);
         this.setDescription(description);
         this.setCanEscape(canEscape);
         this.setButton(1, button1, button1Text, callback1);
         this.setButton(2, button2, button2Text, callback2);
         this.setButton(3, button3, button3Text, callback3);
-        this.setInput(inputField, inputLabel);
+        this.setInput(inputNeeded, inputLabelText);
         this.displayModal(event);
         return this;
     }
+    alert(title, description, canEscape, event){
+      if(canEscape){
+      this.generate(event, title, description, canEscape, false, null, true, "OK", this.hideModal);
+      }
+      else{
+        this.generate(event, title, description, canEscape);
+      }
+    }
 }
-/*onLoad*/
-window.addEventListener("load", function () { // Get the modal
-    let modalLayer = document.getElementById("modalLayer");
-    let btn = document.getElementById("myBtn");
-    let closeButton = document.getElementById("cancelPath");
-    let modalSVG = document.getElementById("modalSVG");
-    let alertManager = new modalAlertManager(modalSVG);
-    let mechOutline = document.getElementById('mechOutline');
-    console.log(mechOutline.contentDocument);
-    let mechSVG = mechOutline.contentDocument.getElementById('mechSVG');
-    alertManager.setLoadingAnim(mechSVG);
-
-    // Test Button
-    btn.onclick = function (event) {
-      alertManager.generate(event, "Unsaved Changes!", "You've made changes to this mech that you haven't exported. Would you like to save this mech definition?", true, true, "Save as:", true, "Cancel", testButtons, true, "Save", saveAsDialog);;
-    }
-    // When the user clicks on <span> (x), close the modal
-    closeButton.addEventListener("pointerup",closeModal);
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      //console.log(event.target);
-        if (event.target == modalLayer) {
-          closeModal();
-        }
-    }
-    function saveAsDialog(){
-
-    }
-    function closeModal(){
-      alertManager.hideModal();
-    }
-    function testButtons(event){
-      console.log("button test triggered");
-      alertManager.setButton(1, true, "Close", closeModal);
-      alertManager.setButton(2, true, "Change", testFormChange);
-      alertManager.setButton(3, true, "Disable", disableButtons);
-      alertManager.displayModal(event);
-    }
-    function testFormChange(event){
-      let sampleText = "chaos+nova together 4ever ";
-      alertManager.setTitle(sampleText);
-      alertManager.setInput(false,"");
-      sampleText = sampleText+sampleText;
-      sampleText = sampleText+sampleText;
-      sampleText = sampleText+sampleText;
-      sampleText = sampleText+sampleText;
-      sampleText = sampleText+sampleText;
-      alertManager.setDescription(sampleText);
-      alertManager.setCanEscape(true);
-      alertManager.displayModal(event);
-    }
-    function disableButtons(event){
-      alertManager.getButton(1).disable();
-      alertManager.getButton(2).disable();
-      alertManager.getButton(3).disable();
-      alertManager.setInput(false,"");
-      alertManager.setCanEscape(true);
-      alertManager.displayModal(event);
-    }
-});
+module.exports = {modalAlertManager};
