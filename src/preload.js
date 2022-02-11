@@ -51,8 +51,10 @@ async function autoFillParts(){
     var subtypeSelect = document.getElementById("subtype");
     var subtypeChoice = subtypeSelect.options[subtypeSelect.selectedIndex];
     var fileName = subtypeChoice.value;
-    currentMech = new mech(chassisChoice.text, subtypeChoice.text);
+    currentMech = new mech(chassisChoice.text, subtypeChoice.text, fileName);
     await currentMech.buildMech();
+    console.log(currentMech);
+    clearSelectBox(document.getElementById("weaponSelectForm"))
     for (select of document.getElementsByClassName("componentSelect")){
         clearSelectBox(select);
         for (component of currentMech.structure){
@@ -68,8 +70,43 @@ async function autoFillParts(){
             };
         };
     };
-    for (hardpoint of currentMech.hardpoints){
-        //console.log(hardpoint);
+    let weaponForm = document.getElementById("weaponSelectForm");
+    for (component of currentMech.structure){
+        if (component.hardpoints.length > 0){
+            
+            //create fieldset for component with hardpoints
+            componentFieldset = document.createElement("fieldset");
+            //create legend for component with hardpoints
+            componentLegend = document.createElement("Legend");
+            componentLegend.innerText = component.location + " hardpoints";
+            //add elements to document
+            componentFieldset.appendChild(componentLegend);
+            weaponForm.appendChild(componentFieldset);
+            for (hardpointID of component.hardpoints){
+                currentHardpoint = currentMech.hardpoints.find(hardpoint => hardpoint["id"] === hardpointID);
+                for (let [index, weaponSlot] of currentHardpoint.weaponSlots.entries()){
+                    weaponSlotLabel = document.createElement("label")
+                    weaponSlotLabel.innerText = "WeaponSlot " + index;
+                    weaponSlotLabel.setAttribute("for", "WeaponSlot" + index);
+                    componentLegend.appendChild(weaponSlotLabel);
+                    weaponSlotSelect = document.createElement("select");
+                    weaponSlotSelect.setAttribute("class", "weaponSelect");
+                    weaponSlotSelect.setAttribute("id", component.location + "WeaponSlot" + index);
+                    for (weapon of weaponSlot){
+                        weaponOption = document.createElement("option")
+                        weaponOption.text = weapon["Weapon Name"]
+                        weaponOption.value = weapon["Attachment"]
+                        weaponSlotSelect.appendChild(weaponOption);
+                    }
+                    componentLegend.appendChild(weaponSlotSelect);
+                    
+                }
+                
+            }
+            
+
+            
+        }
     }
     
 }
@@ -82,7 +119,7 @@ function clearSelectBox(select){
 function scriptSetup(){
     
     document.getElementById("mech").addEventListener('input', addSubtypes);
-    document.getElementById("subtype").addEventListener('input', autoFillParts);
+    document.getElementById("subtype").addEventListener('change', autoFillParts);
 }
 window.addEventListener('DOMContentLoaded', addMechChassis);    
 window.addEventListener('DOMContentLoaded', scriptSetup);
