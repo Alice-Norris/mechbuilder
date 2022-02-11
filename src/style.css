@@ -122,6 +122,7 @@ form{
     font-size: .80em;
     max-height: 85vh;
     overflow-y:auto;
+    font-size: 1.5vh;
 }
 
 form > h5{
@@ -135,6 +136,7 @@ fieldset > label{
     width: 95%;
     text-indent: 5%;
     color: var(--font-color);
+    font-size:1.5vh;
 }
 
 select {
@@ -147,11 +149,12 @@ select {
     background-color:var(--main-bg-color);
     font-family: HeavyMetal;
     color: var(--font-color);
-    font-size: 1.1em;
+    font-size:1.5vh;
   }
   input[type=checkbox]{
+    font-size:1.5vh;
     border: 0.5vh solid var(--main-line-color);
-    border-radius: 1vh;
+    border-radius: 1%;
     background-color:var(--semitrans-bg-color);
   }
   input[type=checkbox]:hover, input[type=checkbox]:checked:hover{

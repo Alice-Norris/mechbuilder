@@ -57,7 +57,11 @@ async function autoFillParts(){
     clearSelectBox(document.getElementById("weaponSelectForm"))
     for (fieldset of document.getElementsByClassName("componentFieldset")){
         clearSelectBox(fieldset);
+        let componentLegend = document.createElement("legend");
+            componentLegend.innerText = fieldset.name + " components";
         for (component of currentMech.structure){
+            
+            fieldset.appendChild(componentLegend);
             console.log(fieldset.name);
             let componentRegex = new RegExp(fieldset.name)
             if (componentRegex.test(component.location) === true) {
@@ -84,7 +88,7 @@ async function autoFillParts(){
             //create fieldset for component with hardpoints
             componentFieldset = document.createElement("fieldset");
             //create legend for component with hardpoints
-            componentLegend = document.createElement("Legend");
+            let componentLegend = document.createElement("legend");
             componentLegend.innerText = component.location + " hardpoints";
             //add elements to document
             for (hardpointID of component.hardpoints){
