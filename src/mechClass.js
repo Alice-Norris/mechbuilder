@@ -1,6 +1,5 @@
 const path = require("path");
 const fs = require("fs/promises");
-const { off } = require("process");
 const Parser = new DOMParser();
 
 //contains hardpoints, not present in IS mechs, held in components
